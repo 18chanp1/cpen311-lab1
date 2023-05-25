@@ -1,0 +1,205 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'CLOCK_50'
+Slack : 6.535
+TNS   : 0.000
+
+Type  : Setup 'altera_reserved_tck'
+Slack : 9.515
+TNS   : 0.000
+
+Type  : Setup 'freq_divider:Gen_some_clk|outclk'
+Slack : 13.315
+TNS   : 0.000
+
+Type  : Setup 'freq_divider:Gen_2HZ_clk|outclk'
+Slack : 14.916
+TNS   : 0.000
+
+Type  : Setup 'audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : 14.986
+TNS   : 0.000
+
+Type  : Setup 'audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 16.833
+TNS   : 0.000
+
+Type  : Setup 'freq_divider:Gen_1KHZ_clk|outclk'
+Slack : 17.003
+TNS   : 0.000
+
+Type  : Setup 'audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 17.725
+TNS   : 0.000
+
+Type  : Setup 'audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 34.199
+TNS   : 0.000
+
+Type  : Setup 'led_flasher:de1_led_flasher|freq_divider:led_flash_divider|outclk'
+Slack : 36.256
+TNS   : 0.000
+
+Type  : Setup 'audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 36.915
+TNS   : 0.000
+
+Type  : Hold 'audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 0.274
+TNS   : 0.000
+
+Type  : Hold 'freq_divider:Gen_1KHZ_clk|outclk'
+Slack : 0.287
+TNS   : 0.000
+
+Type  : Hold 'CLOCK_50'
+Slack : 0.374
+TNS   : 0.000
+
+Type  : Hold 'audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 0.446
+TNS   : 0.000
+
+Type  : Hold 'altera_reserved_tck'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Hold 'freq_divider:Gen_some_clk|outclk'
+Slack : 0.484
+TNS   : 0.000
+
+Type  : Hold 'audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 0.549
+TNS   : 0.000
+
+Type  : Hold 'audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 0.631
+TNS   : 0.000
+
+Type  : Hold 'led_flasher:de1_led_flasher|freq_divider:led_flash_divider|outclk'
+Slack : 0.827
+TNS   : 0.000
+
+Type  : Hold 'audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : 2.259
+TNS   : 0.000
+
+Type  : Hold 'freq_divider:Gen_2HZ_clk|outclk'
+Slack : 2.486
+TNS   : 0.000
+
+Type  : Recovery 'speed_up_event_trigger'
+Slack : 3.988
+TNS   : 0.000
+
+Type  : Recovery 'speed_down_event_trigger'
+Slack : 5.011
+TNS   : 0.000
+
+Type  : Recovery 'CLOCK_50'
+Slack : 7.500
+TNS   : 0.000
+
+Type  : Recovery 'audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 15.107
+TNS   : 0.000
+
+Type  : Recovery 'audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 15.486
+TNS   : 0.000
+
+Type  : Recovery 'doublesync:key2_doublsync|reg2'
+Slack : 16.274
+TNS   : 0.000
+
+Type  : Recovery 'altera_reserved_tck'
+Slack : 28.549
+TNS   : 0.000
+
+Type  : Removal 'altera_reserved_tck'
+Slack : 0.668
+TNS   : 0.000
+
+Type  : Removal 'doublesync:key2_doublsync|reg2'
+Slack : 2.097
+TNS   : 0.000
+
+Type  : Removal 'audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 2.795
+TNS   : 0.000
+
+Type  : Removal 'audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 2.909
+TNS   : 0.000
+
+Type  : Removal 'CLOCK_50'
+Slack : 10.345
+TNS   : 0.000
+
+Type  : Removal 'speed_down_event_trigger'
+Slack : 13.078
+TNS   : 0.000
+
+Type  : Removal 'speed_up_event_trigger'
+Slack : 13.989
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLOCK_50'
+Slack : 8.388
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.113
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'freq_divider:Gen_some_clk|outclk'
+Slack : 18.539
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'audio_controller:audio_control|I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 19.318
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'doublesync:key2_doublsync|reg2'
+Slack : 19.321
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'speed_down_event_trigger'
+Slack : 19.350
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_regs_gen[1].div_reg|outdata[0]'
+Slack : 19.362
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'audio_controller:audio_control|audio_clock:u4|LRCK_1X'
+Slack : 19.363
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'audio_controller:audio_control|audio_clock:u4|oAUD_BCK'
+Slack : 19.366
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'freq_divider:Gen_2HZ_clk|outclk'
+Slack : 19.372
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'speed_up_event_trigger'
+Slack : 19.400
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'audio_controller:audio_control|TFF_power_of_2_division_counter_with_auto_phase_inversion:generate_aud_ctrl_clk|widereg:div_reg_top|outdata[0]'
+Slack : 19.410
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'freq_divider:Gen_1KHZ_clk|outclk'
+Slack : 19.416
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'led_flasher:de1_led_flasher|freq_divider:led_flash_divider|outclk'
+Slack : 19.423
+TNS   : 0.000
+
+------------------------------------------------------------

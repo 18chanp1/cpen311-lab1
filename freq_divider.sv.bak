@@ -1,0 +1,11 @@
+module freq_divider(inclk, outclk);
+	input logic inclk;
+	output logic outclk
+	
+	parameter DIVIDER = 32'D1_000_000;
+	logic [32:0] counter = 32'b0;
+	
+	always_ff @(posedge clk) begin
+		counter <= counter + 32'd1;
+		
+		if (counter > DIVIDER) counter 
