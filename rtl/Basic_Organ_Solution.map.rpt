@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Basic_Organ_Solution
-Thu May 25 20:56:40 2023
+Thu May 25 21:30:25 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -90,7 +90,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 25 20:56:40 2023       ;
+; Analysis & Synthesis Status     ; Successful - Thu May 25 21:30:25 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Basic_Organ_Solution                        ;
 ; Top-level Entity Name           ; Basic_Organ_Solution                        ;
@@ -3644,11 +3644,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 25 20:55:53 2023
+    Info: Processing started: Thu May 25 21:29:36 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Basic_Organ_Solution -c Basic_Organ_Solution
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Warning (10885): Verilog HDL Attribute warning at Basic_Organ_Solution.sv(214): synthesis attribute "keep" with value "1" has no object and is ignored File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 214
+Warning (10885): Verilog HDL Attribute warning at Basic_Organ_Solution.sv(212): synthesis attribute "keep" with value "1" has no object and is ignored File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 212
 Warning (10238): Verilog Module Declaration warning at Basic_Organ_Solution.sv(40): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "Basic_Organ_Solution" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file basic_organ_solution.sv
     Info (12023): Found entity 1: Basic_Organ_Solution File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 2
@@ -3673,38 +3673,38 @@ Info (12021): Found 1 design units, including 1 entities, in source file led_fla
 Info (12021): Found 1 design units, including 1 entities, in source file tone_selector.sv
     Info (12023): Found entity 1: tone_selector File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/tone_selector.sv Line: 7
 Info (12127): Elaborating entity "Basic_Organ_Solution" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(414): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 414
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(472): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 472
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(487): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 487
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(488): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 488
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(489): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 489
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(490): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 490
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(491): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 491
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(492): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 492
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(408): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 408
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(466): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 466
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(481): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 481
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(482): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 482
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(483): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 483
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(484): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 484
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(485): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 485
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(486): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 486
 Warning (10034): Output port "LEDR[9..8]" at Basic_Organ_Solution.sv(50) has no driver File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 50
-Info (12128): Elaborating entity "tone_selector" for hierarchy "tone_selector:tone_organ" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 205
-Info (12128): Elaborating entity "freq_divider" for hierarchy "tone_selector:tone_organ|freq_divider:tone_gen" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/tone_selector.sv Line: 46
+Info (12128): Elaborating entity "tone_selector" for hierarchy "tone_selector:tone_organ" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 204
+Info (12128): Elaborating entity "freq_divider" for hierarchy "tone_selector:tone_organ|freq_divider:tone_gen" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/tone_selector.sv Line: 45
 Warning (10230): Verilog HDL assignment warning at freq_divider.sv(34): truncated value with size 32 to match size of target (26) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/freq_divider.sv Line: 34
-Info (12128): Elaborating entity "led_flasher" for hierarchy "led_flasher:de1_led_flasher" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 209
+Info (12128): Elaborating entity "led_flasher" for hierarchy "led_flasher:de1_led_flasher" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 208
 Warning (12125): Using design file doublesync.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: doublesync File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/doublesync.v Line: 1
-Info (12128): Elaborating entity "doublesync" for hierarchy "doublesync:user_scope_enable_sync1" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 241
+Info (12128): Elaborating entity "doublesync" for hierarchy "doublesync:user_scope_enable_sync1" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 235
 Warning (12125): Using design file scope_capture.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: scope_capture File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/scope_capture.v Line: 1
-Info (12128): Elaborating entity "scope_capture" for hierarchy "scope_capture:LCD_scope_channelA" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 268
+Info (12128): Elaborating entity "scope_capture" for hierarchy "scope_capture:LCD_scope_channelA" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 262
 Warning (12125): Using design file lcd_scope_encapsulated_pacoblaze_wrapper.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: LCD_Scope_Encapsulated_pacoblaze_wrapper File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/lcd_scope_encapsulated_pacoblaze_wrapper.v Line: 1
-Info (12128): Elaborating entity "LCD_Scope_Encapsulated_pacoblaze_wrapper" for hierarchy "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 353
+Info (12128): Elaborating entity "LCD_Scope_Encapsulated_pacoblaze_wrapper" for hierarchy "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 347
 Info (12128): Elaborating entity "LCD_Scope_Encapsulated_pacoblaze" for hierarchy "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/lcd_scope_encapsulated_pacoblaze_wrapper.v Line: 60
-Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:Gen_1KHZ_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 372
+Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:Gen_1KHZ_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 366
 Warning (10230): Verilog HDL assignment warning at freq_divider.sv(34): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/freq_divider.sv Line: 34
-Info (12128): Elaborating entity "async_trap_and_reset_gen_1_pulse" for hierarchy "async_trap_and_reset_gen_1_pulse:make_speedup_pulse" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 431
-Info (12128): Elaborating entity "speed_reg_control" for hierarchy "speed_reg_control:speed_reg_control_inst" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 464
-Info (12128): Elaborating entity "SevenSegmentDisplayDecoder" for hierarchy "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 480
-Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:Gen_2HZ_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 505
+Info (12128): Elaborating entity "async_trap_and_reset_gen_1_pulse" for hierarchy "async_trap_and_reset_gen_1_pulse:make_speedup_pulse" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 425
+Info (12128): Elaborating entity "speed_reg_control" for hierarchy "speed_reg_control:speed_reg_control_inst" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 458
+Info (12128): Elaborating entity "SevenSegmentDisplayDecoder" for hierarchy "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 474
+Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:Gen_2HZ_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 499
 Warning (10230): Verilog HDL assignment warning at freq_divider.sv(34): truncated value with size 32 to match size of target (25) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/freq_divider.sv Line: 34
-Info (12128): Elaborating entity "to_slow_clk_interface" for hierarchy "to_slow_clk_interface:interface_actual_audio_data_right" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 544
-Info (12128): Elaborating entity "audio_controller" for hierarchy "audio_controller:audio_control" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 575
+Info (12128): Elaborating entity "to_slow_clk_interface" for hierarchy "to_slow_clk_interface:interface_actual_audio_data_right" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 538
+Info (12128): Elaborating entity "audio_controller" for hierarchy "audio_controller:audio_control" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 569
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_se84.tdf
     Info (12023): Found entity 1: altsyncram_se84 File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/db/altsyncram_se84.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_elc.tdf
@@ -3727,7 +3727,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/db/cmpr_99c.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.05.25.20:56:24 Progress: Loading sld59a4f0a5/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.05.25.21:30:08 Progress: Loading sld59a4f0a5/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -3837,8 +3837,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 50
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 50
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "ScopeChannelBSignal" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 258
-    Info (17048): Logic cell "scope_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 230
+    Info (17048): Logic cell "ScopeChannelBSignal" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 252
+    Info (17048): Logic cell "scope_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 224
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 613 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -3890,9 +3890,9 @@ Info (21057): Implemented 6986 device resources after synthesis - the final reso
     Info (21061): Implemented 6526 logic cells
     Info (21064): Implemented 308 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 106 warnings
-    Info: Peak virtual memory: 4973 megabytes
-    Info: Processing ended: Thu May 25 20:56:40 2023
-    Info: Elapsed time: 00:00:47
-    Info: Total CPU time (on all processors): 00:00:50
+    Info: Peak virtual memory: 4974 megabytes
+    Info: Processing ended: Thu May 25 21:30:25 2023
+    Info: Elapsed time: 00:00:49
+    Info: Total CPU time (on all processors): 00:00:49
 
 
