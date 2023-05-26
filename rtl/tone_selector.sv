@@ -4,20 +4,19 @@
  * output out - output tone
  */
 
-module tone_selector(   input logic [3:0] switches,
-                        input logic clk,
-								input logic rst,
-                        output logic out);
-
-    parameter DO = 26'd95602;
-    parameter RE = 26'd85179;
-    parameter MI = 26'd75873;
-    parameter FA = 26'd71633;
-    parameter SO = 26'd63857;
-    parameter LA = 26'd56818;
-    parameter TI = 26'd50659;
-    parameter DO2 = 26'd47801;
-
+module tone_selector
+#(  parameter DO = 26'd95602,
+    parameter RE = 26'd85179,
+    parameter MI = 26'd75873,
+    parameter FA = 26'd71633,
+    parameter SO = 26'd63857,
+    parameter LA = 26'd56818,
+    parameter TI = 26'd50659,
+    parameter DO2 = 26'd47801)
+(   input logic [3:0] switches,
+    input logic clk,
+    input logic rst,
+    output logic out);
 
     logic div_out;
     logic [25:0] freq_sel;

@@ -200,7 +200,6 @@ wire Clock_1KHz, Clock_1Hz;
 //
 //
             
-
 logic outfreq;
 tone_selector tone_organ(.switches(SW[3:0]), .clk(CLK_50M), .out(outfreq), .rst(~KEY[3]));
 
@@ -208,16 +207,11 @@ tone_selector tone_organ(.switches(SW[3:0]), .clk(CLK_50M), .out(outfreq), .rst(
 
 led_flasher #(.N(8), .LED_DIVIDER(50_000_000)) de1_led_flasher(.clk(CLK_50M), .outLED(LED[7:0]), .rst(~KEY[3]));
 
-
 //Audio Generation Signal
 //Note that the audio needs signed data - so convert 1 bit to 8 bits signed, replaced here.
 wire [7:0] audio_data = {(~outfreq),{7{outfreq}}}; /* synthesis keep */ 
-//generate signed sample audio signal
 
 //Additional changes made in LCD Scope section. 
-
-
-
                 
 //=====================================================================================
 //
@@ -315,7 +309,7 @@ LCD_Scope_Encapsulated_pacoblaze_wrapper LCD_LED_scope(
                     .lcd_e(LCD_EN), //don't touch
                     .clk(CLK_50M),  //don't touch
                           
-                        //LCD Display values
+                        //LCD Display values - changed to reflect switches.
                       .InH(8'h69),
                       .InG(8'h42),
                       .InF(8'h00),

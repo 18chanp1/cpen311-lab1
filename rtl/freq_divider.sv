@@ -34,11 +34,11 @@ module freq_divider
 			counter <= counter + 'd1;
 			
 			//if counter filled to divider, reset.
-			if (counter >= div - 'd1) 				counter <= 'b0;
+			if (counter >= div - 'd1) 	counter <= 'b0;
 			
 			//for first half of cycle, set to one, then set to 0. 
-			if(counter < (div >> 1)) 				outclk <= 1'b1;
-			else 											outclk <= 1'b0;
+			if(counter < (div >> 1)) 	outclk <= 1'b1;
+			else 						outclk <= 1'b0;
 		end
 	end
 	
