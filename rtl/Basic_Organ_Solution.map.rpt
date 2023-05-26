@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Basic_Organ_Solution
-Thu May 25 19:38:05 2023
+Thu May 25 20:56:40 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -34,36 +34,37 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  26. Source assignments for Top-level Entity: |Basic_Organ_Solution
  27. Source assignments for sld_signaltap:auto_signaltap_0
  28. Parameter Settings for User Entity Instance: Top-level Entity: |Basic_Organ_Solution
- 29. Parameter Settings for User Entity Instance: freq_divider:tone_gen
- 30. Parameter Settings for User Entity Instance: led_flasher:de1_led_flasher
- 31. Parameter Settings for User Entity Instance: led_flasher:de1_led_flasher|freq_divider:led_flash_divider
- 32. Parameter Settings for User Entity Instance: freq_divider:Gen_some_clk
- 33. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelA
- 34. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelB
- 35. Parameter Settings for User Entity Instance: freq_divider:Gen_1KHZ_clk
- 36. Parameter Settings for User Entity Instance: speed_reg_control:speed_reg_control_inst
- 37. Parameter Settings for User Entity Instance: freq_divider:Gen_2HZ_clk
- 38. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_right
- 39. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_left
- 40. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 41. Port Connectivity Checks: "freq_divider:Gen_2HZ_clk"
- 42. Port Connectivity Checks: "doublesync:key2_doublsync"
- 43. Port Connectivity Checks: "doublesync:key1_doublsync"
- 44. Port Connectivity Checks: "doublesync:key0_doublsync"
- 45. Port Connectivity Checks: "freq_divider:Gen_1KHZ_clk"
- 46. Port Connectivity Checks: "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope"
- 47. Port Connectivity Checks: "scope_capture:LCD_scope_channelB"
- 48. Port Connectivity Checks: "scope_capture:LCD_scope_channelA|doublesync:sync_enable"
- 49. Port Connectivity Checks: "scope_capture:LCD_scope_channelA"
- 50. Port Connectivity Checks: "freq_divider:Gen_some_clk"
- 51. Port Connectivity Checks: "doublesync:user_scope_enable_sync1"
- 52. Port Connectivity Checks: "led_flasher:de1_led_flasher|freq_divider:led_flash_divider"
- 53. Port Connectivity Checks: "freq_divider:tone_gen"
- 54. Signal Tap Logic Analyzer Settings
- 55. Post-Synthesis Netlist Statistics for Top Partition
- 56. Elapsed Time Per Partition
- 57. Connections to In-System Debugging Instance "auto_signaltap_0"
- 58. Analysis & Synthesis Messages
+ 29. Parameter Settings for User Entity Instance: tone_selector:tone_organ
+ 30. Parameter Settings for User Entity Instance: tone_selector:tone_organ|freq_divider:tone_gen
+ 31. Parameter Settings for User Entity Instance: led_flasher:de1_led_flasher
+ 32. Parameter Settings for User Entity Instance: led_flasher:de1_led_flasher|freq_divider:led_flash_divider
+ 33. Parameter Settings for User Entity Instance: freq_divider:Gen_some_clk
+ 34. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelA
+ 35. Parameter Settings for User Entity Instance: scope_capture:LCD_scope_channelB
+ 36. Parameter Settings for User Entity Instance: freq_divider:Gen_1KHZ_clk
+ 37. Parameter Settings for User Entity Instance: speed_reg_control:speed_reg_control_inst
+ 38. Parameter Settings for User Entity Instance: freq_divider:Gen_2HZ_clk
+ 39. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_right
+ 40. Parameter Settings for User Entity Instance: to_slow_clk_interface:interface_actual_audio_data_left
+ 41. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 42. Port Connectivity Checks: "freq_divider:Gen_2HZ_clk"
+ 43. Port Connectivity Checks: "doublesync:key2_doublsync"
+ 44. Port Connectivity Checks: "doublesync:key1_doublsync"
+ 45. Port Connectivity Checks: "doublesync:key0_doublsync"
+ 46. Port Connectivity Checks: "freq_divider:Gen_1KHZ_clk"
+ 47. Port Connectivity Checks: "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope"
+ 48. Port Connectivity Checks: "scope_capture:LCD_scope_channelB"
+ 49. Port Connectivity Checks: "scope_capture:LCD_scope_channelA|doublesync:sync_enable"
+ 50. Port Connectivity Checks: "scope_capture:LCD_scope_channelA"
+ 51. Port Connectivity Checks: "freq_divider:Gen_some_clk"
+ 52. Port Connectivity Checks: "doublesync:user_scope_enable_sync1"
+ 53. Port Connectivity Checks: "led_flasher:de1_led_flasher|freq_divider:led_flash_divider"
+ 54. Port Connectivity Checks: "tone_selector:tone_organ|freq_divider:tone_gen"
+ 55. Signal Tap Logic Analyzer Settings
+ 56. Post-Synthesis Netlist Statistics for Top Partition
+ 57. Elapsed Time Per Partition
+ 58. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 59. Analysis & Synthesis Messages
 
 
 
@@ -89,7 +90,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 25 19:38:05 2023       ;
+; Analysis & Synthesis Status     ; Successful - Thu May 25 20:56:40 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Basic_Organ_Solution                        ;
 ; Top-level Entity Name           ; Basic_Organ_Solution                        ;
@@ -227,6 +228,7 @@ refer to the applicable agreement for further details.
 ; async_trap_and_reset_gen_1_pulse.qxp                               ; yes             ; User File                                    ; C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/async_trap_and_reset_gen_1_pulse.qxp                               ;             ;
 ; freq_divider.sv                                                    ; yes             ; User SystemVerilog HDL File                  ; C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/freq_divider.sv                                                    ;             ;
 ; led_flasher.sv                                                     ; yes             ; User SystemVerilog HDL File                  ; C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/led_flasher.sv                                                     ;             ;
+; tone_selector.sv                                                   ; yes             ; User SystemVerilog HDL File                  ; C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/tone_selector.sv                                                   ;             ;
 ; doublesync.v                                                       ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/doublesync.v                                                       ;             ;
 ; scope_capture.v                                                    ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/scope_capture.v                                                    ;             ;
 ; lcd_scope_encapsulated_pacoblaze_wrapper.v                         ; yes             ; Auto-Found Verilog HDL File                  ; C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/lcd_scope_encapsulated_pacoblaze_wrapper.v                         ;             ;
@@ -325,7 +327,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                              ; Entity Name                                               ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+--------------+
-; |Basic_Organ_Solution                                                                                                                   ; 2039 (60)           ; 5269 (50)                 ; 55552             ; 0          ; 147  ; 0            ; |Basic_Organ_Solution                                                                                                                                                                                                                                                                                                                                            ; Basic_Organ_Solution                                      ; work         ;
+; |Basic_Organ_Solution                                                                                                                   ; 2039 (57)           ; 5269 (50)                 ; 55552             ; 0          ; 147  ; 0            ; |Basic_Organ_Solution                                                                                                                                                                                                                                                                                                                                            ; Basic_Organ_Solution                                      ; work         ;
 ;    |LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|                                                                             ; 776 (0)             ; 1020 (0)                  ; 18432             ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope                                                                                                                                                                                                                                                                                     ; LCD_Scope_Encapsulated_pacoblaze_wrapper                  ; work         ;
 ;       |LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst|                                                          ; 776 (0)             ; 1020 (0)                  ; 18432             ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst                                                                                                                                                                                                              ; LCD_Scope_Encapsulated_pacoblaze                          ; work         ;
 ;          |LCD_SCOPE_Verilog_pacoblaze:Internal_LCD_Scope|                                                                               ; 776 (115)           ; 1020 (38)                 ; 18432             ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst|LCD_SCOPE_Verilog_pacoblaze:Internal_LCD_Scope                                                                                                                                                               ; LCD_SCOPE_Verilog_pacoblaze                               ; work         ;
@@ -361,7 +363,6 @@ refer to the applicable agreement for further details.
 ;    |freq_divider:Gen_1KHZ_clk|                                                                                                          ; 24 (24)             ; 17 (17)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|freq_divider:Gen_1KHZ_clk                                                                                                                                                                                                                                                                                                                  ; freq_divider                                              ; work         ;
 ;    |freq_divider:Gen_2HZ_clk|                                                                                                           ; 36 (36)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|freq_divider:Gen_2HZ_clk                                                                                                                                                                                                                                                                                                                   ; freq_divider                                              ; work         ;
 ;    |freq_divider:Gen_some_clk|                                                                                                          ; 86 (86)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|freq_divider:Gen_some_clk                                                                                                                                                                                                                                                                                                                  ; freq_divider                                              ; work         ;
-;    |freq_divider:tone_gen|                                                                                                              ; 85 (85)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|freq_divider:tone_gen                                                                                                                                                                                                                                                                                                                      ; freq_divider                                              ; work         ;
 ;    |led_flasher:de1_led_flasher|                                                                                                        ; 48 (10)             ; 36 (9)                    ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|led_flasher:de1_led_flasher                                                                                                                                                                                                                                                                                                                ; led_flasher                                               ; work         ;
 ;       |freq_divider:led_flash_divider|                                                                                                  ; 38 (38)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|led_flasher:de1_led_flasher|freq_divider:led_flash_divider                                                                                                                                                                                                                                                                                 ; freq_divider                                              ; work         ;
 ;    |scope_capture:LCD_scope_channelA|                                                                                                   ; 0 (0)               ; 18 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|scope_capture:LCD_scope_channelA                                                                                                                                                                                                                                                                                                           ; scope_capture                                             ; work         ;
@@ -701,6 +702,8 @@ refer to the applicable agreement for further details.
 ;       |async_trap_and_reset:make_song_restart_signal|                                                                                   ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|speed_reg_control:speed_reg_control_inst|async_trap_and_reset:make_song_restart_signal                                                                                                                                                                                                                                                     ; async_trap_and_reset                                      ; work         ;
 ;    |to_slow_clk_interface:interface_actual_audio_data_left|                                                                             ; 0 (0)               ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|to_slow_clk_interface:interface_actual_audio_data_left                                                                                                                                                                                                                                                                                     ; to_slow_clk_interface                                     ; work         ;
 ;    |to_slow_clk_interface:interface_actual_audio_data_right|                                                                            ; 0 (0)               ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|to_slow_clk_interface:interface_actual_audio_data_right                                                                                                                                                                                                                                                                                    ; to_slow_clk_interface                                     ; work         ;
+;    |tone_selector:tone_organ|                                                                                                           ; 88 (3)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|tone_selector:tone_organ                                                                                                                                                                                                                                                                                                                   ; tone_selector                                             ; work         ;
+;       |freq_divider:tone_gen|                                                                                                           ; 85 (85)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|tone_selector:tone_organ|freq_divider:tone_gen                                                                                                                                                                                                                                                                                             ; freq_divider                                              ; work         ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -2500,13 +2503,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: freq_divider:tone_gen ;
-+----------------+----------+----------------------------------------+
-; Parameter Name ; Value    ; Type                                   ;
-+----------------+----------+----------------------------------------+
-; MAX_DIVIDER    ; 50000000 ; Signed Integer                         ;
-+----------------+----------+----------------------------------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tone_selector:tone_organ ;
++----------------+----------------------------+-------------------------+
+; Parameter Name ; Value                      ; Type                    ;
++----------------+----------------------------+-------------------------+
+; DO             ; 00000000010111010101110010 ; Unsigned Binary         ;
+; RE             ; 00000000010100110010111011 ; Unsigned Binary         ;
+; MI             ; 00000000010010100001100001 ; Unsigned Binary         ;
+; FA             ; 00000000010001011111010001 ; Unsigned Binary         ;
+; SO             ; 00000000001111100101110001 ; Unsigned Binary         ;
+; LA             ; 00000000001101110111110010 ; Unsigned Binary         ;
+; TI             ; 00000000001100010111100011 ; Unsigned Binary         ;
+; DO2            ; 00000000001011101010111001 ; Unsigned Binary         ;
++----------------+----------------------------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tone_selector:tone_organ|freq_divider:tone_gen ;
++----------------+----------+-----------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                            ;
++----------------+----------+-----------------------------------------------------------------+
+; MAX_DIVIDER    ; 50000000 ; Signed Integer                                                  ;
++----------------+----------+-----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2921,14 +2941,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------+
-; Port Connectivity Checks: "freq_divider:tone_gen" ;
-+-------------+-------+----------+------------------+
-; Port        ; Type  ; Severity ; Details          ;
-+-------------+-------+----------+------------------+
-; div[25..17] ; Input ; Info     ; Stuck at GND     ;
-; div[2]      ; Input ; Info     ; Stuck at GND     ;
-+-------------+-------+----------+------------------+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "tone_selector:tone_organ|freq_divider:tone_gen" ;
++-------------+-------+----------+-------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                   ;
++-------------+-------+----------+-------------------------------------------+
+; div[25..17] ; Input ; Info     ; Stuck at GND                              ;
+; div[2]      ; Input ; Info     ; Stuck at GND                              ;
++-------------+-------+----------+-------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -3388,8 +3408,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InfoH[9]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[0]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[0]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[10]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr11~0                                         ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[10]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr11~0                                         ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[10]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr3~0                                          ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[10]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr3~0                                          ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[11]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~0                                     ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[11]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~0                                     ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[12]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
@@ -3402,16 +3422,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[15]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[16]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA~2                                         ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[16]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA~2                                         ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[17]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr9~0                                          ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[17]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr9~0                                          ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[17]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr1~0                                          ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[17]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr1~0                                          ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[18]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[18]~3                                     ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[18]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[18]~3                                     ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[19]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA~4                                         ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[19]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA~4                                         ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[1]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[13]~1                                     ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[1]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[13]~1                                     ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[20]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr8~0                                          ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[20]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr8~0                                          ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[20]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr0~0                                          ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[20]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr0~0                                          ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[21]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[21]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[22]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
@@ -3448,8 +3468,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[7]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[8]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]                                              ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[8]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[9]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr12~0                                         ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[9]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr12~0                                         ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[9]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr4~0                                          ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[9]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr4~0                                          ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[0]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[1]                                              ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[0]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[1]                                              ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[10]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
@@ -3624,11 +3644,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 25 19:37:14 2023
+    Info: Processing started: Thu May 25 20:55:53 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Basic_Organ_Solution -c Basic_Organ_Solution
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Warning (10885): Verilog HDL Attribute warning at Basic_Organ_Solution.sv(240): synthesis attribute "keep" with value "1" has no object and is ignored File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 240
+Warning (10885): Verilog HDL Attribute warning at Basic_Organ_Solution.sv(214): synthesis attribute "keep" with value "1" has no object and is ignored File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 214
 Warning (10238): Verilog Module Declaration warning at Basic_Organ_Solution.sv(40): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "Basic_Organ_Solution" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file basic_organ_solution.sv
     Info (12023): Found entity 1: Basic_Organ_Solution File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 2
@@ -3650,38 +3670,41 @@ Info (12021): Found 1 design units, including 1 entities, in source file freq_di
     Info (12023): Found entity 1: freq_divider File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/freq_divider.sv Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file led_flasher.sv
     Info (12023): Found entity 1: led_flasher File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/led_flasher.sv Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file tone_selector.sv
+    Info (12023): Found entity 1: tone_selector File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/tone_selector.sv Line: 7
 Info (12127): Elaborating entity "Basic_Organ_Solution" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(440): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 440
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(498): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 498
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(513): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 513
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(514): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 514
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(515): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 515
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(516): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 516
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(517): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 517
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(518): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 518
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(414): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 414
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(472): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 472
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(487): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 487
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(488): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 488
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(489): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 489
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(490): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 490
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(491): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 491
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(492): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 492
 Warning (10034): Output port "LEDR[9..8]" at Basic_Organ_Solution.sv(50) has no driver File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 50
-Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:tone_gen" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 213
+Info (12128): Elaborating entity "tone_selector" for hierarchy "tone_selector:tone_organ" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 205
+Info (12128): Elaborating entity "freq_divider" for hierarchy "tone_selector:tone_organ|freq_divider:tone_gen" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/tone_selector.sv Line: 46
 Warning (10230): Verilog HDL assignment warning at freq_divider.sv(34): truncated value with size 32 to match size of target (26) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/freq_divider.sv Line: 34
-Info (12128): Elaborating entity "led_flasher" for hierarchy "led_flasher:de1_led_flasher" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 235
+Info (12128): Elaborating entity "led_flasher" for hierarchy "led_flasher:de1_led_flasher" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 209
 Warning (12125): Using design file doublesync.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: doublesync File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/doublesync.v Line: 1
-Info (12128): Elaborating entity "doublesync" for hierarchy "doublesync:user_scope_enable_sync1" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 267
+Info (12128): Elaborating entity "doublesync" for hierarchy "doublesync:user_scope_enable_sync1" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 241
 Warning (12125): Using design file scope_capture.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: scope_capture File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/scope_capture.v Line: 1
-Info (12128): Elaborating entity "scope_capture" for hierarchy "scope_capture:LCD_scope_channelA" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 294
+Info (12128): Elaborating entity "scope_capture" for hierarchy "scope_capture:LCD_scope_channelA" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 268
 Warning (12125): Using design file lcd_scope_encapsulated_pacoblaze_wrapper.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: LCD_Scope_Encapsulated_pacoblaze_wrapper File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/lcd_scope_encapsulated_pacoblaze_wrapper.v Line: 1
-Info (12128): Elaborating entity "LCD_Scope_Encapsulated_pacoblaze_wrapper" for hierarchy "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 379
+Info (12128): Elaborating entity "LCD_Scope_Encapsulated_pacoblaze_wrapper" for hierarchy "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 353
 Info (12128): Elaborating entity "LCD_Scope_Encapsulated_pacoblaze" for hierarchy "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/lcd_scope_encapsulated_pacoblaze_wrapper.v Line: 60
-Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:Gen_1KHZ_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 398
+Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:Gen_1KHZ_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 372
 Warning (10230): Verilog HDL assignment warning at freq_divider.sv(34): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/freq_divider.sv Line: 34
-Info (12128): Elaborating entity "async_trap_and_reset_gen_1_pulse" for hierarchy "async_trap_and_reset_gen_1_pulse:make_speedup_pulse" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 457
-Info (12128): Elaborating entity "speed_reg_control" for hierarchy "speed_reg_control:speed_reg_control_inst" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 490
-Info (12128): Elaborating entity "SevenSegmentDisplayDecoder" for hierarchy "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 506
-Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:Gen_2HZ_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 531
+Info (12128): Elaborating entity "async_trap_and_reset_gen_1_pulse" for hierarchy "async_trap_and_reset_gen_1_pulse:make_speedup_pulse" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 431
+Info (12128): Elaborating entity "speed_reg_control" for hierarchy "speed_reg_control:speed_reg_control_inst" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 464
+Info (12128): Elaborating entity "SevenSegmentDisplayDecoder" for hierarchy "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 480
+Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:Gen_2HZ_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 505
 Warning (10230): Verilog HDL assignment warning at freq_divider.sv(34): truncated value with size 32 to match size of target (25) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/freq_divider.sv Line: 34
-Info (12128): Elaborating entity "to_slow_clk_interface" for hierarchy "to_slow_clk_interface:interface_actual_audio_data_right" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 570
-Info (12128): Elaborating entity "audio_controller" for hierarchy "audio_controller:audio_control" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 601
+Info (12128): Elaborating entity "to_slow_clk_interface" for hierarchy "to_slow_clk_interface:interface_actual_audio_data_right" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 544
+Info (12128): Elaborating entity "audio_controller" for hierarchy "audio_controller:audio_control" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 575
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_se84.tdf
     Info (12023): Found entity 1: altsyncram_se84 File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/db/altsyncram_se84.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_elc.tdf
@@ -3704,7 +3727,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/db/cmpr_99c.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.05.25.19:37:47 Progress: Loading sld59a4f0a5/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.05.25.20:56:24 Progress: Loading sld59a4f0a5/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -3814,8 +3837,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 50
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 50
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "ScopeChannelBSignal" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 284
-    Info (17048): Logic cell "scope_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 256
+    Info (17048): Logic cell "ScopeChannelBSignal" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 258
+    Info (17048): Logic cell "scope_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 230
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 613 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -3867,9 +3890,9 @@ Info (21057): Implemented 6986 device resources after synthesis - the final reso
     Info (21061): Implemented 6526 logic cells
     Info (21064): Implemented 308 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 106 warnings
-    Info: Peak virtual memory: 4971 megabytes
-    Info: Processing ended: Thu May 25 19:38:05 2023
-    Info: Elapsed time: 00:00:51
-    Info: Total CPU time (on all processors): 00:01:02
+    Info: Peak virtual memory: 4973 megabytes
+    Info: Processing ended: Thu May 25 20:56:40 2023
+    Info: Elapsed time: 00:00:47
+    Info: Total CPU time (on all processors): 00:00:50
 
 

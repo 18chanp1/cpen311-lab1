@@ -201,34 +201,8 @@ wire Clock_1KHz, Clock_1Hz;
 //
             
 
-//frequency divider
-
-logic outfreq; 
-logic div_out;
-
-logic [25:0] freq_sel;
-
-//instatiate clock divider per each frequency, 
-//parameters default N=8, MAX_DIVIDER = 50_000_000;
-freq_divider tone_gen(.inclk(CLK_50M), .outclk(div_out), .rst(~KEY[3]), .div(freq_sel[25:0]));
-
-
-//combinational logic to determine frequency
-assign outfreq = ~SW[0] ? 1'b0 : div_out;
-
-always_comb begin
-	case(SW[3:1])
-		3'd0: freq_sel = 26'd95602;
-		3'd1: freq_sel = 26'd85179;
-		3'd2: freq_sel = 26'd75873;
-		3'd3: freq_sel = 26'd71633;
-		3'd4: freq_sel = 26'd63857;
-		3'd5: freq_sel = 26'd56818;
-		3'd6: freq_sel = 26'd50659;
-		3'd7: freq_sel = 26'd47801;
-		default: freq_sel = {26{1'bx}};
-	endcase
-end
+logic outfreq;
+tone_selector tone_organ(.switches(SW[3:0]), .clk(CLK_50M), .out(outfreq), .rst(~KEY[3]));
 
 //instantiate flasher module
 

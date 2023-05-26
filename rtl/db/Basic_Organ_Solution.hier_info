@@ -15,10 +15,10 @@ KEY[1] => _.IN1
 KEY[2] => _.IN1
 KEY[3] => _.IN1
 KEY[3] => _.IN1
-SW[0] => SW[0].IN1
-SW[1] => SW[1].IN1
-SW[2] => SW[2].IN1
-SW[3] => SW[3].IN1
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
 SW[4] => SW[4].IN1
 SW[5] => SW[5].IN1
 SW[6] => SW[6].IN1
@@ -149,7 +149,56 @@ GPIO_1[34] <> <UNC>
 GPIO_1[35] <> <UNC>
 
 
-|Basic_Organ_Solution|freq_divider:tone_gen
+|Basic_Organ_Solution|tone_selector:tone_organ
+switches[0] => out.OUTPUTSELECT
+switches[1] => Decoder0.IN2
+switches[1] => Decoder1.IN2
+switches[1] => Decoder2.IN2
+switches[1] => Decoder3.IN2
+switches[1] => Decoder4.IN2
+switches[1] => Decoder5.IN1
+switches[1] => Decoder6.IN2
+switches[1] => Decoder7.IN2
+switches[1] => Decoder8.IN2
+switches[1] => Decoder9.IN2
+switches[1] => Decoder10.IN1
+switches[1] => Decoder11.IN2
+switches[1] => Decoder12.IN2
+switches[1] => Decoder13.IN2
+switches[2] => Decoder0.IN1
+switches[2] => Decoder1.IN1
+switches[2] => Decoder2.IN1
+switches[2] => Decoder3.IN1
+switches[2] => Decoder4.IN1
+switches[2] => Decoder5.IN0
+switches[2] => Decoder6.IN1
+switches[2] => Decoder7.IN1
+switches[2] => Decoder8.IN1
+switches[2] => Decoder9.IN1
+switches[2] => Decoder10.IN0
+switches[2] => Decoder11.IN1
+switches[2] => Decoder12.IN1
+switches[2] => Decoder13.IN1
+switches[3] => Decoder0.IN0
+switches[3] => Decoder1.IN0
+switches[3] => Decoder2.IN0
+switches[3] => Decoder3.IN0
+switches[3] => Decoder4.IN0
+switches[3] => Decoder6.IN0
+switches[3] => Decoder7.IN0
+switches[3] => Decoder8.IN0
+switches[3] => Decoder9.IN0
+switches[3] => Decoder11.IN0
+switches[3] => Decoder12.IN0
+switches[3] => Decoder13.IN0
+switches[3] => freq_sel[16].IN1
+switches[3] => freq_sel[15].IN1
+clk => clk.IN1
+rst => rst.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Basic_Organ_Solution|tone_selector:tone_organ|freq_divider:tone_gen
 inclk => outclk~reg0.CLK
 inclk => counter[0].CLK
 inclk => counter[1].CLK
