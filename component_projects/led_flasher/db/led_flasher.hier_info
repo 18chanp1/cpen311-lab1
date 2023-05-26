@@ -1,0 +1,26 @@
+|led_flasher
+clk => clk.IN1
+rst => rst.IN1
+outLED[0] << outLED[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outLED[1] << outLED[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outLED[2] << outLED[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outLED[3] << outLED[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outLED[4] << outLED[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outLED[5] << outLED[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outLED[6] << outLED[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outLED[7] << outLED[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|led_flasher|freq_divider:led_flash_divider
+inclk => outclk~reg0.CLK
+inclk => counter[0].CLK
+inclk => counter[1].CLK
+rst => counter[0].ACLR
+rst => counter[1].ACLR
+rst => outclk~reg0.ENA
+div[0] => Add1.IN4
+div[1] => Add1.IN3
+div[1] => LessThan1.IN2
+outclk <= outclk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

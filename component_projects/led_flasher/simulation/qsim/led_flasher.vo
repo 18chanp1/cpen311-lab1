@@ -1,0 +1,715 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "05/25/2023 19:15:44"
+
+// 
+// Device: Altera 5CSEMA5F31C6 Package FBGA896
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module led_flasher (
+	clk,
+	rst,
+	outLED);
+input 	clk;
+input 	rst;
+output 	[7:0] outLED;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \outLED[0]~output_o ;
+wire \outLED[1]~output_o ;
+wire \outLED[2]~output_o ;
+wire \outLED[3]~output_o ;
+wire \outLED[4]~output_o ;
+wire \outLED[5]~output_o ;
+wire \outLED[6]~output_o ;
+wire \outLED[7]~output_o ;
+wire \clk~input_o ;
+wire \rst~input_o ;
+wire \led_flash_divider|counter[0]~0_combout ;
+wire \led_flash_divider|outclk~0_combout ;
+wire \led_flash_divider|outclk~q ;
+wire \decr~0_combout ;
+wire \decr~q ;
+wire \outLED~8_combout ;
+wire \outLED[7]~reg0_q ;
+wire \outLED~7_combout ;
+wire \outLED[6]~reg0_q ;
+wire \outLED~6_combout ;
+wire \outLED[5]~3_combout ;
+wire \outLED[5]~reg0_q ;
+wire \outLED~5_combout ;
+wire \outLED[4]~reg0_q ;
+wire \outLED~4_combout ;
+wire \outLED[3]~reg0_q ;
+wire \outLED~2_combout ;
+wire \outLED[2]~reg0_q ;
+wire \outLED~1_combout ;
+wire \outLED[1]~reg0_q ;
+wire \outLED~0_combout ;
+wire \outLED[0]~reg0_q ;
+wire [1:0] \led_flash_divider|counter ;
+
+
+cyclonev_io_obuf \outLED[0]~output (
+	.i(\outLED[0]~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outLED[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outLED[0]~output .bus_hold = "false";
+defparam \outLED[0]~output .open_drain_output = "false";
+defparam \outLED[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \outLED[1]~output (
+	.i(!\outLED[1]~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outLED[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outLED[1]~output .bus_hold = "false";
+defparam \outLED[1]~output .open_drain_output = "false";
+defparam \outLED[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \outLED[2]~output (
+	.i(\outLED[2]~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outLED[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outLED[2]~output .bus_hold = "false";
+defparam \outLED[2]~output .open_drain_output = "false";
+defparam \outLED[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \outLED[3]~output (
+	.i(\outLED[3]~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outLED[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outLED[3]~output .bus_hold = "false";
+defparam \outLED[3]~output .open_drain_output = "false";
+defparam \outLED[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \outLED[4]~output (
+	.i(\outLED[4]~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outLED[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outLED[4]~output .bus_hold = "false";
+defparam \outLED[4]~output .open_drain_output = "false";
+defparam \outLED[4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \outLED[5]~output (
+	.i(\outLED[5]~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outLED[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outLED[5]~output .bus_hold = "false";
+defparam \outLED[5]~output .open_drain_output = "false";
+defparam \outLED[5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \outLED[6]~output (
+	.i(\outLED[6]~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outLED[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outLED[6]~output .bus_hold = "false";
+defparam \outLED[6]~output .open_drain_output = "false";
+defparam \outLED[6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \outLED[7]~output (
+	.i(\outLED[7]~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outLED[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outLED[7]~output .bus_hold = "false";
+defparam \outLED[7]~output .open_drain_output = "false";
+defparam \outLED[7]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \rst~input (
+	.i(rst),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\rst~input_o ));
+// synopsys translate_off
+defparam \rst~input .bus_hold = "false";
+defparam \rst~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|counter[0]~0 (
+// Equation(s):
+// \led_flash_divider|counter[0]~0_combout  = !\led_flash_divider|counter [0]
+
+	.dataa(!\led_flash_divider|counter [0]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led_flash_divider|counter[0]~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|counter[0]~0 .extended_lut = "off";
+defparam \led_flash_divider|counter[0]~0 .lut_mask = 64'hAAAAAAAAAAAAAAAA;
+defparam \led_flash_divider|counter[0]~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[0] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|counter[0]~0_combout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[0] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[0] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|outclk~0 (
+// Equation(s):
+// \led_flash_divider|outclk~0_combout  = (!\rst~input_o  & ((!\led_flash_divider|counter [0]))) # (\rst~input_o  & (\led_flash_divider|outclk~q ))
+
+	.dataa(!\led_flash_divider|outclk~q ),
+	.datab(!\rst~input_o ),
+	.datac(!\led_flash_divider|counter [0]),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led_flash_divider|outclk~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|outclk~0 .extended_lut = "off";
+defparam \led_flash_divider|outclk~0 .lut_mask = 64'hD1D1D1D1D1D1D1D1;
+defparam \led_flash_divider|outclk~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|outclk (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|outclk~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|outclk~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|outclk .is_wysiwyg = "true";
+defparam \led_flash_divider|outclk .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \decr~0 (
+// Equation(s):
+// \decr~0_combout  = (!\outLED[0]~reg0_q  & ((\decr~q ) # (\outLED[7]~reg0_q )))
+
+	.dataa(!\outLED[0]~reg0_q ),
+	.datab(!\outLED[7]~reg0_q ),
+	.datac(!\decr~q ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\decr~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \decr~0 .extended_lut = "off";
+defparam \decr~0 .lut_mask = 64'h2A2A2A2A2A2A2A2A;
+defparam \decr~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas decr(
+	.clk(\led_flash_divider|outclk~q ),
+	.d(\decr~0_combout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\decr~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam decr.is_wysiwyg = "true";
+defparam decr.power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \outLED~8 (
+// Equation(s):
+// \outLED~8_combout  = (\outLED[6]~reg0_q  & (!\outLED[7]~reg0_q  & !\decr~q ))
+
+	.dataa(!\outLED[6]~reg0_q ),
+	.datab(!\outLED[7]~reg0_q ),
+	.datac(!\decr~q ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\outLED~8_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \outLED~8 .extended_lut = "off";
+defparam \outLED~8 .lut_mask = 64'h4040404040404040;
+defparam \outLED~8 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \outLED[7]~reg0 (
+	.clk(\led_flash_divider|outclk~q ),
+	.d(\outLED~8_combout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(!\outLED[0]~reg0_q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\outLED[7]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \outLED[7]~reg0 .is_wysiwyg = "true";
+defparam \outLED[7]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \outLED~7 (
+// Equation(s):
+// \outLED~7_combout  = ((\outLED[5]~reg0_q  & !\decr~q )) # (\outLED[7]~reg0_q )
+
+	.dataa(!\outLED[5]~reg0_q ),
+	.datab(!\outLED[7]~reg0_q ),
+	.datac(!\decr~q ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\outLED~7_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \outLED~7 .extended_lut = "off";
+defparam \outLED~7 .lut_mask = 64'h7373737373737373;
+defparam \outLED~7 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \outLED[6]~reg0 (
+	.clk(\led_flash_divider|outclk~q ),
+	.d(\outLED~7_combout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(!\outLED[0]~reg0_q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\outLED[6]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \outLED[6]~reg0 .is_wysiwyg = "true";
+defparam \outLED[6]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \outLED~6 (
+// Equation(s):
+// \outLED~6_combout  = (!\decr~q  & (\outLED[4]~reg0_q )) # (\decr~q  & ((\outLED[6]~reg0_q )))
+
+	.dataa(!\outLED[4]~reg0_q ),
+	.datab(!\outLED[6]~reg0_q ),
+	.datac(!\decr~q ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\outLED~6_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \outLED~6 .extended_lut = "off";
+defparam \outLED~6 .lut_mask = 64'h5353535353535353;
+defparam \outLED~6 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \outLED[5]~3 (
+// Equation(s):
+// \outLED[5]~3_combout  = (!\outLED[0]~reg0_q  & !\outLED[7]~reg0_q )
+
+	.dataa(!\outLED[0]~reg0_q ),
+	.datab(!\outLED[7]~reg0_q ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\outLED[5]~3_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \outLED[5]~3 .extended_lut = "off";
+defparam \outLED[5]~3 .lut_mask = 64'h8888888888888888;
+defparam \outLED[5]~3 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \outLED[5]~reg0 (
+	.clk(\led_flash_divider|outclk~q ),
+	.d(\outLED~6_combout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\outLED[5]~3_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\outLED[5]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \outLED[5]~reg0 .is_wysiwyg = "true";
+defparam \outLED[5]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \outLED~5 (
+// Equation(s):
+// \outLED~5_combout  = (!\decr~q  & (\outLED[3]~reg0_q )) # (\decr~q  & ((\outLED[5]~reg0_q )))
+
+	.dataa(!\outLED[3]~reg0_q ),
+	.datab(!\outLED[5]~reg0_q ),
+	.datac(!\decr~q ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\outLED~5_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \outLED~5 .extended_lut = "off";
+defparam \outLED~5 .lut_mask = 64'h5353535353535353;
+defparam \outLED~5 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \outLED[4]~reg0 (
+	.clk(\led_flash_divider|outclk~q ),
+	.d(\outLED~5_combout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\outLED[5]~3_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\outLED[4]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \outLED[4]~reg0 .is_wysiwyg = "true";
+defparam \outLED[4]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \outLED~4 (
+// Equation(s):
+// \outLED~4_combout  = (!\decr~q  & (\outLED[2]~reg0_q )) # (\decr~q  & ((\outLED[4]~reg0_q )))
+
+	.dataa(!\outLED[2]~reg0_q ),
+	.datab(!\outLED[4]~reg0_q ),
+	.datac(!\decr~q ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\outLED~4_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \outLED~4 .extended_lut = "off";
+defparam \outLED~4 .lut_mask = 64'h5353535353535353;
+defparam \outLED~4 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \outLED[3]~reg0 (
+	.clk(\led_flash_divider|outclk~q ),
+	.d(\outLED~4_combout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\outLED[5]~3_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\outLED[3]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \outLED[3]~reg0 .is_wysiwyg = "true";
+defparam \outLED[3]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \outLED~2 (
+// Equation(s):
+// \outLED~2_combout  = (!\decr~q  & (!\outLED[1]~reg0_q )) # (\decr~q  & ((\outLED[3]~reg0_q )))
+
+	.dataa(!\outLED[1]~reg0_q ),
+	.datab(!\outLED[3]~reg0_q ),
+	.datac(!\decr~q ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\outLED~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \outLED~2 .extended_lut = "off";
+defparam \outLED~2 .lut_mask = 64'hA3A3A3A3A3A3A3A3;
+defparam \outLED~2 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \outLED[2]~reg0 (
+	.clk(\led_flash_divider|outclk~q ),
+	.d(\outLED~2_combout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\outLED[5]~3_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\outLED[2]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \outLED[2]~reg0 .is_wysiwyg = "true";
+defparam \outLED[2]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \outLED~1 (
+// Equation(s):
+// \outLED~1_combout  = ( \decr~q  & ( (!\outLED[0]~reg0_q  & ((!\outLED[7]~reg0_q  & ((!\outLED[2]~reg0_q ))) # (\outLED[7]~reg0_q  & (\outLED[1]~reg0_q )))) ) ) # ( !\decr~q  & ( (!\outLED[0]~reg0_q  & ((!\outLED[7]~reg0_q ) # (\outLED[1]~reg0_q ))) ) )
+
+	.dataa(!\outLED[0]~reg0_q ),
+	.datab(!\outLED[1]~reg0_q ),
+	.datac(!\outLED[2]~reg0_q ),
+	.datad(!\outLED[7]~reg0_q ),
+	.datae(!\decr~q ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\outLED~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \outLED~1 .extended_lut = "off";
+defparam \outLED~1 .lut_mask = 64'hAA22A022AA22A022;
+defparam \outLED~1 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \outLED[1]~reg0 (
+	.clk(\led_flash_divider|outclk~q ),
+	.d(\outLED~1_combout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\outLED[1]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \outLED[1]~reg0 .is_wysiwyg = "true";
+defparam \outLED[1]~reg0 .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \outLED~0 (
+// Equation(s):
+// \outLED~0_combout  = (!\outLED[0]~reg0_q  & (!\outLED[1]~reg0_q  & (!\outLED[7]~reg0_q  & \decr~q )))
+
+	.dataa(!\outLED[0]~reg0_q ),
+	.datab(!\outLED[1]~reg0_q ),
+	.datac(!\outLED[7]~reg0_q ),
+	.datad(!\decr~q ),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\outLED~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \outLED~0 .extended_lut = "off";
+defparam \outLED~0 .lut_mask = 64'h0080008000800080;
+defparam \outLED~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \outLED[0]~reg0 (
+	.clk(\led_flash_divider|outclk~q ),
+	.d(\outLED~0_combout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\outLED[0]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \outLED[0]~reg0 .is_wysiwyg = "true";
+defparam \outLED[0]~reg0 .power_up = "low";
+// synopsys translate_on
+
+assign outLED[0] = \outLED[0]~output_o ;
+
+assign outLED[1] = \outLED[1]~output_o ;
+
+assign outLED[2] = \outLED[2]~output_o ;
+
+assign outLED[3] = \outLED[3]~output_o ;
+
+assign outLED[4] = \outLED[4]~output_o ;
+
+assign outLED[5] = \outLED[5]~output_o ;
+
+assign outLED[6] = \outLED[6]~output_o ;
+
+assign outLED[7] = \outLED[7]~output_o ;
+
+endmodule

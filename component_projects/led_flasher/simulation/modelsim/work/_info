@@ -1,0 +1,79 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/simulation/modelsim
+vfreq_divider
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1685065769
+!i10b 1
+!s100 UD9kQ3@2@P3B1[64Ej6:f0
+IS1S::XQRYEf0T=hF0H01m2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 freq_divider_sv_unit
+S1
+Z3 dC:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/simulation/modelsim
+Z4 w1685059182
+8C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/freq_divider.sv
+FC:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/freq_divider.sv
+Z5 L0 11
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1685065769.000000
+!s107 C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/freq_divider.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/freq_divider.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vled_flasher
+R0
+R1
+!i10b 1
+!s100 ?g?`5oKhB9e0J<8_g23aJ3
+II^D@=jgW[G0c5XJP>_]UK2
+R2
+!s105 led_flasher_sv_unit
+S1
+R3
+R4
+8C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/led_flasher.sv
+FC:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/led_flasher.sv
+R5
+R6
+r1
+!s85 0
+31
+Z9 !s108 1685065768.000000
+!s107 C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/led_flasher.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/led_flasher.sv|
+!i113 1
+R7
+R8
+vled_flasher_vlg_vec_tst
+!s110 1685065768
+!i10b 1
+!s100 n3VO`E>X3;k0VGk<T2@G:2
+Id4nkX1^UYR@LoDzILe<_m0
+R2
+R3
+w1685065654
+8C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/simulation/modelsim/Waveform.vwf.vt
+FC:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/simulation/modelsim/Waveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/simulation/modelsim/Waveform.vwf.vt|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/simulation/modelsim/Waveform.vwf.vt|
+!i113 1
+o-work work
+R8
