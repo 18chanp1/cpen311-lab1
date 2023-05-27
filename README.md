@@ -1,7 +1,6 @@
 # Something about the CPEN 311 Lab 1
 ## SOF directory path
 [Basic_Organ_Solution.sof](./rtl/Basic_Organ_Solution.sof)
-
 ./rtl/Basic_Organ_Solution.sof
 
 ## Lab status
@@ -30,23 +29,26 @@ The frequency can be obtained by clock frequency / DIVIDER.
 [Waveform.vwf](./component_projects/frequency_divider/Waveform.vwf)
 ./component_projects/frequency_divider/Waveform.vwf
 
-Actual output
-freq_divider_20230526211137.sim.vwff](./component_projects/frequency_divider/simulation/qsim/freq_divider_20230526211137.sim.vwf)
+**Actual output**
+[freq_divider_20230526211137.sim.vwff](./component_projects/frequency_divider/simulation/qsim/freq_divider_20230526211137.sim.vwf)
 ./component_projects/frequency_divider/simulation/qsim/freq_divider_20230525180337.sim.vwf
 
 ### Simulation for led flasher
 [Waveform.vwf](./component_projects/led_flasher/Waveform.vwf)
 ./component_projects/led_flasher/Waveform.vwf
 
-Actual Output
+**Actual Output**
 [led_flasher_20230526213046.sim.vwf](./component_projects/led_flasher/simulation/qsim/led_flasher_20230526213046.sim.vwf)
 ./component_projects/led_flasher/simulation/qsim/led_flasher_20230525191546.sim.vwf
 
 ### Simulation for tone selector
 [Waveform.vwf](./component_projects/tone_selector/Waveform.vwf)
+./component_projects/tone_selector/Waveform.vwf
 
-Actual output
+**Actual output**
 [tone_selector_20230526211404.sim.vwf](./component_projects/tone_selector/simulation/qsim/tone_selector_20230526211404.sim.vwf)
+./component_projects/tone_selector/simulation/qsim/tone_selector_20230526211404.sim.vwf
+
 
 
 ### Additional information
