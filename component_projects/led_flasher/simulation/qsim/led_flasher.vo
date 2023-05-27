@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "05/25/2023 19:15:44"
+// DATE "05/26/2023 21:52:20"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -56,18 +56,87 @@ wire \outLED[5]~output_o ;
 wire \outLED[6]~output_o ;
 wire \outLED[7]~output_o ;
 wire \clk~input_o ;
+wire \led_flash_divider|Add0~69_sumout ;
 wire \rst~input_o ;
-wire \led_flash_divider|counter[0]~0_combout ;
+wire \led_flash_divider|Add0~70 ;
+wire \led_flash_divider|Add0~21_sumout ;
+wire \led_flash_divider|Add0~22 ;
+wire \led_flash_divider|Add0~17_sumout ;
+wire \led_flash_divider|Add0~18 ;
+wire \led_flash_divider|Add0~13_sumout ;
+wire \led_flash_divider|Add0~14 ;
+wire \led_flash_divider|Add0~9_sumout ;
+wire \led_flash_divider|Add0~10 ;
+wire \led_flash_divider|Add0~5_sumout ;
+wire \led_flash_divider|Add0~6 ;
+wire \led_flash_divider|Add0~125_sumout ;
+wire \led_flash_divider|Add0~126 ;
+wire \led_flash_divider|Add0~121_sumout ;
+wire \led_flash_divider|Add0~122 ;
+wire \led_flash_divider|Add0~117_sumout ;
+wire \led_flash_divider|Add0~118 ;
+wire \led_flash_divider|Add0~113_sumout ;
+wire \led_flash_divider|Add0~114 ;
+wire \led_flash_divider|Add0~109_sumout ;
+wire \led_flash_divider|Add0~110 ;
+wire \led_flash_divider|Add0~105_sumout ;
+wire \led_flash_divider|Add0~106 ;
+wire \led_flash_divider|Add0~101_sumout ;
+wire \led_flash_divider|Add0~102 ;
+wire \led_flash_divider|Add0~97_sumout ;
+wire \led_flash_divider|Add0~98 ;
+wire \led_flash_divider|Add0~93_sumout ;
+wire \led_flash_divider|Add0~94 ;
+wire \led_flash_divider|Add0~89_sumout ;
+wire \led_flash_divider|Add0~90 ;
+wire \led_flash_divider|Add0~85_sumout ;
+wire \led_flash_divider|Add0~86 ;
+wire \led_flash_divider|Add0~81_sumout ;
+wire \led_flash_divider|Add0~82 ;
+wire \led_flash_divider|Add0~77_sumout ;
+wire \led_flash_divider|Add0~78 ;
+wire \led_flash_divider|Add0~73_sumout ;
+wire \led_flash_divider|Add0~74 ;
+wire \led_flash_divider|Add0~1_sumout ;
+wire \led_flash_divider|LessThan1~0_combout ;
+wire \led_flash_divider|Add0~2 ;
+wire \led_flash_divider|Add0~65_sumout ;
+wire \led_flash_divider|Add0~66 ;
+wire \led_flash_divider|Add0~61_sumout ;
+wire \led_flash_divider|Add0~62 ;
+wire \led_flash_divider|Add0~57_sumout ;
+wire \led_flash_divider|Add0~58 ;
+wire \led_flash_divider|Add0~53_sumout ;
+wire \led_flash_divider|Add0~54 ;
+wire \led_flash_divider|Add0~49_sumout ;
+wire \led_flash_divider|Add0~50 ;
+wire \led_flash_divider|Add0~45_sumout ;
+wire \led_flash_divider|Add0~46 ;
+wire \led_flash_divider|Add0~41_sumout ;
+wire \led_flash_divider|Add0~42 ;
+wire \led_flash_divider|Add0~37_sumout ;
+wire \led_flash_divider|Add0~38 ;
+wire \led_flash_divider|Add0~33_sumout ;
+wire \led_flash_divider|Add0~34 ;
+wire \led_flash_divider|Add0~29_sumout ;
+wire \led_flash_divider|Add0~30 ;
+wire \led_flash_divider|Add0~25_sumout ;
+wire \led_flash_divider|LessThan1~1_combout ;
+wire \led_flash_divider|LessThan1~2_combout ;
+wire \led_flash_divider|LessThan1~3_combout ;
+wire \led_flash_divider|LessThan1~4_combout ;
+wire \led_flash_divider|LessThan1~5_combout ;
+wire \led_flash_divider|LessThan1~6_combout ;
 wire \led_flash_divider|outclk~0_combout ;
 wire \led_flash_divider|outclk~q ;
-wire \decr~0_combout ;
-wire \decr~q ;
+wire \incr~0_combout ;
+wire \incr~q ;
 wire \outLED~8_combout ;
 wire \outLED[7]~reg0_q ;
 wire \outLED~7_combout ;
 wire \outLED[6]~reg0_q ;
 wire \outLED~6_combout ;
-wire \outLED[5]~3_combout ;
+wire \outLED~3_combout ;
 wire \outLED[5]~reg0_q ;
 wire \outLED~5_combout ;
 wire \outLED[4]~reg0_q ;
@@ -79,7 +148,7 @@ wire \outLED~1_combout ;
 wire \outLED[1]~reg0_q ;
 wire \outLED~0_combout ;
 wire \outLED[0]~reg0_q ;
-wire [1:0] \led_flash_divider|counter ;
+wire [31:0] \led_flash_divider|counter ;
 
 
 cyclonev_io_obuf \outLED[0]~output (
@@ -98,7 +167,7 @@ defparam \outLED[0]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
 cyclonev_io_obuf \outLED[1]~output (
-	.i(!\outLED[1]~reg0_q ),
+	.i(\outLED[1]~reg0_q ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -128,7 +197,7 @@ defparam \outLED[2]~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
 cyclonev_io_obuf \outLED[3]~output (
-	.i(\outLED[3]~reg0_q ),
+	.i(!\outLED[3]~reg0_q ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -212,6 +281,30 @@ defparam \clk~input .bus_hold = "false";
 defparam \clk~input .simulate_z_as = "z";
 // synopsys translate_on
 
+cyclonev_lcell_comb \led_flash_divider|Add0~69 (
+// Equation(s):
+// \led_flash_divider|Add0~69_sumout  = SUM(( \led_flash_divider|counter [0] ) + ( VCC ) + ( !VCC ))
+// \led_flash_divider|Add0~70  = CARRY(( \led_flash_divider|counter [0] ) + ( VCC ) + ( !VCC ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [0]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~69_sumout ),
+	.cout(\led_flash_divider|Add0~70 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~69 .extended_lut = "off";
+defparam \led_flash_divider|Add0~69 .lut_mask = 64'h00000000000000FF;
+defparam \led_flash_divider|Add0~69 .shared_arith = "off";
+// synopsys translate_on
+
 cyclonev_io_ibuf \rst~input (
 	.i(rst),
 	.ibar(gnd),
@@ -222,36 +315,13 @@ defparam \rst~input .bus_hold = "false";
 defparam \rst~input .simulate_z_as = "z";
 // synopsys translate_on
 
-cyclonev_lcell_comb \led_flash_divider|counter[0]~0 (
-// Equation(s):
-// \led_flash_divider|counter[0]~0_combout  = !\led_flash_divider|counter [0]
-
-	.dataa(!\led_flash_divider|counter [0]),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(gnd),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\led_flash_divider|counter[0]~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \led_flash_divider|counter[0]~0 .extended_lut = "off";
-defparam \led_flash_divider|counter[0]~0 .lut_mask = 64'hAAAAAAAAAAAAAAAA;
-defparam \led_flash_divider|counter[0]~0 .shared_arith = "off";
-// synopsys translate_on
-
 dffeas \led_flash_divider|counter[0] (
 	.clk(\clk~input_o ),
-	.d(\led_flash_divider|counter[0]~0_combout ),
+	.d(\led_flash_divider|Add0~69_sumout ),
 	.asdata(vcc),
 	.clrn(!\rst~input_o ),
 	.aload(gnd),
-	.sclr(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
@@ -263,13 +333,1482 @@ defparam \led_flash_divider|counter[0] .is_wysiwyg = "true";
 defparam \led_flash_divider|counter[0] .power_up = "low";
 // synopsys translate_on
 
+cyclonev_lcell_comb \led_flash_divider|Add0~21 (
+// Equation(s):
+// \led_flash_divider|Add0~21_sumout  = SUM(( \led_flash_divider|counter [1] ) + ( GND ) + ( \led_flash_divider|Add0~70  ))
+// \led_flash_divider|Add0~22  = CARRY(( \led_flash_divider|counter [1] ) + ( GND ) + ( \led_flash_divider|Add0~70  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [1]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~70 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~21_sumout ),
+	.cout(\led_flash_divider|Add0~22 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~21 .extended_lut = "off";
+defparam \led_flash_divider|Add0~21 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~21 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[1] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~21_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[1] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[1] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~17 (
+// Equation(s):
+// \led_flash_divider|Add0~17_sumout  = SUM(( \led_flash_divider|counter [2] ) + ( GND ) + ( \led_flash_divider|Add0~22  ))
+// \led_flash_divider|Add0~18  = CARRY(( \led_flash_divider|counter [2] ) + ( GND ) + ( \led_flash_divider|Add0~22  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [2]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~22 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~17_sumout ),
+	.cout(\led_flash_divider|Add0~18 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~17 .extended_lut = "off";
+defparam \led_flash_divider|Add0~17 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~17 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[2] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~17_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[2] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[2] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~13 (
+// Equation(s):
+// \led_flash_divider|Add0~13_sumout  = SUM(( \led_flash_divider|counter [3] ) + ( GND ) + ( \led_flash_divider|Add0~18  ))
+// \led_flash_divider|Add0~14  = CARRY(( \led_flash_divider|counter [3] ) + ( GND ) + ( \led_flash_divider|Add0~18  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [3]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~18 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~13_sumout ),
+	.cout(\led_flash_divider|Add0~14 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~13 .extended_lut = "off";
+defparam \led_flash_divider|Add0~13 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~13 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[3] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~13_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[3] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[3] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~9 (
+// Equation(s):
+// \led_flash_divider|Add0~9_sumout  = SUM(( \led_flash_divider|counter [4] ) + ( GND ) + ( \led_flash_divider|Add0~14  ))
+// \led_flash_divider|Add0~10  = CARRY(( \led_flash_divider|counter [4] ) + ( GND ) + ( \led_flash_divider|Add0~14  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [4]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~14 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~9_sumout ),
+	.cout(\led_flash_divider|Add0~10 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~9 .extended_lut = "off";
+defparam \led_flash_divider|Add0~9 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~9 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[4] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~9_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[4] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[4] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~5 (
+// Equation(s):
+// \led_flash_divider|Add0~5_sumout  = SUM(( \led_flash_divider|counter [5] ) + ( GND ) + ( \led_flash_divider|Add0~10  ))
+// \led_flash_divider|Add0~6  = CARRY(( \led_flash_divider|counter [5] ) + ( GND ) + ( \led_flash_divider|Add0~10  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [5]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~10 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~5_sumout ),
+	.cout(\led_flash_divider|Add0~6 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~5 .extended_lut = "off";
+defparam \led_flash_divider|Add0~5 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~5 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[5] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~5_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[5] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[5] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~125 (
+// Equation(s):
+// \led_flash_divider|Add0~125_sumout  = SUM(( \led_flash_divider|counter [6] ) + ( GND ) + ( \led_flash_divider|Add0~6  ))
+// \led_flash_divider|Add0~126  = CARRY(( \led_flash_divider|counter [6] ) + ( GND ) + ( \led_flash_divider|Add0~6  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [6]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~6 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~125_sumout ),
+	.cout(\led_flash_divider|Add0~126 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~125 .extended_lut = "off";
+defparam \led_flash_divider|Add0~125 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~125 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[6] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~125_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[6] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[6] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~121 (
+// Equation(s):
+// \led_flash_divider|Add0~121_sumout  = SUM(( \led_flash_divider|counter [7] ) + ( GND ) + ( \led_flash_divider|Add0~126  ))
+// \led_flash_divider|Add0~122  = CARRY(( \led_flash_divider|counter [7] ) + ( GND ) + ( \led_flash_divider|Add0~126  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [7]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~126 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~121_sumout ),
+	.cout(\led_flash_divider|Add0~122 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~121 .extended_lut = "off";
+defparam \led_flash_divider|Add0~121 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~121 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[7] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~121_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[7] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[7] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~117 (
+// Equation(s):
+// \led_flash_divider|Add0~117_sumout  = SUM(( \led_flash_divider|counter [8] ) + ( GND ) + ( \led_flash_divider|Add0~122  ))
+// \led_flash_divider|Add0~118  = CARRY(( \led_flash_divider|counter [8] ) + ( GND ) + ( \led_flash_divider|Add0~122  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [8]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~122 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~117_sumout ),
+	.cout(\led_flash_divider|Add0~118 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~117 .extended_lut = "off";
+defparam \led_flash_divider|Add0~117 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~117 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[8] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~117_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [8]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[8] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[8] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~113 (
+// Equation(s):
+// \led_flash_divider|Add0~113_sumout  = SUM(( \led_flash_divider|counter [9] ) + ( GND ) + ( \led_flash_divider|Add0~118  ))
+// \led_flash_divider|Add0~114  = CARRY(( \led_flash_divider|counter [9] ) + ( GND ) + ( \led_flash_divider|Add0~118  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [9]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~118 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~113_sumout ),
+	.cout(\led_flash_divider|Add0~114 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~113 .extended_lut = "off";
+defparam \led_flash_divider|Add0~113 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~113 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[9] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~113_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [9]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[9] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[9] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~109 (
+// Equation(s):
+// \led_flash_divider|Add0~109_sumout  = SUM(( \led_flash_divider|counter [10] ) + ( GND ) + ( \led_flash_divider|Add0~114  ))
+// \led_flash_divider|Add0~110  = CARRY(( \led_flash_divider|counter [10] ) + ( GND ) + ( \led_flash_divider|Add0~114  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [10]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~114 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~109_sumout ),
+	.cout(\led_flash_divider|Add0~110 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~109 .extended_lut = "off";
+defparam \led_flash_divider|Add0~109 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~109 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[10] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~109_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [10]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[10] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[10] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~105 (
+// Equation(s):
+// \led_flash_divider|Add0~105_sumout  = SUM(( \led_flash_divider|counter [11] ) + ( GND ) + ( \led_flash_divider|Add0~110  ))
+// \led_flash_divider|Add0~106  = CARRY(( \led_flash_divider|counter [11] ) + ( GND ) + ( \led_flash_divider|Add0~110  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [11]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~110 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~105_sumout ),
+	.cout(\led_flash_divider|Add0~106 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~105 .extended_lut = "off";
+defparam \led_flash_divider|Add0~105 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~105 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[11] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~105_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [11]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[11] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[11] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~101 (
+// Equation(s):
+// \led_flash_divider|Add0~101_sumout  = SUM(( \led_flash_divider|counter [12] ) + ( GND ) + ( \led_flash_divider|Add0~106  ))
+// \led_flash_divider|Add0~102  = CARRY(( \led_flash_divider|counter [12] ) + ( GND ) + ( \led_flash_divider|Add0~106  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [12]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~106 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~101_sumout ),
+	.cout(\led_flash_divider|Add0~102 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~101 .extended_lut = "off";
+defparam \led_flash_divider|Add0~101 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~101 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[12] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~101_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [12]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[12] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[12] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~97 (
+// Equation(s):
+// \led_flash_divider|Add0~97_sumout  = SUM(( \led_flash_divider|counter [13] ) + ( GND ) + ( \led_flash_divider|Add0~102  ))
+// \led_flash_divider|Add0~98  = CARRY(( \led_flash_divider|counter [13] ) + ( GND ) + ( \led_flash_divider|Add0~102  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [13]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~102 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~97_sumout ),
+	.cout(\led_flash_divider|Add0~98 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~97 .extended_lut = "off";
+defparam \led_flash_divider|Add0~97 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~97 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[13] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~97_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [13]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[13] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[13] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~93 (
+// Equation(s):
+// \led_flash_divider|Add0~93_sumout  = SUM(( \led_flash_divider|counter [14] ) + ( GND ) + ( \led_flash_divider|Add0~98  ))
+// \led_flash_divider|Add0~94  = CARRY(( \led_flash_divider|counter [14] ) + ( GND ) + ( \led_flash_divider|Add0~98  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [14]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~98 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~93_sumout ),
+	.cout(\led_flash_divider|Add0~94 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~93 .extended_lut = "off";
+defparam \led_flash_divider|Add0~93 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~93 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[14] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~93_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [14]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[14] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[14] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~89 (
+// Equation(s):
+// \led_flash_divider|Add0~89_sumout  = SUM(( \led_flash_divider|counter [15] ) + ( GND ) + ( \led_flash_divider|Add0~94  ))
+// \led_flash_divider|Add0~90  = CARRY(( \led_flash_divider|counter [15] ) + ( GND ) + ( \led_flash_divider|Add0~94  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [15]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~94 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~89_sumout ),
+	.cout(\led_flash_divider|Add0~90 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~89 .extended_lut = "off";
+defparam \led_flash_divider|Add0~89 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~89 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[15] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~89_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [15]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[15] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[15] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~85 (
+// Equation(s):
+// \led_flash_divider|Add0~85_sumout  = SUM(( \led_flash_divider|counter [16] ) + ( GND ) + ( \led_flash_divider|Add0~90  ))
+// \led_flash_divider|Add0~86  = CARRY(( \led_flash_divider|counter [16] ) + ( GND ) + ( \led_flash_divider|Add0~90  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [16]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~90 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~85_sumout ),
+	.cout(\led_flash_divider|Add0~86 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~85 .extended_lut = "off";
+defparam \led_flash_divider|Add0~85 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~85 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[16] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~85_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [16]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[16] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[16] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~81 (
+// Equation(s):
+// \led_flash_divider|Add0~81_sumout  = SUM(( \led_flash_divider|counter [17] ) + ( GND ) + ( \led_flash_divider|Add0~86  ))
+// \led_flash_divider|Add0~82  = CARRY(( \led_flash_divider|counter [17] ) + ( GND ) + ( \led_flash_divider|Add0~86  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [17]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~86 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~81_sumout ),
+	.cout(\led_flash_divider|Add0~82 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~81 .extended_lut = "off";
+defparam \led_flash_divider|Add0~81 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~81 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[17] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~81_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [17]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[17] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[17] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~77 (
+// Equation(s):
+// \led_flash_divider|Add0~77_sumout  = SUM(( \led_flash_divider|counter [18] ) + ( GND ) + ( \led_flash_divider|Add0~82  ))
+// \led_flash_divider|Add0~78  = CARRY(( \led_flash_divider|counter [18] ) + ( GND ) + ( \led_flash_divider|Add0~82  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [18]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~82 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~77_sumout ),
+	.cout(\led_flash_divider|Add0~78 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~77 .extended_lut = "off";
+defparam \led_flash_divider|Add0~77 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~77 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[18] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~77_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [18]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[18] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[18] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~73 (
+// Equation(s):
+// \led_flash_divider|Add0~73_sumout  = SUM(( \led_flash_divider|counter [19] ) + ( GND ) + ( \led_flash_divider|Add0~78  ))
+// \led_flash_divider|Add0~74  = CARRY(( \led_flash_divider|counter [19] ) + ( GND ) + ( \led_flash_divider|Add0~78  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [19]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~78 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~73_sumout ),
+	.cout(\led_flash_divider|Add0~74 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~73 .extended_lut = "off";
+defparam \led_flash_divider|Add0~73 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~73 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[19] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~73_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [19]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[19] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[19] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~1 (
+// Equation(s):
+// \led_flash_divider|Add0~1_sumout  = SUM(( \led_flash_divider|counter [20] ) + ( GND ) + ( \led_flash_divider|Add0~74  ))
+// \led_flash_divider|Add0~2  = CARRY(( \led_flash_divider|counter [20] ) + ( GND ) + ( \led_flash_divider|Add0~74  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [20]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~74 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~1_sumout ),
+	.cout(\led_flash_divider|Add0~2 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~1 .extended_lut = "off";
+defparam \led_flash_divider|Add0~1 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~1 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[20] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~1_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [20]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[20] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[20] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|LessThan1~0 (
+// Equation(s):
+// \led_flash_divider|LessThan1~0_combout  = ( !\led_flash_divider|counter [2] & ( !\led_flash_divider|counter [1] & ( (!\led_flash_divider|counter [20] & (!\led_flash_divider|counter [5] & (!\led_flash_divider|counter [4] & !\led_flash_divider|counter 
+// [3]))) ) ) )
+
+	.dataa(!\led_flash_divider|counter [20]),
+	.datab(!\led_flash_divider|counter [5]),
+	.datac(!\led_flash_divider|counter [4]),
+	.datad(!\led_flash_divider|counter [3]),
+	.datae(!\led_flash_divider|counter [2]),
+	.dataf(!\led_flash_divider|counter [1]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led_flash_divider|LessThan1~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|LessThan1~0 .extended_lut = "off";
+defparam \led_flash_divider|LessThan1~0 .lut_mask = 64'h8000000000000000;
+defparam \led_flash_divider|LessThan1~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~65 (
+// Equation(s):
+// \led_flash_divider|Add0~65_sumout  = SUM(( \led_flash_divider|counter [21] ) + ( GND ) + ( \led_flash_divider|Add0~2  ))
+// \led_flash_divider|Add0~66  = CARRY(( \led_flash_divider|counter [21] ) + ( GND ) + ( \led_flash_divider|Add0~2  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [21]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~2 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~65_sumout ),
+	.cout(\led_flash_divider|Add0~66 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~65 .extended_lut = "off";
+defparam \led_flash_divider|Add0~65 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~65 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[21] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~65_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [21]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[21] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[21] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~61 (
+// Equation(s):
+// \led_flash_divider|Add0~61_sumout  = SUM(( \led_flash_divider|counter [22] ) + ( GND ) + ( \led_flash_divider|Add0~66  ))
+// \led_flash_divider|Add0~62  = CARRY(( \led_flash_divider|counter [22] ) + ( GND ) + ( \led_flash_divider|Add0~66  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [22]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~66 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~61_sumout ),
+	.cout(\led_flash_divider|Add0~62 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~61 .extended_lut = "off";
+defparam \led_flash_divider|Add0~61 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~61 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[22] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~61_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [22]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[22] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[22] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~57 (
+// Equation(s):
+// \led_flash_divider|Add0~57_sumout  = SUM(( \led_flash_divider|counter [23] ) + ( GND ) + ( \led_flash_divider|Add0~62  ))
+// \led_flash_divider|Add0~58  = CARRY(( \led_flash_divider|counter [23] ) + ( GND ) + ( \led_flash_divider|Add0~62  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [23]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~62 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~57_sumout ),
+	.cout(\led_flash_divider|Add0~58 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~57 .extended_lut = "off";
+defparam \led_flash_divider|Add0~57 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~57 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[23] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~57_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [23]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[23] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[23] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~53 (
+// Equation(s):
+// \led_flash_divider|Add0~53_sumout  = SUM(( \led_flash_divider|counter [24] ) + ( GND ) + ( \led_flash_divider|Add0~58  ))
+// \led_flash_divider|Add0~54  = CARRY(( \led_flash_divider|counter [24] ) + ( GND ) + ( \led_flash_divider|Add0~58  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [24]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~58 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~53_sumout ),
+	.cout(\led_flash_divider|Add0~54 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~53 .extended_lut = "off";
+defparam \led_flash_divider|Add0~53 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~53 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[24] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~53_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [24]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[24] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[24] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~49 (
+// Equation(s):
+// \led_flash_divider|Add0~49_sumout  = SUM(( \led_flash_divider|counter [25] ) + ( GND ) + ( \led_flash_divider|Add0~54  ))
+// \led_flash_divider|Add0~50  = CARRY(( \led_flash_divider|counter [25] ) + ( GND ) + ( \led_flash_divider|Add0~54  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [25]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~54 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~49_sumout ),
+	.cout(\led_flash_divider|Add0~50 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~49 .extended_lut = "off";
+defparam \led_flash_divider|Add0~49 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~49 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[25] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~49_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [25]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[25] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[25] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~45 (
+// Equation(s):
+// \led_flash_divider|Add0~45_sumout  = SUM(( \led_flash_divider|counter [26] ) + ( GND ) + ( \led_flash_divider|Add0~50  ))
+// \led_flash_divider|Add0~46  = CARRY(( \led_flash_divider|counter [26] ) + ( GND ) + ( \led_flash_divider|Add0~50  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [26]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~50 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~45_sumout ),
+	.cout(\led_flash_divider|Add0~46 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~45 .extended_lut = "off";
+defparam \led_flash_divider|Add0~45 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~45 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[26] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~45_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [26]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[26] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[26] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~41 (
+// Equation(s):
+// \led_flash_divider|Add0~41_sumout  = SUM(( \led_flash_divider|counter [27] ) + ( GND ) + ( \led_flash_divider|Add0~46  ))
+// \led_flash_divider|Add0~42  = CARRY(( \led_flash_divider|counter [27] ) + ( GND ) + ( \led_flash_divider|Add0~46  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [27]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~46 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~41_sumout ),
+	.cout(\led_flash_divider|Add0~42 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~41 .extended_lut = "off";
+defparam \led_flash_divider|Add0~41 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~41 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[27] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~41_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [27]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[27] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[27] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~37 (
+// Equation(s):
+// \led_flash_divider|Add0~37_sumout  = SUM(( \led_flash_divider|counter [28] ) + ( GND ) + ( \led_flash_divider|Add0~42  ))
+// \led_flash_divider|Add0~38  = CARRY(( \led_flash_divider|counter [28] ) + ( GND ) + ( \led_flash_divider|Add0~42  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [28]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~42 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~37_sumout ),
+	.cout(\led_flash_divider|Add0~38 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~37 .extended_lut = "off";
+defparam \led_flash_divider|Add0~37 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~37 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[28] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~37_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [28]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[28] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[28] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~33 (
+// Equation(s):
+// \led_flash_divider|Add0~33_sumout  = SUM(( \led_flash_divider|counter [29] ) + ( GND ) + ( \led_flash_divider|Add0~38  ))
+// \led_flash_divider|Add0~34  = CARRY(( \led_flash_divider|counter [29] ) + ( GND ) + ( \led_flash_divider|Add0~38  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [29]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~38 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~33_sumout ),
+	.cout(\led_flash_divider|Add0~34 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~33 .extended_lut = "off";
+defparam \led_flash_divider|Add0~33 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~33 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[29] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~33_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [29]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[29] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[29] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~29 (
+// Equation(s):
+// \led_flash_divider|Add0~29_sumout  = SUM(( \led_flash_divider|counter [30] ) + ( GND ) + ( \led_flash_divider|Add0~34  ))
+// \led_flash_divider|Add0~30  = CARRY(( \led_flash_divider|counter [30] ) + ( GND ) + ( \led_flash_divider|Add0~34  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [30]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~34 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~29_sumout ),
+	.cout(\led_flash_divider|Add0~30 ),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~29 .extended_lut = "off";
+defparam \led_flash_divider|Add0~29 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~29 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[30] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~29_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [30]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[30] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[30] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|Add0~25 (
+// Equation(s):
+// \led_flash_divider|Add0~25_sumout  = SUM(( \led_flash_divider|counter [31] ) + ( GND ) + ( \led_flash_divider|Add0~30  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\led_flash_divider|counter [31]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\led_flash_divider|Add0~30 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\led_flash_divider|Add0~25_sumout ),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|Add0~25 .extended_lut = "off";
+defparam \led_flash_divider|Add0~25 .lut_mask = 64'h0000FFFF000000FF;
+defparam \led_flash_divider|Add0~25 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \led_flash_divider|counter[31] (
+	.clk(\clk~input_o ),
+	.d(\led_flash_divider|Add0~25_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\led_flash_divider|LessThan1~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led_flash_divider|counter [31]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led_flash_divider|counter[31] .is_wysiwyg = "true";
+defparam \led_flash_divider|counter[31] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|LessThan1~1 (
+// Equation(s):
+// \led_flash_divider|LessThan1~1_combout  = ( !\led_flash_divider|counter [27] & ( !\led_flash_divider|counter [26] & ( (!\led_flash_divider|counter [31] & (!\led_flash_divider|counter [30] & (!\led_flash_divider|counter [29] & !\led_flash_divider|counter 
+// [28]))) ) ) )
+
+	.dataa(!\led_flash_divider|counter [31]),
+	.datab(!\led_flash_divider|counter [30]),
+	.datac(!\led_flash_divider|counter [29]),
+	.datad(!\led_flash_divider|counter [28]),
+	.datae(!\led_flash_divider|counter [27]),
+	.dataf(!\led_flash_divider|counter [26]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led_flash_divider|LessThan1~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|LessThan1~1 .extended_lut = "off";
+defparam \led_flash_divider|LessThan1~1 .lut_mask = 64'h8000000000000000;
+defparam \led_flash_divider|LessThan1~1 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|LessThan1~2 (
+// Equation(s):
+// \led_flash_divider|LessThan1~2_combout  = ( !\led_flash_divider|counter [21] & ( !\led_flash_divider|counter [0] & ( (!\led_flash_divider|counter [25] & (!\led_flash_divider|counter [24] & (!\led_flash_divider|counter [23] & !\led_flash_divider|counter 
+// [22]))) ) ) )
+
+	.dataa(!\led_flash_divider|counter [25]),
+	.datab(!\led_flash_divider|counter [24]),
+	.datac(!\led_flash_divider|counter [23]),
+	.datad(!\led_flash_divider|counter [22]),
+	.datae(!\led_flash_divider|counter [21]),
+	.dataf(!\led_flash_divider|counter [0]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led_flash_divider|LessThan1~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|LessThan1~2 .extended_lut = "off";
+defparam \led_flash_divider|LessThan1~2 .lut_mask = 64'h8000000000000000;
+defparam \led_flash_divider|LessThan1~2 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|LessThan1~3 (
+// Equation(s):
+// \led_flash_divider|LessThan1~3_combout  = ( !\led_flash_divider|counter [15] & ( !\led_flash_divider|counter [14] & ( (!\led_flash_divider|counter [19] & (!\led_flash_divider|counter [18] & (!\led_flash_divider|counter [17] & !\led_flash_divider|counter 
+// [16]))) ) ) )
+
+	.dataa(!\led_flash_divider|counter [19]),
+	.datab(!\led_flash_divider|counter [18]),
+	.datac(!\led_flash_divider|counter [17]),
+	.datad(!\led_flash_divider|counter [16]),
+	.datae(!\led_flash_divider|counter [15]),
+	.dataf(!\led_flash_divider|counter [14]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led_flash_divider|LessThan1~3_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|LessThan1~3 .extended_lut = "off";
+defparam \led_flash_divider|LessThan1~3 .lut_mask = 64'h8000000000000000;
+defparam \led_flash_divider|LessThan1~3 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|LessThan1~4 (
+// Equation(s):
+// \led_flash_divider|LessThan1~4_combout  = ( !\led_flash_divider|counter [9] & ( !\led_flash_divider|counter [8] & ( (!\led_flash_divider|counter [13] & (!\led_flash_divider|counter [12] & (!\led_flash_divider|counter [11] & !\led_flash_divider|counter 
+// [10]))) ) ) )
+
+	.dataa(!\led_flash_divider|counter [13]),
+	.datab(!\led_flash_divider|counter [12]),
+	.datac(!\led_flash_divider|counter [11]),
+	.datad(!\led_flash_divider|counter [10]),
+	.datae(!\led_flash_divider|counter [9]),
+	.dataf(!\led_flash_divider|counter [8]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led_flash_divider|LessThan1~4_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|LessThan1~4 .extended_lut = "off";
+defparam \led_flash_divider|LessThan1~4 .lut_mask = 64'h8000000000000000;
+defparam \led_flash_divider|LessThan1~4 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|LessThan1~5 (
+// Equation(s):
+// \led_flash_divider|LessThan1~5_combout  = (!\led_flash_divider|counter [7] & !\led_flash_divider|counter [6])
+
+	.dataa(!\led_flash_divider|counter [7]),
+	.datab(!\led_flash_divider|counter [6]),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led_flash_divider|LessThan1~5_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|LessThan1~5 .extended_lut = "off";
+defparam \led_flash_divider|LessThan1~5 .lut_mask = 64'h8888888888888888;
+defparam \led_flash_divider|LessThan1~5 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \led_flash_divider|LessThan1~6 (
+// Equation(s):
+// \led_flash_divider|LessThan1~6_combout  = ( \led_flash_divider|LessThan1~4_combout  & ( \led_flash_divider|LessThan1~5_combout  & ( (!\led_flash_divider|LessThan1~0_combout ) # ((!\led_flash_divider|LessThan1~1_combout ) # 
+// ((!\led_flash_divider|LessThan1~2_combout ) # (!\led_flash_divider|LessThan1~3_combout ))) ) ) ) # ( !\led_flash_divider|LessThan1~4_combout  & ( \led_flash_divider|LessThan1~5_combout  ) ) # ( \led_flash_divider|LessThan1~4_combout  & ( 
+// !\led_flash_divider|LessThan1~5_combout  ) ) # ( !\led_flash_divider|LessThan1~4_combout  & ( !\led_flash_divider|LessThan1~5_combout  ) )
+
+	.dataa(!\led_flash_divider|LessThan1~0_combout ),
+	.datab(!\led_flash_divider|LessThan1~1_combout ),
+	.datac(!\led_flash_divider|LessThan1~2_combout ),
+	.datad(!\led_flash_divider|LessThan1~3_combout ),
+	.datae(!\led_flash_divider|LessThan1~4_combout ),
+	.dataf(!\led_flash_divider|LessThan1~5_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led_flash_divider|LessThan1~6_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led_flash_divider|LessThan1~6 .extended_lut = "off";
+defparam \led_flash_divider|LessThan1~6 .lut_mask = 64'hFFFFFFFFFFFFFFFE;
+defparam \led_flash_divider|LessThan1~6 .shared_arith = "off";
+// synopsys translate_on
+
 cyclonev_lcell_comb \led_flash_divider|outclk~0 (
 // Equation(s):
-// \led_flash_divider|outclk~0_combout  = (!\rst~input_o  & ((!\led_flash_divider|counter [0]))) # (\rst~input_o  & (\led_flash_divider|outclk~q ))
+// \led_flash_divider|outclk~0_combout  = !\led_flash_divider|LessThan1~6_combout 
 
-	.dataa(!\led_flash_divider|outclk~q ),
-	.datab(!\rst~input_o ),
-	.datac(!\led_flash_divider|counter [0]),
+	.dataa(!\led_flash_divider|LessThan1~6_combout ),
+	.datab(gnd),
+	.datac(gnd),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -282,7 +1821,7 @@ cyclonev_lcell_comb \led_flash_divider|outclk~0 (
 	.shareout());
 // synopsys translate_off
 defparam \led_flash_divider|outclk~0 .extended_lut = "off";
-defparam \led_flash_divider|outclk~0 .lut_mask = 64'hD1D1D1D1D1D1D1D1;
+defparam \led_flash_divider|outclk~0 .lut_mask = 64'hAAAAAAAAAAAAAAAA;
 defparam \led_flash_divider|outclk~0 .shared_arith = "off";
 // synopsys translate_on
 
@@ -294,7 +1833,7 @@ dffeas \led_flash_divider|outclk (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(vcc),
+	.ena(!\rst~input_o ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\led_flash_divider|outclk~q ),
@@ -304,32 +1843,32 @@ defparam \led_flash_divider|outclk .is_wysiwyg = "true";
 defparam \led_flash_divider|outclk .power_up = "low";
 // synopsys translate_on
 
-cyclonev_lcell_comb \decr~0 (
+cyclonev_lcell_comb \incr~0 (
 // Equation(s):
-// \decr~0_combout  = (!\outLED[0]~reg0_q  & ((\decr~q ) # (\outLED[7]~reg0_q )))
+// \incr~0_combout  = (!\outLED[7]~reg0_q  & ((\incr~q ) # (\outLED[0]~reg0_q )))
 
 	.dataa(!\outLED[0]~reg0_q ),
 	.datab(!\outLED[7]~reg0_q ),
-	.datac(!\decr~q ),
+	.datac(!\incr~q ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\decr~0_combout ),
+	.combout(\incr~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \decr~0 .extended_lut = "off";
-defparam \decr~0 .lut_mask = 64'h2A2A2A2A2A2A2A2A;
-defparam \decr~0 .shared_arith = "off";
+defparam \incr~0 .extended_lut = "off";
+defparam \incr~0 .lut_mask = 64'h4C4C4C4C4C4C4C4C;
+defparam \incr~0 .shared_arith = "off";
 // synopsys translate_on
 
-dffeas decr(
+dffeas incr(
 	.clk(\led_flash_divider|outclk~q ),
-	.d(\decr~0_combout ),
+	.d(\incr~0_combout ),
 	.asdata(vcc),
 	.clrn(!\rst~input_o ),
 	.aload(gnd),
@@ -338,21 +1877,21 @@ dffeas decr(
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\decr~q ),
+	.q(\incr~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam decr.is_wysiwyg = "true";
-defparam decr.power_up = "low";
+defparam incr.is_wysiwyg = "true";
+defparam incr.power_up = "low";
 // synopsys translate_on
 
 cyclonev_lcell_comb \outLED~8 (
 // Equation(s):
-// \outLED~8_combout  = (\outLED[6]~reg0_q  & (!\outLED[7]~reg0_q  & !\decr~q ))
+// \outLED~8_combout  = (!\outLED[0]~reg0_q  & (\outLED[6]~reg0_q  & (!\outLED[7]~reg0_q  & \incr~q )))
 
-	.dataa(!\outLED[6]~reg0_q ),
-	.datab(!\outLED[7]~reg0_q ),
-	.datac(!\decr~q ),
-	.datad(gnd),
+	.dataa(!\outLED[0]~reg0_q ),
+	.datab(!\outLED[6]~reg0_q ),
+	.datac(!\outLED[7]~reg0_q ),
+	.datad(!\incr~q ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -364,7 +1903,7 @@ cyclonev_lcell_comb \outLED~8 (
 	.shareout());
 // synopsys translate_off
 defparam \outLED~8 .extended_lut = "off";
-defparam \outLED~8 .lut_mask = 64'h4040404040404040;
+defparam \outLED~8 .lut_mask = 64'h0020002000200020;
 defparam \outLED~8 .shared_arith = "off";
 // synopsys translate_on
 
@@ -376,7 +1915,7 @@ dffeas \outLED[7]~reg0 (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(!\outLED[0]~reg0_q ),
+	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\outLED[7]~reg0_q ),
@@ -388,13 +1927,13 @@ defparam \outLED[7]~reg0 .power_up = "low";
 
 cyclonev_lcell_comb \outLED~7 (
 // Equation(s):
-// \outLED~7_combout  = ((\outLED[5]~reg0_q  & !\decr~q )) # (\outLED[7]~reg0_q )
+// \outLED~7_combout  = ( \incr~q  & ( ((!\outLED[0]~reg0_q  & (\outLED[5]~reg0_q )) # (\outLED[0]~reg0_q  & ((\outLED[6]~reg0_q )))) # (\outLED[7]~reg0_q ) ) ) # ( !\incr~q  & ( ((\outLED[0]~reg0_q  & \outLED[6]~reg0_q )) # (\outLED[7]~reg0_q ) ) )
 
-	.dataa(!\outLED[5]~reg0_q ),
-	.datab(!\outLED[7]~reg0_q ),
-	.datac(!\decr~q ),
-	.datad(gnd),
-	.datae(gnd),
+	.dataa(!\outLED[0]~reg0_q ),
+	.datab(!\outLED[5]~reg0_q ),
+	.datac(!\outLED[6]~reg0_q ),
+	.datad(!\outLED[7]~reg0_q ),
+	.datae(!\incr~q ),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -405,7 +1944,7 @@ cyclonev_lcell_comb \outLED~7 (
 	.shareout());
 // synopsys translate_off
 defparam \outLED~7 .extended_lut = "off";
-defparam \outLED~7 .lut_mask = 64'h7373737373737373;
+defparam \outLED~7 .lut_mask = 64'h05FF27FF05FF27FF;
 defparam \outLED~7 .shared_arith = "off";
 // synopsys translate_on
 
@@ -417,7 +1956,7 @@ dffeas \outLED[6]~reg0 (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(!\outLED[0]~reg0_q ),
+	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\outLED[6]~reg0_q ),
@@ -429,11 +1968,11 @@ defparam \outLED[6]~reg0 .power_up = "low";
 
 cyclonev_lcell_comb \outLED~6 (
 // Equation(s):
-// \outLED~6_combout  = (!\decr~q  & (\outLED[4]~reg0_q )) # (\decr~q  & ((\outLED[6]~reg0_q )))
+// \outLED~6_combout  = (!\incr~q  & ((\outLED[6]~reg0_q ))) # (\incr~q  & (\outLED[4]~reg0_q ))
 
 	.dataa(!\outLED[4]~reg0_q ),
 	.datab(!\outLED[6]~reg0_q ),
-	.datac(!\decr~q ),
+	.datac(!\incr~q ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -446,13 +1985,13 @@ cyclonev_lcell_comb \outLED~6 (
 	.shareout());
 // synopsys translate_off
 defparam \outLED~6 .extended_lut = "off";
-defparam \outLED~6 .lut_mask = 64'h5353535353535353;
+defparam \outLED~6 .lut_mask = 64'h3535353535353535;
 defparam \outLED~6 .shared_arith = "off";
 // synopsys translate_on
 
-cyclonev_lcell_comb \outLED[5]~3 (
+cyclonev_lcell_comb \outLED~3 (
 // Equation(s):
-// \outLED[5]~3_combout  = (!\outLED[0]~reg0_q  & !\outLED[7]~reg0_q )
+// \outLED~3_combout  = (!\outLED[0]~reg0_q  & !\outLED[7]~reg0_q )
 
 	.dataa(!\outLED[0]~reg0_q ),
 	.datab(!\outLED[7]~reg0_q ),
@@ -463,14 +2002,14 @@ cyclonev_lcell_comb \outLED[5]~3 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\outLED[5]~3_combout ),
+	.combout(\outLED~3_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \outLED[5]~3 .extended_lut = "off";
-defparam \outLED[5]~3 .lut_mask = 64'h8888888888888888;
-defparam \outLED[5]~3 .shared_arith = "off";
+defparam \outLED~3 .extended_lut = "off";
+defparam \outLED~3 .lut_mask = 64'h8888888888888888;
+defparam \outLED~3 .shared_arith = "off";
 // synopsys translate_on
 
 dffeas \outLED[5]~reg0 (
@@ -481,7 +2020,7 @@ dffeas \outLED[5]~reg0 (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\outLED[5]~3_combout ),
+	.ena(\outLED~3_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\outLED[5]~reg0_q ),
@@ -493,11 +2032,11 @@ defparam \outLED[5]~reg0 .power_up = "low";
 
 cyclonev_lcell_comb \outLED~5 (
 // Equation(s):
-// \outLED~5_combout  = (!\decr~q  & (\outLED[3]~reg0_q )) # (\decr~q  & ((\outLED[5]~reg0_q )))
+// \outLED~5_combout  = (!\incr~q  & ((\outLED[5]~reg0_q ))) # (\incr~q  & (!\outLED[3]~reg0_q ))
 
 	.dataa(!\outLED[3]~reg0_q ),
 	.datab(!\outLED[5]~reg0_q ),
-	.datac(!\decr~q ),
+	.datac(!\incr~q ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -510,7 +2049,7 @@ cyclonev_lcell_comb \outLED~5 (
 	.shareout());
 // synopsys translate_off
 defparam \outLED~5 .extended_lut = "off";
-defparam \outLED~5 .lut_mask = 64'h5353535353535353;
+defparam \outLED~5 .lut_mask = 64'h3A3A3A3A3A3A3A3A;
 defparam \outLED~5 .shared_arith = "off";
 // synopsys translate_on
 
@@ -522,7 +2061,7 @@ dffeas \outLED[4]~reg0 (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\outLED[5]~3_combout ),
+	.ena(\outLED~3_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\outLED[4]~reg0_q ),
@@ -534,11 +2073,11 @@ defparam \outLED[4]~reg0 .power_up = "low";
 
 cyclonev_lcell_comb \outLED~4 (
 // Equation(s):
-// \outLED~4_combout  = (!\decr~q  & (\outLED[2]~reg0_q )) # (\decr~q  & ((\outLED[4]~reg0_q )))
+// \outLED~4_combout  = (!\incr~q  & ((!\outLED[4]~reg0_q ))) # (\incr~q  & (!\outLED[2]~reg0_q ))
 
 	.dataa(!\outLED[2]~reg0_q ),
 	.datab(!\outLED[4]~reg0_q ),
-	.datac(!\decr~q ),
+	.datac(!\incr~q ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -551,7 +2090,7 @@ cyclonev_lcell_comb \outLED~4 (
 	.shareout());
 // synopsys translate_off
 defparam \outLED~4 .extended_lut = "off";
-defparam \outLED~4 .lut_mask = 64'h5353535353535353;
+defparam \outLED~4 .lut_mask = 64'hCACACACACACACACA;
 defparam \outLED~4 .shared_arith = "off";
 // synopsys translate_on
 
@@ -563,7 +2102,7 @@ dffeas \outLED[3]~reg0 (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\outLED[5]~3_combout ),
+	.ena(\outLED~3_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\outLED[3]~reg0_q ),
@@ -575,11 +2114,11 @@ defparam \outLED[3]~reg0 .power_up = "low";
 
 cyclonev_lcell_comb \outLED~2 (
 // Equation(s):
-// \outLED~2_combout  = (!\decr~q  & (!\outLED[1]~reg0_q )) # (\decr~q  & ((\outLED[3]~reg0_q )))
+// \outLED~2_combout  = (!\incr~q  & ((!\outLED[3]~reg0_q ))) # (\incr~q  & (\outLED[1]~reg0_q ))
 
 	.dataa(!\outLED[1]~reg0_q ),
 	.datab(!\outLED[3]~reg0_q ),
-	.datac(!\decr~q ),
+	.datac(!\incr~q ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
@@ -592,7 +2131,7 @@ cyclonev_lcell_comb \outLED~2 (
 	.shareout());
 // synopsys translate_off
 defparam \outLED~2 .extended_lut = "off";
-defparam \outLED~2 .lut_mask = 64'hA3A3A3A3A3A3A3A3;
+defparam \outLED~2 .lut_mask = 64'hC5C5C5C5C5C5C5C5;
 defparam \outLED~2 .shared_arith = "off";
 // synopsys translate_on
 
@@ -604,7 +2143,7 @@ dffeas \outLED[2]~reg0 (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\outLED[5]~3_combout ),
+	.ena(\outLED~3_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\outLED[2]~reg0_q ),
@@ -616,13 +2155,13 @@ defparam \outLED[2]~reg0 .power_up = "low";
 
 cyclonev_lcell_comb \outLED~1 (
 // Equation(s):
-// \outLED~1_combout  = ( \decr~q  & ( (!\outLED[0]~reg0_q  & ((!\outLED[7]~reg0_q  & ((!\outLED[2]~reg0_q ))) # (\outLED[7]~reg0_q  & (\outLED[1]~reg0_q )))) ) ) # ( !\decr~q  & ( (!\outLED[0]~reg0_q  & ((!\outLED[7]~reg0_q ) # (\outLED[1]~reg0_q ))) ) )
+// \outLED~1_combout  = ((\outLED[2]~reg0_q  & !\incr~q )) # (\outLED[0]~reg0_q )
 
 	.dataa(!\outLED[0]~reg0_q ),
-	.datab(!\outLED[1]~reg0_q ),
-	.datac(!\outLED[2]~reg0_q ),
-	.datad(!\outLED[7]~reg0_q ),
-	.datae(!\decr~q ),
+	.datab(!\outLED[2]~reg0_q ),
+	.datac(!\incr~q ),
+	.datad(gnd),
+	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
@@ -633,7 +2172,7 @@ cyclonev_lcell_comb \outLED~1 (
 	.shareout());
 // synopsys translate_off
 defparam \outLED~1 .extended_lut = "off";
-defparam \outLED~1 .lut_mask = 64'hAA22A022AA22A022;
+defparam \outLED~1 .lut_mask = 64'h7575757575757575;
 defparam \outLED~1 .shared_arith = "off";
 // synopsys translate_on
 
@@ -645,7 +2184,7 @@ dffeas \outLED[1]~reg0 (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(vcc),
+	.ena(!\outLED[7]~reg0_q ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\outLED[1]~reg0_q ),
@@ -657,12 +2196,12 @@ defparam \outLED[1]~reg0 .power_up = "low";
 
 cyclonev_lcell_comb \outLED~0 (
 // Equation(s):
-// \outLED~0_combout  = (!\outLED[0]~reg0_q  & (!\outLED[1]~reg0_q  & (!\outLED[7]~reg0_q  & \decr~q )))
+// \outLED~0_combout  = (!\outLED[0]~reg0_q  & (\outLED[1]~reg0_q  & !\incr~q ))
 
 	.dataa(!\outLED[0]~reg0_q ),
 	.datab(!\outLED[1]~reg0_q ),
-	.datac(!\outLED[7]~reg0_q ),
-	.datad(!\decr~q ),
+	.datac(!\incr~q ),
+	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -674,7 +2213,7 @@ cyclonev_lcell_comb \outLED~0 (
 	.shareout());
 // synopsys translate_off
 defparam \outLED~0 .extended_lut = "off";
-defparam \outLED~0 .lut_mask = 64'h0080008000800080;
+defparam \outLED~0 .lut_mask = 64'h2020202020202020;
 defparam \outLED~0 .shared_arith = "off";
 // synopsys translate_on
 
@@ -686,7 +2225,7 @@ dffeas \outLED[0]~reg0 (
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(vcc),
+	.ena(!\outLED[7]~reg0_q ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\outLED[0]~reg0_q ),

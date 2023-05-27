@@ -5,21 +5,21 @@
  */
 
 module tone_selector
-#(  parameter DO = 26'd95602,
-    parameter RE = 26'd85179,
-    parameter MI = 26'd75873,
-    parameter FA = 26'd71633,
-    parameter SO = 26'd63857,
-    parameter LA = 26'd56818,
-    parameter TI = 26'd50659,
-    parameter DO2 = 26'd47801)
+#(  parameter DO = 32'd95602,
+    parameter RE = 32'd85179,
+    parameter MI = 32'd75873,
+    parameter FA = 32'd71633,
+    parameter SO = 32'd63857,
+    parameter LA = 32'd56818,
+    parameter TI = 32'd50659,
+    parameter DO2 = 32'd47801)
 (   input logic [3:0] switches,
     input logic clk,
     input logic rst,
     output logic out);
 
     logic div_out;
-    logic [25:0] freq_sel;
+    logic [32:0] freq_sel;
 
     //feed appropriate select / DIVIDER into frequency divider
     
@@ -33,19 +33,21 @@ module tone_selector
 		3'd5: freq_sel = LA;
 		3'd6: freq_sel = TI;
 		3'd7: freq_sel = DO2;
-		default: freq_sel = {26{1'bx}};
+		default: freq_sel = {32{1'bx}};
 	endcase
     end
 
     //instantiate frequency divider
 
-    freq_divider tone_gen(  .inclk(clk), 
-                            .outclk(div_out), 
-                            .rst(rst), 
-                            .div(freq_sel[25:0]));
+    freq_divider #(.DIV_BUS(32)) tone_gen(.inclk(clk), 
+														.outclk(div_out), 
+														.rst(rst), 
+														.div(freq_sel[32:0]));
 
     //set on off switch
     assign out = ~switches[0] ? 1'b0 : div_out;
+	 
+	 //no glitches. Purely combinational, and freq_divider has registered output (glitch free). 
 endmodule
 
 
