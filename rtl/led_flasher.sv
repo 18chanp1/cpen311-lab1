@@ -25,7 +25,7 @@ module led_flasher
     always_ff @(posedge divided_clock, posedge rst) begin
         if (rst) begin
             decr <= 1'b0;
-            outLED[N-1:0] <= 2'b10;
+            outLED[N-1:0] <= 2'b100;
         end
         else begin
             if(outLED[0]) begin
