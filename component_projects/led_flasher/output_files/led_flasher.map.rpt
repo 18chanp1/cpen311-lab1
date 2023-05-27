@@ -1,5 +1,5 @@
 Analysis & Synthesis report for led_flasher
-Thu May 25 19:15:17 2023
+Fri May 26 21:52:05 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,15 +13,14 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |led_flasher
- 12. Parameter Settings for User Entity Instance: freq_divider:led_flash_divider
- 13. Port Connectivity Checks: "freq_divider:led_flash_divider"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |led_flasher
+ 11. Parameter Settings for User Entity Instance: freq_divider:led_flash_divider
+ 12. Port Connectivity Checks: "freq_divider:led_flash_divider"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -47,13 +46,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 25 19:15:17 2023       ;
+; Analysis & Synthesis Status     ; Successful - Fri May 26 21:52:05 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; led_flasher                                 ;
 ; Top-level Entity Name           ; led_flasher                                 ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 11                                          ;
+; Total registers                 ; 42                                          ;
 ; Total pins                      ; 10                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -186,25 +185,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 6         ;
+; Estimate of Logic utilization (ALMs needed) ; 28        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 12        ;
+; Combinational ALUT usage for logic          ; 50        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 6         ;
 ;     -- 5 input functions                    ; 1         ;
 ;     -- 4 input functions                    ; 1         ;
-;     -- <=3 input functions                  ; 10        ;
+;     -- <=3 input functions                  ; 42        ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 11        ;
+; Dedicated logic registers                   ; 42        ;
 ;                                             ;           ;
 ; I/O pins                                    ; 10        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; rst~input ;
-; Maximum fan-out                             ; 11        ;
-; Total fan-out                               ; 92        ;
-; Average fan-out                             ; 2.14      ;
+; Maximum fan-out                             ; 42        ;
+; Total fan-out                               ; 316       ;
+; Average fan-out                             ; 2.82      ;
 +---------------------------------------------+-----------+
 
 
@@ -213,20 +212,10 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+--------------+--------------+
 ; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name  ; Library Name ;
 +-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+--------------+--------------+
-; |led_flasher                        ; 12 (10)             ; 11 (9)                    ; 0                 ; 0          ; 10   ; 0            ; |led_flasher                                ; led_flasher  ; work         ;
-;    |freq_divider:led_flash_divider| ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |led_flasher|freq_divider:led_flash_divider ; freq_divider ; work         ;
+; |led_flasher                        ; 50 (10)             ; 42 (9)                    ; 0                 ; 0          ; 10   ; 0            ; |led_flasher                                ; led_flasher  ; work         ;
+;    |freq_divider:led_flash_divider| ; 40 (40)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |led_flasher|freq_divider:led_flash_divider ; freq_divider ; work         ;
 +-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                 ;
-+-------------------------------------------+----------------------------------------+
-; Register name                             ; Reason for Removal                     ;
-+-------------------------------------------+----------------------------------------+
-; freq_divider:led_flash_divider|counter[1] ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 1     ;                                        ;
-+-------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -234,12 +223,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 11    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 42    ;
+; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 10    ;
+; Number of registers using Asynchronous Clear ; 41    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 6     ;
+; Number of registers using Clock Enable       ; 7     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -249,7 +238,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; outLED[1]~reg0                         ; 4       ;
+; outLED[3]~reg0                         ; 3       ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
@@ -260,7 +249,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Parameter Name ; Value ; Type                                               ;
 +----------------+-------+----------------------------------------------------+
 ; N              ; 8     ; Signed Integer                                     ;
-; LED_DIVIDER    ; 2     ; Signed Integer                                     ;
+; DIV_BUS        ; 32    ; Signed Integer                                     ;
+; DIVIDER        ; 2     ; Signed Integer                                     ;
 +----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -270,20 +260,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                               ;
 +----------------+-------+----------------------------------------------------+
-; MAX_DIVIDER    ; 2     ; Signed Integer                                     ;
+; DIV_BUS        ; 32    ; Signed Integer                                     ;
 +----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "freq_divider:led_flash_divider"                                                                                                                                                     ;
-+--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; div    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (2 bits) it drives.  The 30 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; div[1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; div[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-+--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------+
+; Port Connectivity Checks: "freq_divider:led_flash_divider" ;
++------------+-------+----------+----------------------------+
+; Port       ; Type  ; Severity ; Details                    ;
++------------+-------+----------+----------------------------+
+; div[31..2] ; Input ; Info     ; Stuck at GND               ;
+; div[1]     ; Input ; Info     ; Stuck at VCC               ;
+; div[0]     ; Input ; Info     ; Stuck at GND               ;
++------------+-------+----------+----------------------------+
 
 
 +-----------------------------------------------------+
@@ -291,21 +281,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 11                          ;
-;     CLR               ; 4                           ;
+; arriav_ff             ; 42                          ;
+;     CLR               ; 3                           ;
+;     CLR SCLR          ; 32                          ;
+;     ENA               ; 1                           ;
 ;     ENA CLR           ; 6                           ;
-;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 13                          ;
-;     normal            ; 13                          ;
+; arriav_lcell_comb     ; 51                          ;
+;     arith             ; 32                          ;
+;         1 data inputs ; 32                          ;
+;     normal            ; 19                          ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 8                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 7                           ;
 ;         4 data inputs ; 1                           ;
 ;         5 data inputs ; 1                           ;
+;         6 data inputs ; 6                           ;
 ; boundary_port         ; 10                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.96                        ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 2.82                        ;
 +-----------------------+-----------------------------+
 
 
@@ -324,7 +318,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 25 19:14:57 2023
+    Info: Processing started: Fri May 26 21:51:48 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off led_flasher -c led_flasher
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -333,20 +327,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file led_fla
 Info (12021): Found 1 design units, including 1 entities, in source file freq_divider.sv
     Info (12023): Found entity 1: freq_divider File: C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/freq_divider.sv Line: 11
 Info (12127): Elaborating entity "led_flasher" for the top level hierarchy
-Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:led_flash_divider" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/led_flasher.sv Line: 20
-Warning (10230): Verilog HDL assignment warning at freq_divider.sv(34): truncated value with size 32 to match size of target (2) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/freq_divider.sv Line: 34
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:led_flash_divider" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/led_flasher/led_flasher.sv Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 60 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 12 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info (21061): Implemented 50 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4805 megabytes
-    Info: Processing ended: Thu May 25 19:15:17 2023
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Processing ended: Fri May 26 21:52:05 2023
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:20
 
 

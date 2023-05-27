@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu May 25 21:30:25 2023
+Analysis & Synthesis Status : Successful - Fri May 26 21:42:21 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Basic_Organ_Solution
 Top-level Entity Name : Basic_Organ_Solution
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 5269
+Total registers : 5294
 Total pins : 147
 Total virtual pins : 0
 Total block memory bits : 55,552

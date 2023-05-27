@@ -3,7 +3,7 @@ $comment
 		vcd file led_flasher.msim.vcd -direction
 $end
 $date
-	Thu May 25 19:15:46 2023
+	Fri May 26 21:52:22 2023
 $end
 $version
 	ModelSim Version 10.5b
@@ -40,31 +40,130 @@ $var wire 1 6 outLED[5]~output_o $end
 $var wire 1 7 outLED[6]~output_o $end
 $var wire 1 8 outLED[7]~output_o $end
 $var wire 1 9 clk~input_o $end
-$var wire 1 : rst~input_o $end
-$var wire 1 ; led_flash_divider|counter[0]~0_combout $end
-$var wire 1 < led_flash_divider|outclk~0_combout $end
-$var wire 1 = led_flash_divider|outclk~q $end
-$var wire 1 > decr~0_combout $end
-$var wire 1 ? decr~q $end
-$var wire 1 @ outLED~8_combout $end
-$var wire 1 A outLED[7]~reg0_q $end
-$var wire 1 B outLED~7_combout $end
-$var wire 1 C outLED[6]~reg0_q $end
-$var wire 1 D outLED~6_combout $end
-$var wire 1 E outLED[5]~3_combout $end
-$var wire 1 F outLED[5]~reg0_q $end
-$var wire 1 G outLED~5_combout $end
-$var wire 1 H outLED[4]~reg0_q $end
-$var wire 1 I outLED~4_combout $end
-$var wire 1 J outLED[3]~reg0_q $end
-$var wire 1 K outLED~2_combout $end
-$var wire 1 L outLED[2]~reg0_q $end
-$var wire 1 M outLED~1_combout $end
-$var wire 1 N outLED[1]~reg0_q $end
-$var wire 1 O outLED~0_combout $end
-$var wire 1 P outLED[0]~reg0_q $end
-$var wire 1 Q led_flash_divider|counter [1] $end
-$var wire 1 R led_flash_divider|counter [0] $end
+$var wire 1 : led_flash_divider|Add0~69_sumout $end
+$var wire 1 ; rst~input_o $end
+$var wire 1 < led_flash_divider|Add0~70 $end
+$var wire 1 = led_flash_divider|Add0~21_sumout $end
+$var wire 1 > led_flash_divider|Add0~22 $end
+$var wire 1 ? led_flash_divider|Add0~17_sumout $end
+$var wire 1 @ led_flash_divider|Add0~18 $end
+$var wire 1 A led_flash_divider|Add0~13_sumout $end
+$var wire 1 B led_flash_divider|Add0~14 $end
+$var wire 1 C led_flash_divider|Add0~9_sumout $end
+$var wire 1 D led_flash_divider|Add0~10 $end
+$var wire 1 E led_flash_divider|Add0~5_sumout $end
+$var wire 1 F led_flash_divider|Add0~6 $end
+$var wire 1 G led_flash_divider|Add0~125_sumout $end
+$var wire 1 H led_flash_divider|Add0~126 $end
+$var wire 1 I led_flash_divider|Add0~121_sumout $end
+$var wire 1 J led_flash_divider|Add0~122 $end
+$var wire 1 K led_flash_divider|Add0~117_sumout $end
+$var wire 1 L led_flash_divider|Add0~118 $end
+$var wire 1 M led_flash_divider|Add0~113_sumout $end
+$var wire 1 N led_flash_divider|Add0~114 $end
+$var wire 1 O led_flash_divider|Add0~109_sumout $end
+$var wire 1 P led_flash_divider|Add0~110 $end
+$var wire 1 Q led_flash_divider|Add0~105_sumout $end
+$var wire 1 R led_flash_divider|Add0~106 $end
+$var wire 1 S led_flash_divider|Add0~101_sumout $end
+$var wire 1 T led_flash_divider|Add0~102 $end
+$var wire 1 U led_flash_divider|Add0~97_sumout $end
+$var wire 1 V led_flash_divider|Add0~98 $end
+$var wire 1 W led_flash_divider|Add0~93_sumout $end
+$var wire 1 X led_flash_divider|Add0~94 $end
+$var wire 1 Y led_flash_divider|Add0~89_sumout $end
+$var wire 1 Z led_flash_divider|Add0~90 $end
+$var wire 1 [ led_flash_divider|Add0~85_sumout $end
+$var wire 1 \ led_flash_divider|Add0~86 $end
+$var wire 1 ] led_flash_divider|Add0~81_sumout $end
+$var wire 1 ^ led_flash_divider|Add0~82 $end
+$var wire 1 _ led_flash_divider|Add0~77_sumout $end
+$var wire 1 ` led_flash_divider|Add0~78 $end
+$var wire 1 a led_flash_divider|Add0~73_sumout $end
+$var wire 1 b led_flash_divider|Add0~74 $end
+$var wire 1 c led_flash_divider|Add0~1_sumout $end
+$var wire 1 d led_flash_divider|LessThan1~0_combout $end
+$var wire 1 e led_flash_divider|Add0~2 $end
+$var wire 1 f led_flash_divider|Add0~65_sumout $end
+$var wire 1 g led_flash_divider|Add0~66 $end
+$var wire 1 h led_flash_divider|Add0~61_sumout $end
+$var wire 1 i led_flash_divider|Add0~62 $end
+$var wire 1 j led_flash_divider|Add0~57_sumout $end
+$var wire 1 k led_flash_divider|Add0~58 $end
+$var wire 1 l led_flash_divider|Add0~53_sumout $end
+$var wire 1 m led_flash_divider|Add0~54 $end
+$var wire 1 n led_flash_divider|Add0~49_sumout $end
+$var wire 1 o led_flash_divider|Add0~50 $end
+$var wire 1 p led_flash_divider|Add0~45_sumout $end
+$var wire 1 q led_flash_divider|Add0~46 $end
+$var wire 1 r led_flash_divider|Add0~41_sumout $end
+$var wire 1 s led_flash_divider|Add0~42 $end
+$var wire 1 t led_flash_divider|Add0~37_sumout $end
+$var wire 1 u led_flash_divider|Add0~38 $end
+$var wire 1 v led_flash_divider|Add0~33_sumout $end
+$var wire 1 w led_flash_divider|Add0~34 $end
+$var wire 1 x led_flash_divider|Add0~29_sumout $end
+$var wire 1 y led_flash_divider|Add0~30 $end
+$var wire 1 z led_flash_divider|Add0~25_sumout $end
+$var wire 1 { led_flash_divider|LessThan1~1_combout $end
+$var wire 1 | led_flash_divider|LessThan1~2_combout $end
+$var wire 1 } led_flash_divider|LessThan1~3_combout $end
+$var wire 1 ~ led_flash_divider|LessThan1~4_combout $end
+$var wire 1 !! led_flash_divider|LessThan1~5_combout $end
+$var wire 1 "! led_flash_divider|LessThan1~6_combout $end
+$var wire 1 #! led_flash_divider|outclk~0_combout $end
+$var wire 1 $! led_flash_divider|outclk~q $end
+$var wire 1 %! incr~0_combout $end
+$var wire 1 &! incr~q $end
+$var wire 1 '! outLED~8_combout $end
+$var wire 1 (! outLED[7]~reg0_q $end
+$var wire 1 )! outLED~7_combout $end
+$var wire 1 *! outLED[6]~reg0_q $end
+$var wire 1 +! outLED~6_combout $end
+$var wire 1 ,! outLED~3_combout $end
+$var wire 1 -! outLED[5]~reg0_q $end
+$var wire 1 .! outLED~5_combout $end
+$var wire 1 /! outLED[4]~reg0_q $end
+$var wire 1 0! outLED~4_combout $end
+$var wire 1 1! outLED[3]~reg0_q $end
+$var wire 1 2! outLED~2_combout $end
+$var wire 1 3! outLED[2]~reg0_q $end
+$var wire 1 4! outLED~1_combout $end
+$var wire 1 5! outLED[1]~reg0_q $end
+$var wire 1 6! outLED~0_combout $end
+$var wire 1 7! outLED[0]~reg0_q $end
+$var wire 1 8! led_flash_divider|counter [31] $end
+$var wire 1 9! led_flash_divider|counter [30] $end
+$var wire 1 :! led_flash_divider|counter [29] $end
+$var wire 1 ;! led_flash_divider|counter [28] $end
+$var wire 1 <! led_flash_divider|counter [27] $end
+$var wire 1 =! led_flash_divider|counter [26] $end
+$var wire 1 >! led_flash_divider|counter [25] $end
+$var wire 1 ?! led_flash_divider|counter [24] $end
+$var wire 1 @! led_flash_divider|counter [23] $end
+$var wire 1 A! led_flash_divider|counter [22] $end
+$var wire 1 B! led_flash_divider|counter [21] $end
+$var wire 1 C! led_flash_divider|counter [20] $end
+$var wire 1 D! led_flash_divider|counter [19] $end
+$var wire 1 E! led_flash_divider|counter [18] $end
+$var wire 1 F! led_flash_divider|counter [17] $end
+$var wire 1 G! led_flash_divider|counter [16] $end
+$var wire 1 H! led_flash_divider|counter [15] $end
+$var wire 1 I! led_flash_divider|counter [14] $end
+$var wire 1 J! led_flash_divider|counter [13] $end
+$var wire 1 K! led_flash_divider|counter [12] $end
+$var wire 1 L! led_flash_divider|counter [11] $end
+$var wire 1 M! led_flash_divider|counter [10] $end
+$var wire 1 N! led_flash_divider|counter [9] $end
+$var wire 1 O! led_flash_divider|counter [8] $end
+$var wire 1 P! led_flash_divider|counter [7] $end
+$var wire 1 Q! led_flash_divider|counter [6] $end
+$var wire 1 R! led_flash_divider|counter [5] $end
+$var wire 1 S! led_flash_divider|counter [4] $end
+$var wire 1 T! led_flash_divider|counter [3] $end
+$var wire 1 U! led_flash_divider|counter [2] $end
+$var wire 1 V! led_flash_divider|counter [1] $end
+$var wire 1 W! led_flash_divider|counter [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -73,9 +172,9 @@ $dumpvars
 0!
 1"
 0*
-1)
+0)
 0(
-0'
+1'
 0&
 0%
 0$
@@ -87,9 +186,9 @@ x-
 1/
 10
 01
-12
+02
 03
-04
+14
 05
 06
 07
@@ -106,20 +205,119 @@ x-
 0B
 0C
 0D
-1E
+0E
 0F
 0G
 0H
 0I
 0J
-1K
+0K
 0L
-1M
+0M
 0N
 0O
 0P
+0Q
 0R
-zQ
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+1d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+1{
+1|
+1}
+1~
+1!!
+0"!
+1#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+1,!
+0-!
+0.!
+0/!
+10!
+01!
+12!
+03!
+04!
+05!
+06!
+07!
+0W!
+0V!
+0U!
+0T!
+0S!
+0R!
+0Q!
+0P!
+0O!
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0H!
+0G!
+0F!
+0E!
+0D!
+0C!
+0B!
+0A!
+0@!
+0?!
+0>!
+0=!
+0<!
+0;!
+0:!
+09!
+08!
 $end
 #10000
 1!
@@ -127,706 +325,905 @@ $end
 #20000
 0"
 0!
-0:
+0;
 09
-1<
 #30000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1N
-1L
+0#!
+11!
+13!
 13
-02
-0)
+04
+0'
 1(
-0K
-1I
+02!
+14!
 #40000
 0!
 09
 #50000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #60000
 0!
 09
 #70000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-0L
-1J
-14
+0#!
+15!
+03!
 03
+12
+1)
 0(
-1'
-1G
-0I
+04!
+16!
 #80000
 0!
 09
 #90000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #100000
 0!
 09
 #110000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-0J
-1H
-15
-04
-0'
-1&
-1D
-0G
+0#!
+17!
+05!
+02
+11
+0,!
+1*
+0)
+06!
+14!
+1%!
 #120000
 0!
 09
 #130000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #140000
 0!
 09
 #150000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-0H
-1F
-16
-05
-0&
-1%
-1B
-0D
+0#!
+1&!
+07!
+15!
+12
+01
+1,!
+0*
+1)
+04!
+12!
 #160000
 0!
 09
 #170000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #180000
 0!
 09
 #190000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-0F
-1C
-17
-06
-0%
-1$
-1@
-0B
+0#!
+05!
+13!
+13
+02
+0)
+1(
+00!
+02!
 #200000
 0!
 09
 #210000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #220000
 0!
 09
 #230000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-0C
-1A
-18
-07
-0E
-0$
-1#
-1B
-0@
-1>
+0#!
+01!
+03!
+03
+14
+1'
+0(
+1.!
+10!
 #240000
 0!
 09
 #250000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #260000
 0!
 09
 #270000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1?
-1C
-0A
-08
-17
-1E
-1$
-0#
-1D
-0B
+0#!
+11!
+1/!
+15
+04
+0'
+1&
+0.!
+1+!
 #280000
 0!
 09
 #290000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #300000
 0!
 09
 #310000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1F
-0C
-07
+0#!
+0/!
+1-!
 16
+05
+0&
 1%
-0$
-0D
-1G
+1)!
+0+!
 #320000
 0!
 09
 #330000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #340000
 0!
 09
 #350000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1H
-0F
+0#!
+0-!
+1*!
+17
 06
-15
-1&
 0%
-0G
-1I
+1$
+0)!
+1'!
 #360000
 0!
 09
 #370000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #380000
 0!
 09
 #390000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1J
-0H
-05
-14
-1'
-0&
-0I
-1K
+0#!
+0*!
+1(!
+18
+07
+0,!
+0$
+1#
+1)!
+0'!
+0%!
 #400000
 0!
 09
 #410000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #420000
 0!
 09
 #430000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1L
-0J
-04
-13
-1(
-0'
-0K
-0M
+0#!
+0&!
+1*!
+0(!
+08
+17
+1,!
+1$
+0#
+1+!
+0)!
 #440000
 0!
 09
 #450000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #460000
 0!
 09
 #470000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-0N
-0L
-03
-12
-1)
-0(
-1O
-1M
+0#!
+1-!
+0*!
+07
+16
+1%
+0$
+0+!
+1.!
 #480000
 0!
 09
 #490000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #500000
 0!
 09
 #510000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1N
-1P
-11
-02
-0E
-0)
-1*
-0O
-0M
-0>
+0#!
+1/!
+0-!
+06
+15
+1&
+0%
+0.!
+00!
 #520000
 0!
 09
 #530000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #540000
 0!
 09
 #550000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-0N
-0?
-0P
-01
-12
-1E
-1)
-0*
-1M
-1K
+0#!
+01!
+0/!
+05
+14
+1'
+0&
+12!
+10!
 #560000
 0!
 09
 #570000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #580000
 0!
 09
 #590000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1N
-1L
+0#!
+11!
+13!
 13
-02
-0)
+04
+0'
 1(
-0K
-1I
+02!
+14!
 #600000
 0!
 09
 #610000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #620000
 0!
 09
 #630000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-0L
-1J
-14
+0#!
+15!
+03!
 03
+12
+1)
 0(
-1'
-1G
-0I
+04!
+16!
 #640000
 0!
 09
 #650000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #660000
 0!
 09
 #670000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-0J
-1H
-15
-04
-0'
-1&
-1D
-0G
+0#!
+17!
+05!
+02
+11
+0,!
+1*
+0)
+06!
+14!
+1%!
 #680000
 0!
 09
 #690000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #700000
 0!
 09
 #710000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-0H
-1F
-16
-05
-0&
-1%
-1B
-0D
+0#!
+1&!
+07!
+15!
+12
+01
+1,!
+0*
+1)
+04!
+12!
 #720000
 0!
 09
 #730000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #740000
 0!
 09
 #750000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-0F
-1C
-17
-06
-0%
-1$
-1@
-0B
+0#!
+05!
+13!
+13
+02
+0)
+1(
+00!
+02!
 #760000
 0!
 09
 #770000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #780000
 0!
 09
 #790000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-0C
-1A
-18
-07
-0E
-0$
-1#
-1B
-0@
-1>
+0#!
+01!
+03!
+03
+14
+1'
+0(
+1.!
+10!
 #800000
 0!
 09
 #810000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #820000
 0!
 09
 #830000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1?
-1C
-0A
-08
-17
-1E
-1$
-0#
-1D
-0B
+0#!
+11!
+1/!
+15
+04
+0'
+1&
+0.!
+1+!
 #840000
 0!
 09
 #850000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #860000
 0!
 09
 #870000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1F
-0C
-07
+0#!
+0/!
+1-!
 16
+05
+0&
 1%
-0$
-0D
-1G
+1)!
+0+!
 #880000
 0!
 09
 #890000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #900000
 0!
 09
 #910000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1H
-0F
+0#!
+0-!
+1*!
+17
 06
-15
-1&
 0%
-0G
-1I
+1$
+0)!
+1'!
 #920000
 0!
 09
 #930000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #940000
 0!
 09
 #950000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1J
-0H
-05
-14
-1'
-0&
-0I
-1K
+0#!
+0*!
+1(!
+18
+07
+0,!
+0$
+1#
+1)!
+0'!
+0%!
 #960000
 0!
 09
 #970000
 1!
 19
-0R
+0W!
+0$!
+1|
+0<
+1:
+0"!
 0=
-1<
-1;
+1#!
 #980000
 0!
 09
 #990000
 1!
 19
-1R
+1W!
+1$!
+0|
+1<
+0:
+1"!
 1=
-0<
-0;
-1L
-0J
-04
-13
-1(
-0'
-0K
-0M
+0#!
+0&!
+1*!
+0(!
+08
+17
+1,!
+1$
+0#
+1+!
+0)!
 #1000000

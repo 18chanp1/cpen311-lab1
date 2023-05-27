@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "05/25/2023 22:14:42"
+// DATE "05/26/2023 21:14:02"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -52,33 +52,47 @@ tri1 devoe;
 wire \out~output_o ;
 wire \switches[0]~input_o ;
 wire \clk~input_o ;
-wire \tone_gen|Add0~9_sumout ;
+wire \tone_gen|Add0~125_sumout ;
 wire \rst~input_o ;
+wire \switches[3]~input_o ;
+wire \switches[2]~input_o ;
+wire \switches[1]~input_o ;
+wire \tone_gen|LessThan0~5_combout ;
 wire \tone_gen|Add0~2 ;
-wire \tone_gen|Add0~29_sumout ;
-wire \tone_gen|Add0~30 ;
-wire \tone_gen|Add0~25_sumout ;
-wire \tone_gen|Add0~26 ;
-wire \tone_gen|Add0~21_sumout ;
-wire \tone_gen|Add0~22 ;
-wire \tone_gen|Add0~17_sumout ;
-wire \tone_gen|Add0~18 ;
-wire \tone_gen|Add0~13_sumout ;
-wire \tone_gen|LessThan0~0_combout ;
-wire \tone_gen|Add0~14 ;
-wire \tone_gen|Add0~53_sumout ;
-wire \tone_gen|Add0~54 ;
-wire \tone_gen|Add0~49_sumout ;
-wire \tone_gen|Add0~50 ;
-wire \tone_gen|Add0~45_sumout ;
-wire \tone_gen|Add0~46 ;
 wire \tone_gen|Add0~41_sumout ;
 wire \tone_gen|Add0~42 ;
 wire \tone_gen|Add0~37_sumout ;
 wire \tone_gen|Add0~38 ;
 wire \tone_gen|Add0~33_sumout ;
-wire \tone_gen|LessThan0~1_combout ;
 wire \tone_gen|Add0~34 ;
+wire \tone_gen|Add0~29_sumout ;
+wire \tone_gen|Add0~30 ;
+wire \tone_gen|Add0~25_sumout ;
+wire \tone_gen|Add0~26 ;
+wire \tone_gen|Add0~21_sumout ;
+wire \tone_gen|LessThan0~1_combout ;
+wire \tone_gen|Add0~22 ;
+wire \tone_gen|Add0~65_sumout ;
+wire \tone_gen|Add0~66 ;
+wire \tone_gen|Add0~61_sumout ;
+wire \tone_gen|Add0~62 ;
+wire \tone_gen|Add0~57_sumout ;
+wire \tone_gen|Add0~58 ;
+wire \tone_gen|Add0~69_sumout ;
+wire \tone_gen|Add0~70 ;
+wire \tone_gen|Add0~53_sumout ;
+wire \tone_gen|Add0~54 ;
+wire \tone_gen|Add0~49_sumout ;
+wire \tone_gen|Add0~50 ;
+wire \tone_gen|Add0~45_sumout ;
+wire \tone_gen|LessThan0~2_combout ;
+wire \tone_gen|Add0~46 ;
+wire \tone_gen|Add0~113_sumout ;
+wire \tone_gen|Add0~114 ;
+wire \tone_gen|Add0~109_sumout ;
+wire \tone_gen|Add0~110 ;
+wire \tone_gen|Add0~105_sumout ;
+wire \tone_gen|Add0~106 ;
 wire \tone_gen|Add0~101_sumout ;
 wire \tone_gen|Add0~102 ;
 wire \tone_gen|Add0~97_sumout ;
@@ -94,30 +108,29 @@ wire \tone_gen|Add0~82 ;
 wire \tone_gen|Add0~77_sumout ;
 wire \tone_gen|Add0~78 ;
 wire \tone_gen|Add0~73_sumout ;
-wire \tone_gen|Add0~74 ;
-wire \tone_gen|Add0~69_sumout ;
-wire \tone_gen|Add0~70 ;
-wire \tone_gen|Add0~65_sumout ;
-wire \tone_gen|Add0~66 ;
-wire \tone_gen|Add0~61_sumout ;
-wire \tone_gen|Add0~62 ;
-wire \tone_gen|Add0~57_sumout ;
-wire \tone_gen|LessThan0~2_combout ;
 wire \tone_gen|LessThan0~3_combout ;
-wire \switches[3]~input_o ;
-wire \switches[1]~input_o ;
-wire \switches[2]~input_o ;
 wire \tone_gen|LessThan0~4_combout ;
-wire \tone_gen|LessThan0~5_combout ;
+wire \tone_gen|LessThan0~6_combout ;
+wire \tone_gen|Add0~126 ;
+wire \tone_gen|Add0~121_sumout ;
+wire \tone_gen|Add0~122 ;
+wire \tone_gen|Add0~117_sumout ;
+wire \tone_gen|Add0~118 ;
+wire \tone_gen|Add0~17_sumout ;
+wire \tone_gen|Add0~18 ;
+wire \tone_gen|Add0~13_sumout ;
+wire \tone_gen|Add0~14 ;
+wire \tone_gen|Add0~9_sumout ;
 wire \tone_gen|Add0~10 ;
 wire \tone_gen|Add0~5_sumout ;
 wire \tone_gen|Add0~6 ;
 wire \tone_gen|Add0~1_sumout ;
+wire \tone_gen|LessThan0~0_combout ;
 wire \tone_gen|LessThan1~0_combout ;
 wire \tone_gen|LessThan1~1_combout ;
 wire \tone_gen|outclk~q ;
 wire \out~0_combout ;
-wire [25:0] \tone_gen|counter ;
+wire [31:0] \tone_gen|counter ;
 
 
 cyclonev_io_obuf \out~output (
@@ -155,10 +168,10 @@ defparam \clk~input .bus_hold = "false";
 defparam \clk~input .simulate_z_as = "z";
 // synopsys translate_on
 
-cyclonev_lcell_comb \tone_gen|Add0~9 (
+cyclonev_lcell_comb \tone_gen|Add0~125 (
 // Equation(s):
-// \tone_gen|Add0~9_sumout  = SUM(( \tone_gen|counter [0] ) + ( VCC ) + ( !VCC ))
-// \tone_gen|Add0~10  = CARRY(( \tone_gen|counter [0] ) + ( VCC ) + ( !VCC ))
+// \tone_gen|Add0~125_sumout  = SUM(( \tone_gen|counter [0] ) + ( VCC ) + ( !VCC ))
+// \tone_gen|Add0~126  = CARRY(( \tone_gen|counter [0] ) + ( VCC ) + ( !VCC ))
 
 	.dataa(gnd),
 	.datab(gnd),
@@ -170,13 +183,13 @@ cyclonev_lcell_comb \tone_gen|Add0~9 (
 	.cin(gnd),
 	.sharein(gnd),
 	.combout(),
-	.sumout(\tone_gen|Add0~9_sumout ),
-	.cout(\tone_gen|Add0~10 ),
+	.sumout(\tone_gen|Add0~125_sumout ),
+	.cout(\tone_gen|Add0~126 ),
 	.shareout());
 // synopsys translate_off
-defparam \tone_gen|Add0~9 .extended_lut = "off";
-defparam \tone_gen|Add0~9 .lut_mask = 64'h00000000000000FF;
-defparam \tone_gen|Add0~9 .shared_arith = "off";
+defparam \tone_gen|Add0~125 .extended_lut = "off";
+defparam \tone_gen|Add0~125 .lut_mask = 64'h00000000000000FF;
+defparam \tone_gen|Add0~125 .shared_arith = "off";
 // synopsys translate_on
 
 cyclonev_io_ibuf \rst~input (
@@ -189,15 +202,72 @@ defparam \rst~input .bus_hold = "false";
 defparam \rst~input .simulate_z_as = "z";
 // synopsys translate_on
 
+cyclonev_io_ibuf \switches[3]~input (
+	.i(switches[3]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\switches[3]~input_o ));
+// synopsys translate_off
+defparam \switches[3]~input .bus_hold = "false";
+defparam \switches[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \switches[2]~input (
+	.i(switches[2]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\switches[2]~input_o ));
+// synopsys translate_off
+defparam \switches[2]~input .bus_hold = "false";
+defparam \switches[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \switches[1]~input (
+	.i(switches[1]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\switches[1]~input_o ));
+// synopsys translate_off
+defparam \switches[1]~input .bus_hold = "false";
+defparam \switches[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|LessThan0~5 (
+// Equation(s):
+// \tone_gen|LessThan0~5_combout  = ( \switches[1]~input_o  & ( \tone_gen|counter [0] & ( (!\tone_gen|counter [2] & (((!\tone_gen|counter [1] & \switches[2]~input_o )) # (\switches[3]~input_o ))) # (\tone_gen|counter [2] & (\switches[3]~input_o  & 
+// (!\tone_gen|counter [1] & \switches[2]~input_o ))) ) ) ) # ( !\switches[1]~input_o  & ( \tone_gen|counter [0] & ( (!\tone_gen|counter [2] & (((!\tone_gen|counter [1] & \switches[2]~input_o )) # (\switches[3]~input_o ))) # (\tone_gen|counter [2] & 
+// (\switches[3]~input_o  & (!\tone_gen|counter [1] & \switches[2]~input_o ))) ) ) ) # ( \switches[1]~input_o  & ( !\tone_gen|counter [0] & ( (!\tone_gen|counter [2] & (((!\tone_gen|counter [1]) # (\switches[2]~input_o )) # (\switches[3]~input_o ))) # 
+// (\tone_gen|counter [2] & (\switches[3]~input_o  & ((!\tone_gen|counter [1]) # (\switches[2]~input_o )))) ) ) ) # ( !\switches[1]~input_o  & ( !\tone_gen|counter [0] & ( (!\tone_gen|counter [2] & (((!\tone_gen|counter [1] & \switches[2]~input_o )) # 
+// (\switches[3]~input_o ))) # (\tone_gen|counter [2] & (\switches[3]~input_o  & (!\tone_gen|counter [1] & \switches[2]~input_o ))) ) ) )
+
+	.dataa(!\tone_gen|counter [2]),
+	.datab(!\switches[3]~input_o ),
+	.datac(!\tone_gen|counter [1]),
+	.datad(!\switches[2]~input_o ),
+	.datae(!\switches[1]~input_o ),
+	.dataf(!\tone_gen|counter [0]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\tone_gen|LessThan0~5_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|LessThan0~5 .extended_lut = "off";
+defparam \tone_gen|LessThan0~5 .lut_mask = 64'h22B2B2BB22B222B2;
+defparam \tone_gen|LessThan0~5 .shared_arith = "off";
+// synopsys translate_on
+
 cyclonev_lcell_comb \tone_gen|Add0~1 (
 // Equation(s):
-// \tone_gen|Add0~1_sumout  = SUM(( \tone_gen|counter [2] ) + ( GND ) + ( \tone_gen|Add0~6  ))
-// \tone_gen|Add0~2  = CARRY(( \tone_gen|counter [2] ) + ( GND ) + ( \tone_gen|Add0~6  ))
+// \tone_gen|Add0~1_sumout  = SUM(( \tone_gen|counter [7] ) + ( GND ) + ( \tone_gen|Add0~6  ))
+// \tone_gen|Add0~2  = CARRY(( \tone_gen|counter [7] ) + ( GND ) + ( \tone_gen|Add0~6  ))
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\tone_gen|counter [2]),
+	.datad(!\tone_gen|counter [7]),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -213,243 +283,10 @@ defparam \tone_gen|Add0~1 .lut_mask = 64'h0000FFFF000000FF;
 defparam \tone_gen|Add0~1 .shared_arith = "off";
 // synopsys translate_on
 
-cyclonev_lcell_comb \tone_gen|Add0~29 (
+cyclonev_lcell_comb \tone_gen|Add0~41 (
 // Equation(s):
-// \tone_gen|Add0~29_sumout  = SUM(( \tone_gen|counter [3] ) + ( GND ) + ( \tone_gen|Add0~2  ))
-// \tone_gen|Add0~30  = CARRY(( \tone_gen|counter [3] ) + ( GND ) + ( \tone_gen|Add0~2  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [3]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~2 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~29_sumout ),
-	.cout(\tone_gen|Add0~30 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~29 .extended_lut = "off";
-defparam \tone_gen|Add0~29 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~29 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[3] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~29_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [3]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[3] .is_wysiwyg = "true";
-defparam \tone_gen|counter[3] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~25 (
-// Equation(s):
-// \tone_gen|Add0~25_sumout  = SUM(( \tone_gen|counter [4] ) + ( GND ) + ( \tone_gen|Add0~30  ))
-// \tone_gen|Add0~26  = CARRY(( \tone_gen|counter [4] ) + ( GND ) + ( \tone_gen|Add0~30  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [4]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~30 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~25_sumout ),
-	.cout(\tone_gen|Add0~26 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~25 .extended_lut = "off";
-defparam \tone_gen|Add0~25 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~25 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[4] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~25_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [4]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[4] .is_wysiwyg = "true";
-defparam \tone_gen|counter[4] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~21 (
-// Equation(s):
-// \tone_gen|Add0~21_sumout  = SUM(( \tone_gen|counter [5] ) + ( GND ) + ( \tone_gen|Add0~26  ))
-// \tone_gen|Add0~22  = CARRY(( \tone_gen|counter [5] ) + ( GND ) + ( \tone_gen|Add0~26  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [5]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~26 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~21_sumout ),
-	.cout(\tone_gen|Add0~22 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~21 .extended_lut = "off";
-defparam \tone_gen|Add0~21 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~21 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[5] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~21_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [5]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[5] .is_wysiwyg = "true";
-defparam \tone_gen|counter[5] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~17 (
-// Equation(s):
-// \tone_gen|Add0~17_sumout  = SUM(( \tone_gen|counter [6] ) + ( GND ) + ( \tone_gen|Add0~22  ))
-// \tone_gen|Add0~18  = CARRY(( \tone_gen|counter [6] ) + ( GND ) + ( \tone_gen|Add0~22  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [6]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~22 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~17_sumout ),
-	.cout(\tone_gen|Add0~18 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~17 .extended_lut = "off";
-defparam \tone_gen|Add0~17 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~17 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[6] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~17_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [6]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[6] .is_wysiwyg = "true";
-defparam \tone_gen|counter[6] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~13 (
-// Equation(s):
-// \tone_gen|Add0~13_sumout  = SUM(( \tone_gen|counter [7] ) + ( GND ) + ( \tone_gen|Add0~18  ))
-// \tone_gen|Add0~14  = CARRY(( \tone_gen|counter [7] ) + ( GND ) + ( \tone_gen|Add0~18  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [7]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~18 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~13_sumout ),
-	.cout(\tone_gen|Add0~14 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~13 .extended_lut = "off";
-defparam \tone_gen|Add0~13 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~13 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[7] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~13_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [7]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[7] .is_wysiwyg = "true";
-defparam \tone_gen|counter[7] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|LessThan0~0 (
-// Equation(s):
-// \tone_gen|LessThan0~0_combout  = ( !\tone_gen|counter [3] & ( (!\tone_gen|counter [7] & (!\tone_gen|counter [6] & (!\tone_gen|counter [5] & !\tone_gen|counter [4]))) ) )
-
-	.dataa(!\tone_gen|counter [7]),
-	.datab(!\tone_gen|counter [6]),
-	.datac(!\tone_gen|counter [5]),
-	.datad(!\tone_gen|counter [4]),
-	.datae(!\tone_gen|counter [3]),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\tone_gen|LessThan0~0_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|LessThan0~0 .extended_lut = "off";
-defparam \tone_gen|LessThan0~0 .lut_mask = 64'h8000000080000000;
-defparam \tone_gen|LessThan0~0 .shared_arith = "off";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~53 (
-// Equation(s):
-// \tone_gen|Add0~53_sumout  = SUM(( \tone_gen|counter [8] ) + ( GND ) + ( \tone_gen|Add0~14  ))
-// \tone_gen|Add0~54  = CARRY(( \tone_gen|counter [8] ) + ( GND ) + ( \tone_gen|Add0~14  ))
+// \tone_gen|Add0~41_sumout  = SUM(( \tone_gen|counter [8] ) + ( GND ) + ( \tone_gen|Add0~2  ))
+// \tone_gen|Add0~42  = CARRY(( \tone_gen|counter [8] ) + ( GND ) + ( \tone_gen|Add0~2  ))
 
 	.dataa(gnd),
 	.datab(gnd),
@@ -458,133 +295,7 @@ cyclonev_lcell_comb \tone_gen|Add0~53 (
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
-	.cin(\tone_gen|Add0~14 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~53_sumout ),
-	.cout(\tone_gen|Add0~54 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~53 .extended_lut = "off";
-defparam \tone_gen|Add0~53 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~53 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[8] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~53_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [8]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[8] .is_wysiwyg = "true";
-defparam \tone_gen|counter[8] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~49 (
-// Equation(s):
-// \tone_gen|Add0~49_sumout  = SUM(( \tone_gen|counter [9] ) + ( GND ) + ( \tone_gen|Add0~54  ))
-// \tone_gen|Add0~50  = CARRY(( \tone_gen|counter [9] ) + ( GND ) + ( \tone_gen|Add0~54  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [9]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~54 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~49_sumout ),
-	.cout(\tone_gen|Add0~50 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~49 .extended_lut = "off";
-defparam \tone_gen|Add0~49 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~49 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[9] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~49_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [9]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[9] .is_wysiwyg = "true";
-defparam \tone_gen|counter[9] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~45 (
-// Equation(s):
-// \tone_gen|Add0~45_sumout  = SUM(( \tone_gen|counter [10] ) + ( GND ) + ( \tone_gen|Add0~50  ))
-// \tone_gen|Add0~46  = CARRY(( \tone_gen|counter [10] ) + ( GND ) + ( \tone_gen|Add0~50  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [10]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~50 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~45_sumout ),
-	.cout(\tone_gen|Add0~46 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~45 .extended_lut = "off";
-defparam \tone_gen|Add0~45 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~45 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[10] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~45_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [10]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[10] .is_wysiwyg = "true";
-defparam \tone_gen|counter[10] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~41 (
-// Equation(s):
-// \tone_gen|Add0~41_sumout  = SUM(( \tone_gen|counter [11] ) + ( GND ) + ( \tone_gen|Add0~46  ))
-// \tone_gen|Add0~42  = CARRY(( \tone_gen|counter [11] ) + ( GND ) + ( \tone_gen|Add0~46  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [11]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~46 ),
+	.cin(\tone_gen|Add0~2 ),
 	.sharein(gnd),
 	.combout(),
 	.sumout(\tone_gen|Add0~41_sumout ),
@@ -596,33 +307,33 @@ defparam \tone_gen|Add0~41 .lut_mask = 64'h0000FFFF000000FF;
 defparam \tone_gen|Add0~41 .shared_arith = "off";
 // synopsys translate_on
 
-dffeas \tone_gen|counter[11] (
+dffeas \tone_gen|counter[8] (
 	.clk(\clk~input_o ),
 	.d(\tone_gen|Add0~41_sumout ),
 	.asdata(vcc),
 	.clrn(!\rst~input_o ),
 	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
+	.sclr(\tone_gen|LessThan0~6_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\tone_gen|counter [11]),
+	.q(\tone_gen|counter [8]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \tone_gen|counter[11] .is_wysiwyg = "true";
-defparam \tone_gen|counter[11] .power_up = "low";
+defparam \tone_gen|counter[8] .is_wysiwyg = "true";
+defparam \tone_gen|counter[8] .power_up = "low";
 // synopsys translate_on
 
 cyclonev_lcell_comb \tone_gen|Add0~37 (
 // Equation(s):
-// \tone_gen|Add0~37_sumout  = SUM(( \tone_gen|counter [12] ) + ( GND ) + ( \tone_gen|Add0~42  ))
-// \tone_gen|Add0~38  = CARRY(( \tone_gen|counter [12] ) + ( GND ) + ( \tone_gen|Add0~42  ))
+// \tone_gen|Add0~37_sumout  = SUM(( \tone_gen|counter [9] ) + ( GND ) + ( \tone_gen|Add0~42  ))
+// \tone_gen|Add0~38  = CARRY(( \tone_gen|counter [9] ) + ( GND ) + ( \tone_gen|Add0~42  ))
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\tone_gen|counter [12]),
+	.datad(!\tone_gen|counter [9]),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -638,33 +349,33 @@ defparam \tone_gen|Add0~37 .lut_mask = 64'h0000FFFF000000FF;
 defparam \tone_gen|Add0~37 .shared_arith = "off";
 // synopsys translate_on
 
-dffeas \tone_gen|counter[12] (
+dffeas \tone_gen|counter[9] (
 	.clk(\clk~input_o ),
 	.d(\tone_gen|Add0~37_sumout ),
 	.asdata(vcc),
 	.clrn(!\rst~input_o ),
 	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
+	.sclr(\tone_gen|LessThan0~6_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\tone_gen|counter [12]),
+	.q(\tone_gen|counter [9]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \tone_gen|counter[12] .is_wysiwyg = "true";
-defparam \tone_gen|counter[12] .power_up = "low";
+defparam \tone_gen|counter[9] .is_wysiwyg = "true";
+defparam \tone_gen|counter[9] .power_up = "low";
 // synopsys translate_on
 
 cyclonev_lcell_comb \tone_gen|Add0~33 (
 // Equation(s):
-// \tone_gen|Add0~33_sumout  = SUM(( \tone_gen|counter [13] ) + ( GND ) + ( \tone_gen|Add0~38  ))
-// \tone_gen|Add0~34  = CARRY(( \tone_gen|counter [13] ) + ( GND ) + ( \tone_gen|Add0~38  ))
+// \tone_gen|Add0~33_sumout  = SUM(( \tone_gen|counter [10] ) + ( GND ) + ( \tone_gen|Add0~38  ))
+// \tone_gen|Add0~34  = CARRY(( \tone_gen|counter [10] ) + ( GND ) + ( \tone_gen|Add0~38  ))
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\tone_gen|counter [13]),
+	.datad(!\tone_gen|counter [10]),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -680,13 +391,139 @@ defparam \tone_gen|Add0~33 .lut_mask = 64'h0000FFFF000000FF;
 defparam \tone_gen|Add0~33 .shared_arith = "off";
 // synopsys translate_on
 
-dffeas \tone_gen|counter[13] (
+dffeas \tone_gen|counter[10] (
 	.clk(\clk~input_o ),
 	.d(\tone_gen|Add0~33_sumout ),
 	.asdata(vcc),
 	.clrn(!\rst~input_o ),
 	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [10]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[10] .is_wysiwyg = "true";
+defparam \tone_gen|counter[10] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~29 (
+// Equation(s):
+// \tone_gen|Add0~29_sumout  = SUM(( \tone_gen|counter [11] ) + ( GND ) + ( \tone_gen|Add0~34  ))
+// \tone_gen|Add0~30  = CARRY(( \tone_gen|counter [11] ) + ( GND ) + ( \tone_gen|Add0~34  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [11]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~34 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~29_sumout ),
+	.cout(\tone_gen|Add0~30 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~29 .extended_lut = "off";
+defparam \tone_gen|Add0~29 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~29 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[11] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~29_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [11]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[11] .is_wysiwyg = "true";
+defparam \tone_gen|counter[11] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~25 (
+// Equation(s):
+// \tone_gen|Add0~25_sumout  = SUM(( \tone_gen|counter [12] ) + ( GND ) + ( \tone_gen|Add0~30  ))
+// \tone_gen|Add0~26  = CARRY(( \tone_gen|counter [12] ) + ( GND ) + ( \tone_gen|Add0~30  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [12]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~30 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~25_sumout ),
+	.cout(\tone_gen|Add0~26 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~25 .extended_lut = "off";
+defparam \tone_gen|Add0~25 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~25 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[12] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~25_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [12]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[12] .is_wysiwyg = "true";
+defparam \tone_gen|counter[12] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~21 (
+// Equation(s):
+// \tone_gen|Add0~21_sumout  = SUM(( \tone_gen|counter [13] ) + ( GND ) + ( \tone_gen|Add0~26  ))
+// \tone_gen|Add0~22  = CARRY(( \tone_gen|counter [13] ) + ( GND ) + ( \tone_gen|Add0~26  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [13]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~26 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~21_sumout ),
+	.cout(\tone_gen|Add0~22 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~21 .extended_lut = "off";
+defparam \tone_gen|Add0~21 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~21 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[13] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~21_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
@@ -721,10 +558,10 @@ defparam \tone_gen|LessThan0~1 .lut_mask = 64'h8000000000000000;
 defparam \tone_gen|LessThan0~1 .shared_arith = "off";
 // synopsys translate_on
 
-cyclonev_lcell_comb \tone_gen|Add0~101 (
+cyclonev_lcell_comb \tone_gen|Add0~65 (
 // Equation(s):
-// \tone_gen|Add0~101_sumout  = SUM(( \tone_gen|counter [14] ) + ( GND ) + ( \tone_gen|Add0~34  ))
-// \tone_gen|Add0~102  = CARRY(( \tone_gen|counter [14] ) + ( GND ) + ( \tone_gen|Add0~34  ))
+// \tone_gen|Add0~65_sumout  = SUM(( \tone_gen|counter [14] ) + ( GND ) + ( \tone_gen|Add0~22  ))
+// \tone_gen|Add0~66  = CARRY(( \tone_gen|counter [14] ) + ( GND ) + ( \tone_gen|Add0~22  ))
 
 	.dataa(gnd),
 	.datab(gnd),
@@ -733,385 +570,7 @@ cyclonev_lcell_comb \tone_gen|Add0~101 (
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
-	.cin(\tone_gen|Add0~34 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~101_sumout ),
-	.cout(\tone_gen|Add0~102 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~101 .extended_lut = "off";
-defparam \tone_gen|Add0~101 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~101 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[14] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~101_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [14]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[14] .is_wysiwyg = "true";
-defparam \tone_gen|counter[14] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~97 (
-// Equation(s):
-// \tone_gen|Add0~97_sumout  = SUM(( \tone_gen|counter [15] ) + ( GND ) + ( \tone_gen|Add0~102  ))
-// \tone_gen|Add0~98  = CARRY(( \tone_gen|counter [15] ) + ( GND ) + ( \tone_gen|Add0~102  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [15]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~102 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~97_sumout ),
-	.cout(\tone_gen|Add0~98 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~97 .extended_lut = "off";
-defparam \tone_gen|Add0~97 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~97 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[15] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~97_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [15]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[15] .is_wysiwyg = "true";
-defparam \tone_gen|counter[15] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~93 (
-// Equation(s):
-// \tone_gen|Add0~93_sumout  = SUM(( \tone_gen|counter [16] ) + ( GND ) + ( \tone_gen|Add0~98  ))
-// \tone_gen|Add0~94  = CARRY(( \tone_gen|counter [16] ) + ( GND ) + ( \tone_gen|Add0~98  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [16]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~98 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~93_sumout ),
-	.cout(\tone_gen|Add0~94 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~93 .extended_lut = "off";
-defparam \tone_gen|Add0~93 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~93 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[16] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~93_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [16]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[16] .is_wysiwyg = "true";
-defparam \tone_gen|counter[16] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~89 (
-// Equation(s):
-// \tone_gen|Add0~89_sumout  = SUM(( \tone_gen|counter [17] ) + ( GND ) + ( \tone_gen|Add0~94  ))
-// \tone_gen|Add0~90  = CARRY(( \tone_gen|counter [17] ) + ( GND ) + ( \tone_gen|Add0~94  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [17]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~94 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~89_sumout ),
-	.cout(\tone_gen|Add0~90 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~89 .extended_lut = "off";
-defparam \tone_gen|Add0~89 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~89 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[17] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~89_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [17]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[17] .is_wysiwyg = "true";
-defparam \tone_gen|counter[17] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~85 (
-// Equation(s):
-// \tone_gen|Add0~85_sumout  = SUM(( \tone_gen|counter [18] ) + ( GND ) + ( \tone_gen|Add0~90  ))
-// \tone_gen|Add0~86  = CARRY(( \tone_gen|counter [18] ) + ( GND ) + ( \tone_gen|Add0~90  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [18]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~90 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~85_sumout ),
-	.cout(\tone_gen|Add0~86 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~85 .extended_lut = "off";
-defparam \tone_gen|Add0~85 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~85 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[18] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~85_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [18]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[18] .is_wysiwyg = "true";
-defparam \tone_gen|counter[18] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~81 (
-// Equation(s):
-// \tone_gen|Add0~81_sumout  = SUM(( \tone_gen|counter [19] ) + ( GND ) + ( \tone_gen|Add0~86  ))
-// \tone_gen|Add0~82  = CARRY(( \tone_gen|counter [19] ) + ( GND ) + ( \tone_gen|Add0~86  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [19]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~86 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~81_sumout ),
-	.cout(\tone_gen|Add0~82 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~81 .extended_lut = "off";
-defparam \tone_gen|Add0~81 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~81 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[19] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~81_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [19]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[19] .is_wysiwyg = "true";
-defparam \tone_gen|counter[19] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~77 (
-// Equation(s):
-// \tone_gen|Add0~77_sumout  = SUM(( \tone_gen|counter [20] ) + ( GND ) + ( \tone_gen|Add0~82  ))
-// \tone_gen|Add0~78  = CARRY(( \tone_gen|counter [20] ) + ( GND ) + ( \tone_gen|Add0~82  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [20]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~82 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~77_sumout ),
-	.cout(\tone_gen|Add0~78 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~77 .extended_lut = "off";
-defparam \tone_gen|Add0~77 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~77 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[20] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~77_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [20]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[20] .is_wysiwyg = "true";
-defparam \tone_gen|counter[20] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~73 (
-// Equation(s):
-// \tone_gen|Add0~73_sumout  = SUM(( \tone_gen|counter [21] ) + ( GND ) + ( \tone_gen|Add0~78  ))
-// \tone_gen|Add0~74  = CARRY(( \tone_gen|counter [21] ) + ( GND ) + ( \tone_gen|Add0~78  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [21]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~78 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~73_sumout ),
-	.cout(\tone_gen|Add0~74 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~73 .extended_lut = "off";
-defparam \tone_gen|Add0~73 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~73 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[21] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~73_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [21]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[21] .is_wysiwyg = "true";
-defparam \tone_gen|counter[21] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~69 (
-// Equation(s):
-// \tone_gen|Add0~69_sumout  = SUM(( \tone_gen|counter [22] ) + ( GND ) + ( \tone_gen|Add0~74  ))
-// \tone_gen|Add0~70  = CARRY(( \tone_gen|counter [22] ) + ( GND ) + ( \tone_gen|Add0~74  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [22]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~74 ),
-	.sharein(gnd),
-	.combout(),
-	.sumout(\tone_gen|Add0~69_sumout ),
-	.cout(\tone_gen|Add0~70 ),
-	.shareout());
-// synopsys translate_off
-defparam \tone_gen|Add0~69 .extended_lut = "off";
-defparam \tone_gen|Add0~69 .lut_mask = 64'h0000FFFF000000FF;
-defparam \tone_gen|Add0~69 .shared_arith = "off";
-// synopsys translate_on
-
-dffeas \tone_gen|counter[22] (
-	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~69_sumout ),
-	.asdata(vcc),
-	.clrn(!\rst~input_o ),
-	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\tone_gen|counter [22]),
-	.prn(vcc));
-// synopsys translate_off
-defparam \tone_gen|counter[22] .is_wysiwyg = "true";
-defparam \tone_gen|counter[22] .power_up = "low";
-// synopsys translate_on
-
-cyclonev_lcell_comb \tone_gen|Add0~65 (
-// Equation(s):
-// \tone_gen|Add0~65_sumout  = SUM(( \tone_gen|counter [23] ) + ( GND ) + ( \tone_gen|Add0~70  ))
-// \tone_gen|Add0~66  = CARRY(( \tone_gen|counter [23] ) + ( GND ) + ( \tone_gen|Add0~70  ))
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(!\tone_gen|counter [23]),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(\tone_gen|Add0~70 ),
+	.cin(\tone_gen|Add0~22 ),
 	.sharein(gnd),
 	.combout(),
 	.sumout(\tone_gen|Add0~65_sumout ),
@@ -1123,33 +582,33 @@ defparam \tone_gen|Add0~65 .lut_mask = 64'h0000FFFF000000FF;
 defparam \tone_gen|Add0~65 .shared_arith = "off";
 // synopsys translate_on
 
-dffeas \tone_gen|counter[23] (
+dffeas \tone_gen|counter[14] (
 	.clk(\clk~input_o ),
 	.d(\tone_gen|Add0~65_sumout ),
 	.asdata(vcc),
 	.clrn(!\rst~input_o ),
 	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
+	.sclr(\tone_gen|LessThan0~6_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\tone_gen|counter [23]),
+	.q(\tone_gen|counter [14]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \tone_gen|counter[23] .is_wysiwyg = "true";
-defparam \tone_gen|counter[23] .power_up = "low";
+defparam \tone_gen|counter[14] .is_wysiwyg = "true";
+defparam \tone_gen|counter[14] .power_up = "low";
 // synopsys translate_on
 
 cyclonev_lcell_comb \tone_gen|Add0~61 (
 // Equation(s):
-// \tone_gen|Add0~61_sumout  = SUM(( \tone_gen|counter [24] ) + ( GND ) + ( \tone_gen|Add0~66  ))
-// \tone_gen|Add0~62  = CARRY(( \tone_gen|counter [24] ) + ( GND ) + ( \tone_gen|Add0~66  ))
+// \tone_gen|Add0~61_sumout  = SUM(( \tone_gen|counter [15] ) + ( GND ) + ( \tone_gen|Add0~66  ))
+// \tone_gen|Add0~62  = CARRY(( \tone_gen|counter [15] ) + ( GND ) + ( \tone_gen|Add0~66  ))
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\tone_gen|counter [24]),
+	.datad(!\tone_gen|counter [15]),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -1165,32 +624,33 @@ defparam \tone_gen|Add0~61 .lut_mask = 64'h0000FFFF000000FF;
 defparam \tone_gen|Add0~61 .shared_arith = "off";
 // synopsys translate_on
 
-dffeas \tone_gen|counter[24] (
+dffeas \tone_gen|counter[15] (
 	.clk(\clk~input_o ),
 	.d(\tone_gen|Add0~61_sumout ),
 	.asdata(vcc),
 	.clrn(!\rst~input_o ),
 	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
+	.sclr(\tone_gen|LessThan0~6_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\tone_gen|counter [24]),
+	.q(\tone_gen|counter [15]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \tone_gen|counter[24] .is_wysiwyg = "true";
-defparam \tone_gen|counter[24] .power_up = "low";
+defparam \tone_gen|counter[15] .is_wysiwyg = "true";
+defparam \tone_gen|counter[15] .power_up = "low";
 // synopsys translate_on
 
 cyclonev_lcell_comb \tone_gen|Add0~57 (
 // Equation(s):
-// \tone_gen|Add0~57_sumout  = SUM(( \tone_gen|counter [25] ) + ( GND ) + ( \tone_gen|Add0~62  ))
+// \tone_gen|Add0~57_sumout  = SUM(( \tone_gen|counter [16] ) + ( GND ) + ( \tone_gen|Add0~62  ))
+// \tone_gen|Add0~58  = CARRY(( \tone_gen|counter [16] ) + ( GND ) + ( \tone_gen|Add0~62  ))
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(!\tone_gen|counter [25]),
+	.datad(!\tone_gen|counter [16]),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -1198,7 +658,7 @@ cyclonev_lcell_comb \tone_gen|Add0~57 (
 	.sharein(gnd),
 	.combout(),
 	.sumout(\tone_gen|Add0~57_sumout ),
-	.cout(),
+	.cout(\tone_gen|Add0~58 ),
 	.shareout());
 // synopsys translate_off
 defparam \tone_gen|Add0~57 .extended_lut = "off";
@@ -1206,34 +666,202 @@ defparam \tone_gen|Add0~57 .lut_mask = 64'h0000FFFF000000FF;
 defparam \tone_gen|Add0~57 .shared_arith = "off";
 // synopsys translate_on
 
-dffeas \tone_gen|counter[25] (
+dffeas \tone_gen|counter[16] (
 	.clk(\clk~input_o ),
 	.d(\tone_gen|Add0~57_sumout ),
 	.asdata(vcc),
 	.clrn(!\rst~input_o ),
 	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
+	.sclr(\tone_gen|LessThan0~6_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\tone_gen|counter [25]),
+	.q(\tone_gen|counter [16]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \tone_gen|counter[25] .is_wysiwyg = "true";
-defparam \tone_gen|counter[25] .power_up = "low";
+defparam \tone_gen|counter[16] .is_wysiwyg = "true";
+defparam \tone_gen|counter[16] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~69 (
+// Equation(s):
+// \tone_gen|Add0~69_sumout  = SUM(( \tone_gen|counter [17] ) + ( GND ) + ( \tone_gen|Add0~58  ))
+// \tone_gen|Add0~70  = CARRY(( \tone_gen|counter [17] ) + ( GND ) + ( \tone_gen|Add0~58  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [17]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~58 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~69_sumout ),
+	.cout(\tone_gen|Add0~70 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~69 .extended_lut = "off";
+defparam \tone_gen|Add0~69 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~69 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[17] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~69_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [17]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[17] .is_wysiwyg = "true";
+defparam \tone_gen|counter[17] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~53 (
+// Equation(s):
+// \tone_gen|Add0~53_sumout  = SUM(( \tone_gen|counter [18] ) + ( GND ) + ( \tone_gen|Add0~70  ))
+// \tone_gen|Add0~54  = CARRY(( \tone_gen|counter [18] ) + ( GND ) + ( \tone_gen|Add0~70  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [18]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~70 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~53_sumout ),
+	.cout(\tone_gen|Add0~54 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~53 .extended_lut = "off";
+defparam \tone_gen|Add0~53 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~53 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[18] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~53_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [18]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[18] .is_wysiwyg = "true";
+defparam \tone_gen|counter[18] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~49 (
+// Equation(s):
+// \tone_gen|Add0~49_sumout  = SUM(( \tone_gen|counter [19] ) + ( GND ) + ( \tone_gen|Add0~54  ))
+// \tone_gen|Add0~50  = CARRY(( \tone_gen|counter [19] ) + ( GND ) + ( \tone_gen|Add0~54  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [19]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~54 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~49_sumout ),
+	.cout(\tone_gen|Add0~50 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~49 .extended_lut = "off";
+defparam \tone_gen|Add0~49 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~49 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[19] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~49_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [19]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[19] .is_wysiwyg = "true";
+defparam \tone_gen|counter[19] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~45 (
+// Equation(s):
+// \tone_gen|Add0~45_sumout  = SUM(( \tone_gen|counter [20] ) + ( GND ) + ( \tone_gen|Add0~50  ))
+// \tone_gen|Add0~46  = CARRY(( \tone_gen|counter [20] ) + ( GND ) + ( \tone_gen|Add0~50  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [20]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~50 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~45_sumout ),
+	.cout(\tone_gen|Add0~46 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~45 .extended_lut = "off";
+defparam \tone_gen|Add0~45 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~45 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[20] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~45_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [20]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[20] .is_wysiwyg = "true";
+defparam \tone_gen|counter[20] .power_up = "low";
 // synopsys translate_on
 
 cyclonev_lcell_comb \tone_gen|LessThan0~2 (
 // Equation(s):
-// \tone_gen|LessThan0~2_combout  = ( !\tone_gen|counter [21] & ( !\tone_gen|counter [20] & ( (!\tone_gen|counter [25] & (!\tone_gen|counter [24] & (!\tone_gen|counter [23] & !\tone_gen|counter [22]))) ) ) )
+// \tone_gen|LessThan0~2_combout  = ( !\tone_gen|counter [15] & ( !\tone_gen|counter [14] & ( (!\tone_gen|counter [20] & (!\tone_gen|counter [19] & (!\tone_gen|counter [18] & !\tone_gen|counter [16]))) ) ) )
 
-	.dataa(!\tone_gen|counter [25]),
-	.datab(!\tone_gen|counter [24]),
-	.datac(!\tone_gen|counter [23]),
-	.datad(!\tone_gen|counter [22]),
-	.datae(!\tone_gen|counter [21]),
-	.dataf(!\tone_gen|counter [20]),
+	.dataa(!\tone_gen|counter [20]),
+	.datab(!\tone_gen|counter [19]),
+	.datac(!\tone_gen|counter [18]),
+	.datad(!\tone_gen|counter [16]),
+	.datae(!\tone_gen|counter [15]),
+	.dataf(!\tone_gen|counter [14]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1247,16 +875,477 @@ defparam \tone_gen|LessThan0~2 .lut_mask = 64'h8000000000000000;
 defparam \tone_gen|LessThan0~2 .shared_arith = "off";
 // synopsys translate_on
 
+cyclonev_lcell_comb \tone_gen|Add0~113 (
+// Equation(s):
+// \tone_gen|Add0~113_sumout  = SUM(( \tone_gen|counter [21] ) + ( GND ) + ( \tone_gen|Add0~46  ))
+// \tone_gen|Add0~114  = CARRY(( \tone_gen|counter [21] ) + ( GND ) + ( \tone_gen|Add0~46  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [21]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~46 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~113_sumout ),
+	.cout(\tone_gen|Add0~114 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~113 .extended_lut = "off";
+defparam \tone_gen|Add0~113 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~113 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[21] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~113_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [21]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[21] .is_wysiwyg = "true";
+defparam \tone_gen|counter[21] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~109 (
+// Equation(s):
+// \tone_gen|Add0~109_sumout  = SUM(( \tone_gen|counter [22] ) + ( GND ) + ( \tone_gen|Add0~114  ))
+// \tone_gen|Add0~110  = CARRY(( \tone_gen|counter [22] ) + ( GND ) + ( \tone_gen|Add0~114  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [22]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~114 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~109_sumout ),
+	.cout(\tone_gen|Add0~110 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~109 .extended_lut = "off";
+defparam \tone_gen|Add0~109 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~109 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[22] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~109_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [22]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[22] .is_wysiwyg = "true";
+defparam \tone_gen|counter[22] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~105 (
+// Equation(s):
+// \tone_gen|Add0~105_sumout  = SUM(( \tone_gen|counter [23] ) + ( GND ) + ( \tone_gen|Add0~110  ))
+// \tone_gen|Add0~106  = CARRY(( \tone_gen|counter [23] ) + ( GND ) + ( \tone_gen|Add0~110  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [23]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~110 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~105_sumout ),
+	.cout(\tone_gen|Add0~106 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~105 .extended_lut = "off";
+defparam \tone_gen|Add0~105 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~105 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[23] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~105_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [23]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[23] .is_wysiwyg = "true";
+defparam \tone_gen|counter[23] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~101 (
+// Equation(s):
+// \tone_gen|Add0~101_sumout  = SUM(( \tone_gen|counter [24] ) + ( GND ) + ( \tone_gen|Add0~106  ))
+// \tone_gen|Add0~102  = CARRY(( \tone_gen|counter [24] ) + ( GND ) + ( \tone_gen|Add0~106  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [24]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~106 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~101_sumout ),
+	.cout(\tone_gen|Add0~102 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~101 .extended_lut = "off";
+defparam \tone_gen|Add0~101 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~101 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[24] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~101_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [24]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[24] .is_wysiwyg = "true";
+defparam \tone_gen|counter[24] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~97 (
+// Equation(s):
+// \tone_gen|Add0~97_sumout  = SUM(( \tone_gen|counter [25] ) + ( GND ) + ( \tone_gen|Add0~102  ))
+// \tone_gen|Add0~98  = CARRY(( \tone_gen|counter [25] ) + ( GND ) + ( \tone_gen|Add0~102  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [25]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~102 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~97_sumout ),
+	.cout(\tone_gen|Add0~98 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~97 .extended_lut = "off";
+defparam \tone_gen|Add0~97 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~97 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[25] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~97_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [25]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[25] .is_wysiwyg = "true";
+defparam \tone_gen|counter[25] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~93 (
+// Equation(s):
+// \tone_gen|Add0~93_sumout  = SUM(( \tone_gen|counter [26] ) + ( GND ) + ( \tone_gen|Add0~98  ))
+// \tone_gen|Add0~94  = CARRY(( \tone_gen|counter [26] ) + ( GND ) + ( \tone_gen|Add0~98  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [26]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~98 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~93_sumout ),
+	.cout(\tone_gen|Add0~94 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~93 .extended_lut = "off";
+defparam \tone_gen|Add0~93 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~93 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[26] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~93_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [26]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[26] .is_wysiwyg = "true";
+defparam \tone_gen|counter[26] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~89 (
+// Equation(s):
+// \tone_gen|Add0~89_sumout  = SUM(( \tone_gen|counter [27] ) + ( GND ) + ( \tone_gen|Add0~94  ))
+// \tone_gen|Add0~90  = CARRY(( \tone_gen|counter [27] ) + ( GND ) + ( \tone_gen|Add0~94  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [27]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~94 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~89_sumout ),
+	.cout(\tone_gen|Add0~90 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~89 .extended_lut = "off";
+defparam \tone_gen|Add0~89 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~89 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[27] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~89_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [27]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[27] .is_wysiwyg = "true";
+defparam \tone_gen|counter[27] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~85 (
+// Equation(s):
+// \tone_gen|Add0~85_sumout  = SUM(( \tone_gen|counter [28] ) + ( GND ) + ( \tone_gen|Add0~90  ))
+// \tone_gen|Add0~86  = CARRY(( \tone_gen|counter [28] ) + ( GND ) + ( \tone_gen|Add0~90  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [28]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~90 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~85_sumout ),
+	.cout(\tone_gen|Add0~86 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~85 .extended_lut = "off";
+defparam \tone_gen|Add0~85 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~85 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[28] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~85_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [28]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[28] .is_wysiwyg = "true";
+defparam \tone_gen|counter[28] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~81 (
+// Equation(s):
+// \tone_gen|Add0~81_sumout  = SUM(( \tone_gen|counter [29] ) + ( GND ) + ( \tone_gen|Add0~86  ))
+// \tone_gen|Add0~82  = CARRY(( \tone_gen|counter [29] ) + ( GND ) + ( \tone_gen|Add0~86  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [29]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~86 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~81_sumout ),
+	.cout(\tone_gen|Add0~82 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~81 .extended_lut = "off";
+defparam \tone_gen|Add0~81 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~81 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[29] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~81_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [29]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[29] .is_wysiwyg = "true";
+defparam \tone_gen|counter[29] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~77 (
+// Equation(s):
+// \tone_gen|Add0~77_sumout  = SUM(( \tone_gen|counter [30] ) + ( GND ) + ( \tone_gen|Add0~82  ))
+// \tone_gen|Add0~78  = CARRY(( \tone_gen|counter [30] ) + ( GND ) + ( \tone_gen|Add0~82  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [30]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~82 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~77_sumout ),
+	.cout(\tone_gen|Add0~78 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~77 .extended_lut = "off";
+defparam \tone_gen|Add0~77 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~77 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[30] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~77_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [30]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[30] .is_wysiwyg = "true";
+defparam \tone_gen|counter[30] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~73 (
+// Equation(s):
+// \tone_gen|Add0~73_sumout  = SUM(( \tone_gen|counter [31] ) + ( GND ) + ( \tone_gen|Add0~78  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [31]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~78 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~73_sumout ),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~73 .extended_lut = "off";
+defparam \tone_gen|Add0~73 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~73 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[31] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~73_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [31]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[31] .is_wysiwyg = "true";
+defparam \tone_gen|counter[31] .power_up = "low";
+// synopsys translate_on
+
 cyclonev_lcell_comb \tone_gen|LessThan0~3 (
 // Equation(s):
-// \tone_gen|LessThan0~3_combout  = ( !\tone_gen|counter [15] & ( !\tone_gen|counter [14] & ( (!\tone_gen|counter [19] & (!\tone_gen|counter [18] & (!\tone_gen|counter [17] & !\tone_gen|counter [16]))) ) ) )
+// \tone_gen|LessThan0~3_combout  = ( !\tone_gen|counter [28] & ( !\tone_gen|counter [27] & ( (!\tone_gen|counter [17] & (!\tone_gen|counter [31] & (!\tone_gen|counter [30] & !\tone_gen|counter [29]))) ) ) )
 
-	.dataa(!\tone_gen|counter [19]),
-	.datab(!\tone_gen|counter [18]),
-	.datac(!\tone_gen|counter [17]),
-	.datad(!\tone_gen|counter [16]),
-	.datae(!\tone_gen|counter [15]),
-	.dataf(!\tone_gen|counter [14]),
+	.dataa(!\tone_gen|counter [17]),
+	.datab(!\tone_gen|counter [31]),
+	.datac(!\tone_gen|counter [30]),
+	.datad(!\tone_gen|counter [29]),
+	.datae(!\tone_gen|counter [28]),
+	.dataf(!\tone_gen|counter [27]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1270,49 +1359,16 @@ defparam \tone_gen|LessThan0~3 .lut_mask = 64'h8000000000000000;
 defparam \tone_gen|LessThan0~3 .shared_arith = "off";
 // synopsys translate_on
 
-cyclonev_io_ibuf \switches[3]~input (
-	.i(switches[3]),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\switches[3]~input_o ));
-// synopsys translate_off
-defparam \switches[3]~input .bus_hold = "false";
-defparam \switches[3]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cyclonev_io_ibuf \switches[1]~input (
-	.i(switches[1]),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\switches[1]~input_o ));
-// synopsys translate_off
-defparam \switches[1]~input .bus_hold = "false";
-defparam \switches[1]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-cyclonev_io_ibuf \switches[2]~input (
-	.i(switches[2]),
-	.ibar(gnd),
-	.dynamicterminationcontrol(gnd),
-	.o(\switches[2]~input_o ));
-// synopsys translate_off
-defparam \switches[2]~input .bus_hold = "false";
-defparam \switches[2]~input .simulate_z_as = "z";
-// synopsys translate_on
-
 cyclonev_lcell_comb \tone_gen|LessThan0~4 (
 // Equation(s):
-// \tone_gen|LessThan0~4_combout  = ( \switches[2]~input_o  & ( \tone_gen|counter [0] & ( (!\tone_gen|counter [2] & ((!\tone_gen|counter [1]) # (\switches[3]~input_o ))) # (\tone_gen|counter [2] & (!\tone_gen|counter [1] & \switches[3]~input_o )) ) ) ) # ( 
-// !\switches[2]~input_o  & ( \tone_gen|counter [0] & ( (!\tone_gen|counter [2] & \switches[3]~input_o ) ) ) ) # ( \switches[2]~input_o  & ( !\tone_gen|counter [0] & ( ((!\tone_gen|counter [2] & ((!\tone_gen|counter [1]) # (\switches[1]~input_o )))) # 
-// (\switches[3]~input_o ) ) ) ) # ( !\switches[2]~input_o  & ( !\tone_gen|counter [0] & ( (!\tone_gen|counter [2] & (((!\tone_gen|counter [1] & \switches[1]~input_o )) # (\switches[3]~input_o ))) # (\tone_gen|counter [2] & (!\tone_gen|counter [1] & 
-// (\switches[3]~input_o  & \switches[1]~input_o ))) ) ) )
+// \tone_gen|LessThan0~4_combout  = ( !\tone_gen|counter [22] & ( !\tone_gen|counter [21] & ( (!\tone_gen|counter [26] & (!\tone_gen|counter [25] & (!\tone_gen|counter [24] & !\tone_gen|counter [23]))) ) ) )
 
-	.dataa(!\tone_gen|counter [2]),
-	.datab(!\tone_gen|counter [1]),
-	.datac(!\switches[3]~input_o ),
-	.datad(!\switches[1]~input_o ),
-	.datae(!\switches[2]~input_o ),
-	.dataf(!\tone_gen|counter [0]),
+	.dataa(!\tone_gen|counter [26]),
+	.datab(!\tone_gen|counter [25]),
+	.datac(!\tone_gen|counter [24]),
+	.datad(!\tone_gen|counter [23]),
+	.datae(!\tone_gen|counter [22]),
+	.dataf(!\tone_gen|counter [21]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1322,41 +1378,41 @@ cyclonev_lcell_comb \tone_gen|LessThan0~4 (
 	.shareout());
 // synopsys translate_off
 defparam \tone_gen|LessThan0~4 .extended_lut = "off";
-defparam \tone_gen|LessThan0~4 .lut_mask = 64'h0A8E8FAF0A0A8E8E;
+defparam \tone_gen|LessThan0~4 .lut_mask = 64'h8000000000000000;
 defparam \tone_gen|LessThan0~4 .shared_arith = "off";
 // synopsys translate_on
 
-cyclonev_lcell_comb \tone_gen|LessThan0~5 (
+cyclonev_lcell_comb \tone_gen|LessThan0~6 (
 // Equation(s):
-// \tone_gen|LessThan0~5_combout  = ( \tone_gen|LessThan0~4_combout  & ( (!\tone_gen|LessThan0~0_combout ) # ((!\tone_gen|LessThan0~1_combout ) # ((!\tone_gen|LessThan0~2_combout ) # (!\tone_gen|LessThan0~3_combout ))) ) ) # ( !\tone_gen|LessThan0~4_combout  
-// )
+// \tone_gen|LessThan0~6_combout  = ( \tone_gen|LessThan0~3_combout  & ( \tone_gen|LessThan0~4_combout  & ( (!\tone_gen|LessThan0~5_combout ) # ((!\tone_gen|LessThan0~0_combout ) # ((!\tone_gen|LessThan0~1_combout ) # (!\tone_gen|LessThan0~2_combout ))) ) ) 
+// ) # ( !\tone_gen|LessThan0~3_combout  & ( \tone_gen|LessThan0~4_combout  ) ) # ( \tone_gen|LessThan0~3_combout  & ( !\tone_gen|LessThan0~4_combout  ) ) # ( !\tone_gen|LessThan0~3_combout  & ( !\tone_gen|LessThan0~4_combout  ) )
 
-	.dataa(!\tone_gen|LessThan0~0_combout ),
-	.datab(!\tone_gen|LessThan0~1_combout ),
-	.datac(!\tone_gen|LessThan0~2_combout ),
-	.datad(!\tone_gen|LessThan0~3_combout ),
-	.datae(!\tone_gen|LessThan0~4_combout ),
-	.dataf(gnd),
+	.dataa(!\tone_gen|LessThan0~5_combout ),
+	.datab(!\tone_gen|LessThan0~0_combout ),
+	.datac(!\tone_gen|LessThan0~1_combout ),
+	.datad(!\tone_gen|LessThan0~2_combout ),
+	.datae(!\tone_gen|LessThan0~3_combout ),
+	.dataf(!\tone_gen|LessThan0~4_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\tone_gen|LessThan0~5_combout ),
+	.combout(\tone_gen|LessThan0~6_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \tone_gen|LessThan0~5 .extended_lut = "off";
-defparam \tone_gen|LessThan0~5 .lut_mask = 64'hFFFFFFFEFFFFFFFE;
-defparam \tone_gen|LessThan0~5 .shared_arith = "off";
+defparam \tone_gen|LessThan0~6 .extended_lut = "off";
+defparam \tone_gen|LessThan0~6 .lut_mask = 64'hFFFFFFFFFFFFFFFE;
+defparam \tone_gen|LessThan0~6 .shared_arith = "off";
 // synopsys translate_on
 
 dffeas \tone_gen|counter[0] (
 	.clk(\clk~input_o ),
-	.d(\tone_gen|Add0~9_sumout ),
+	.d(\tone_gen|Add0~125_sumout ),
 	.asdata(vcc),
 	.clrn(!\rst~input_o ),
 	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
+	.sclr(\tone_gen|LessThan0~6_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
@@ -1368,15 +1424,225 @@ defparam \tone_gen|counter[0] .is_wysiwyg = "true";
 defparam \tone_gen|counter[0] .power_up = "low";
 // synopsys translate_on
 
-cyclonev_lcell_comb \tone_gen|Add0~5 (
+cyclonev_lcell_comb \tone_gen|Add0~121 (
 // Equation(s):
-// \tone_gen|Add0~5_sumout  = SUM(( \tone_gen|counter [1] ) + ( GND ) + ( \tone_gen|Add0~10  ))
-// \tone_gen|Add0~6  = CARRY(( \tone_gen|counter [1] ) + ( GND ) + ( \tone_gen|Add0~10  ))
+// \tone_gen|Add0~121_sumout  = SUM(( \tone_gen|counter [1] ) + ( GND ) + ( \tone_gen|Add0~126  ))
+// \tone_gen|Add0~122  = CARRY(( \tone_gen|counter [1] ) + ( GND ) + ( \tone_gen|Add0~126  ))
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(gnd),
 	.datad(!\tone_gen|counter [1]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~126 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~121_sumout ),
+	.cout(\tone_gen|Add0~122 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~121 .extended_lut = "off";
+defparam \tone_gen|Add0~121 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~121 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[1] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~121_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[1] .is_wysiwyg = "true";
+defparam \tone_gen|counter[1] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~117 (
+// Equation(s):
+// \tone_gen|Add0~117_sumout  = SUM(( \tone_gen|counter [2] ) + ( GND ) + ( \tone_gen|Add0~122  ))
+// \tone_gen|Add0~118  = CARRY(( \tone_gen|counter [2] ) + ( GND ) + ( \tone_gen|Add0~122  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [2]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~122 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~117_sumout ),
+	.cout(\tone_gen|Add0~118 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~117 .extended_lut = "off";
+defparam \tone_gen|Add0~117 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~117 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[2] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~117_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[2] .is_wysiwyg = "true";
+defparam \tone_gen|counter[2] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~17 (
+// Equation(s):
+// \tone_gen|Add0~17_sumout  = SUM(( \tone_gen|counter [3] ) + ( GND ) + ( \tone_gen|Add0~118  ))
+// \tone_gen|Add0~18  = CARRY(( \tone_gen|counter [3] ) + ( GND ) + ( \tone_gen|Add0~118  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [3]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~118 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~17_sumout ),
+	.cout(\tone_gen|Add0~18 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~17 .extended_lut = "off";
+defparam \tone_gen|Add0~17 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~17 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[3] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~17_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[3] .is_wysiwyg = "true";
+defparam \tone_gen|counter[3] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~13 (
+// Equation(s):
+// \tone_gen|Add0~13_sumout  = SUM(( \tone_gen|counter [4] ) + ( GND ) + ( \tone_gen|Add0~18  ))
+// \tone_gen|Add0~14  = CARRY(( \tone_gen|counter [4] ) + ( GND ) + ( \tone_gen|Add0~18  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [4]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~18 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~13_sumout ),
+	.cout(\tone_gen|Add0~14 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~13 .extended_lut = "off";
+defparam \tone_gen|Add0~13 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~13 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[4] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~13_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[4] .is_wysiwyg = "true";
+defparam \tone_gen|counter[4] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~9 (
+// Equation(s):
+// \tone_gen|Add0~9_sumout  = SUM(( \tone_gen|counter [5] ) + ( GND ) + ( \tone_gen|Add0~14  ))
+// \tone_gen|Add0~10  = CARRY(( \tone_gen|counter [5] ) + ( GND ) + ( \tone_gen|Add0~14  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [5]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\tone_gen|Add0~14 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\tone_gen|Add0~9_sumout ),
+	.cout(\tone_gen|Add0~10 ),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|Add0~9 .extended_lut = "off";
+defparam \tone_gen|Add0~9 .lut_mask = 64'h0000FFFF000000FF;
+defparam \tone_gen|Add0~9 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \tone_gen|counter[5] (
+	.clk(\clk~input_o ),
+	.d(\tone_gen|Add0~9_sumout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(\tone_gen|LessThan0~6_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\tone_gen|counter [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \tone_gen|counter[5] .is_wysiwyg = "true";
+defparam \tone_gen|counter[5] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|Add0~5 (
+// Equation(s):
+// \tone_gen|Add0~5_sumout  = SUM(( \tone_gen|counter [6] ) + ( GND ) + ( \tone_gen|Add0~10  ))
+// \tone_gen|Add0~6  = CARRY(( \tone_gen|counter [6] ) + ( GND ) + ( \tone_gen|Add0~10  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\tone_gen|counter [6]),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
@@ -1392,53 +1658,78 @@ defparam \tone_gen|Add0~5 .lut_mask = 64'h0000FFFF000000FF;
 defparam \tone_gen|Add0~5 .shared_arith = "off";
 // synopsys translate_on
 
-dffeas \tone_gen|counter[1] (
+dffeas \tone_gen|counter[6] (
 	.clk(\clk~input_o ),
 	.d(\tone_gen|Add0~5_sumout ),
 	.asdata(vcc),
 	.clrn(!\rst~input_o ),
 	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
+	.sclr(\tone_gen|LessThan0~6_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\tone_gen|counter [1]),
+	.q(\tone_gen|counter [6]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \tone_gen|counter[1] .is_wysiwyg = "true";
-defparam \tone_gen|counter[1] .power_up = "low";
+defparam \tone_gen|counter[6] .is_wysiwyg = "true";
+defparam \tone_gen|counter[6] .power_up = "low";
 // synopsys translate_on
 
-dffeas \tone_gen|counter[2] (
+dffeas \tone_gen|counter[7] (
 	.clk(\clk~input_o ),
 	.d(\tone_gen|Add0~1_sumout ),
 	.asdata(vcc),
 	.clrn(!\rst~input_o ),
 	.aload(gnd),
-	.sclr(\tone_gen|LessThan0~5_combout ),
+	.sclr(\tone_gen|LessThan0~6_combout ),
 	.sload(gnd),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\tone_gen|counter [2]),
+	.q(\tone_gen|counter [7]),
 	.prn(vcc));
 // synopsys translate_off
-defparam \tone_gen|counter[2] .is_wysiwyg = "true";
-defparam \tone_gen|counter[2] .power_up = "low";
+defparam \tone_gen|counter[7] .is_wysiwyg = "true";
+defparam \tone_gen|counter[7] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \tone_gen|LessThan0~0 (
+// Equation(s):
+// \tone_gen|LessThan0~0_combout  = ( !\tone_gen|counter [3] & ( (!\tone_gen|counter [7] & (!\tone_gen|counter [6] & (!\tone_gen|counter [5] & !\tone_gen|counter [4]))) ) )
+
+	.dataa(!\tone_gen|counter [7]),
+	.datab(!\tone_gen|counter [6]),
+	.datac(!\tone_gen|counter [5]),
+	.datad(!\tone_gen|counter [4]),
+	.datae(!\tone_gen|counter [3]),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\tone_gen|LessThan0~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \tone_gen|LessThan0~0 .extended_lut = "off";
+defparam \tone_gen|LessThan0~0 .lut_mask = 64'h8000000080000000;
+defparam \tone_gen|LessThan0~0 .shared_arith = "off";
 // synopsys translate_on
 
 cyclonev_lcell_comb \tone_gen|LessThan1~0 (
 // Equation(s):
-// \tone_gen|LessThan1~0_combout  = ( \tone_gen|counter [0] & ( (!\tone_gen|counter [1] & (!\switches[3]~input_o  & ((!\switches[1]~input_o ) # (!\switches[2]~input_o )))) # (\tone_gen|counter [1] & ((!\switches[3]~input_o ) # ((!\switches[2]~input_o )))) ) 
-// ) # ( !\tone_gen|counter [0] & ( (!\tone_gen|counter [1] & (!\switches[3]~input_o  & (!\switches[1]~input_o  & !\switches[2]~input_o ))) # (\tone_gen|counter [1] & ((!\switches[3]~input_o ) # ((!\switches[1]~input_o  & !\switches[2]~input_o )))) ) )
+// \tone_gen|LessThan1~0_combout  = ( \switches[1]~input_o  & ( \tone_gen|counter [0] & ( (!\tone_gen|counter [2] & ((!\switches[3]~input_o  & (!\tone_gen|counter [1] & \switches[2]~input_o )) # (\switches[3]~input_o  & ((!\tone_gen|counter [1]) # 
+// (\switches[2]~input_o ))))) ) ) ) # ( !\switches[1]~input_o  & ( \tone_gen|counter [0] & ( (!\tone_gen|counter [2] & (\switches[3]~input_o  & !\tone_gen|counter [1])) ) ) ) # ( \switches[1]~input_o  & ( !\tone_gen|counter [0] & ( (!\tone_gen|counter [2] & 
+// ((!\tone_gen|counter [1]) # (\switches[3]~input_o ))) ) ) ) # ( !\switches[1]~input_o  & ( !\tone_gen|counter [0] & ( (!\tone_gen|counter [2] & ((!\switches[3]~input_o  & (!\tone_gen|counter [1] & \switches[2]~input_o )) # (\switches[3]~input_o  & 
+// ((!\tone_gen|counter [1]) # (\switches[2]~input_o ))))) ) ) )
 
-	.dataa(!\tone_gen|counter [1]),
+	.dataa(!\tone_gen|counter [2]),
 	.datab(!\switches[3]~input_o ),
-	.datac(!\switches[1]~input_o ),
+	.datac(!\tone_gen|counter [1]),
 	.datad(!\switches[2]~input_o ),
-	.datae(!\tone_gen|counter [0]),
-	.dataf(gnd),
+	.datae(!\switches[1]~input_o ),
+	.dataf(!\tone_gen|counter [0]),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1448,20 +1739,20 @@ cyclonev_lcell_comb \tone_gen|LessThan1~0 (
 	.shareout());
 // synopsys translate_off
 defparam \tone_gen|LessThan1~0 .extended_lut = "off";
-defparam \tone_gen|LessThan1~0 .lut_mask = 64'hD444DDC4D444DDC4;
+defparam \tone_gen|LessThan1~0 .lut_mask = 64'h20A2A2A2202020A2;
 defparam \tone_gen|LessThan1~0 .shared_arith = "off";
 // synopsys translate_on
 
 cyclonev_lcell_comb \tone_gen|LessThan1~1 (
 // Equation(s):
-// \tone_gen|LessThan1~1_combout  = ( \tone_gen|LessThan0~2_combout  & ( \tone_gen|LessThan0~3_combout  & ( (!\tone_gen|counter [2] & (!\tone_gen|LessThan1~0_combout  & (\tone_gen|LessThan0~0_combout  & \tone_gen|LessThan0~1_combout ))) ) ) )
+// \tone_gen|LessThan1~1_combout  = ( \tone_gen|LessThan0~4_combout  & ( \tone_gen|LessThan1~0_combout  & ( (\tone_gen|LessThan0~0_combout  & (\tone_gen|LessThan0~1_combout  & (\tone_gen|LessThan0~2_combout  & \tone_gen|LessThan0~3_combout ))) ) ) )
 
-	.dataa(!\tone_gen|counter [2]),
-	.datab(!\tone_gen|LessThan1~0_combout ),
-	.datac(!\tone_gen|LessThan0~0_combout ),
-	.datad(!\tone_gen|LessThan0~1_combout ),
-	.datae(!\tone_gen|LessThan0~2_combout ),
-	.dataf(!\tone_gen|LessThan0~3_combout ),
+	.dataa(!\tone_gen|LessThan0~0_combout ),
+	.datab(!\tone_gen|LessThan0~1_combout ),
+	.datac(!\tone_gen|LessThan0~2_combout ),
+	.datad(!\tone_gen|LessThan0~3_combout ),
+	.datae(!\tone_gen|LessThan0~4_combout ),
+	.dataf(!\tone_gen|LessThan1~0_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -1471,7 +1762,7 @@ cyclonev_lcell_comb \tone_gen|LessThan1~1 (
 	.shareout());
 // synopsys translate_off
 defparam \tone_gen|LessThan1~1 .extended_lut = "off";
-defparam \tone_gen|LessThan1~1 .lut_mask = 64'h0000000000000008;
+defparam \tone_gen|LessThan1~1 .lut_mask = 64'h0000000000000001;
 defparam \tone_gen|LessThan1~1 .shared_arith = "off";
 // synopsys translate_on
 

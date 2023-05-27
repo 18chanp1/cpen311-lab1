@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu May 25 22:05:06 2023
+Analysis & Synthesis Status : Successful - Fri May 26 21:13:19 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : tone_selector
 Top-level Entity Name : tone_selector
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 27
+Total registers : 33
 Total pins : 7
 Total virtual pins : 0
 Total block memory bits : 0

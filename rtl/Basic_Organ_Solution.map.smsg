@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at Basic_Organ_Solution.sv(265): always construct contains both blocking and non-blocking assignments File: E:/lab1/Basic_Organ_Solution.sv Line: 265
+Warning (10268): Verilog HDL information at led_flasher.sv(27): always construct contains both blocking and non-blocking assignments File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/led_flasher.sv Line: 27

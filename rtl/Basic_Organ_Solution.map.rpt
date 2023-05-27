@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Basic_Organ_Solution
-Thu May 25 21:30:25 2023
+Fri May 26 21:42:21 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -90,13 +90,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 25 21:30:25 2023       ;
+; Analysis & Synthesis Status     ; Successful - Fri May 26 21:42:21 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Basic_Organ_Solution                        ;
 ; Top-level Entity Name           ; Basic_Organ_Solution                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 5269                                        ;
+; Total registers                 ; 5294                                        ;
 ; Total pins                      ; 147                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 55,552                                      ;
@@ -298,16 +298,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------------------------+
 ; Resource                                    ; Usage                            ;
 +---------------------------------------------+----------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 3111                             ;
+; Estimate of Logic utilization (ALMs needed) ; 3125                             ;
 ;                                             ;                                  ;
-; Combinational ALUT usage for logic          ; 2039                             ;
+; Combinational ALUT usage for logic          ; 2071                             ;
 ;     -- 7 input functions                    ; 10                               ;
-;     -- 6 input functions                    ; 749                              ;
-;     -- 5 input functions                    ; 447                              ;
-;     -- 4 input functions                    ; 214                              ;
-;     -- <=3 input functions                  ; 619                              ;
+;     -- 6 input functions                    ; 746                              ;
+;     -- 5 input functions                    ; 450                              ;
+;     -- 4 input functions                    ; 222                              ;
+;     -- <=3 input functions                  ; 643                              ;
 ;                                             ;                                  ;
-; Dedicated logic registers                   ; 5269                             ;
+; Dedicated logic registers                   ; 5294                             ;
 ;                                             ;                                  ;
 ; I/O pins                                    ; 147                              ;
 ; Total MLAB memory bits                      ; 0                                ;
@@ -317,7 +317,7 @@ refer to the applicable agreement for further details.
 ;                                             ;                                  ;
 ; Maximum fan-out node                        ; freq_divider:Gen_some_clk|outclk ;
 ; Maximum fan-out                             ; 2711                             ;
-; Total fan-out                               ; 31046                            ;
+; Total fan-out                               ; 31218                            ;
 ; Average fan-out                             ; 3.88                             ;
 +---------------------------------------------+----------------------------------+
 
@@ -327,7 +327,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                              ; Entity Name                                               ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+--------------+
-; |Basic_Organ_Solution                                                                                                                   ; 2039 (57)           ; 5269 (50)                 ; 55552             ; 0          ; 147  ; 0            ; |Basic_Organ_Solution                                                                                                                                                                                                                                                                                                                                            ; Basic_Organ_Solution                                      ; work         ;
+; |Basic_Organ_Solution                                                                                                                   ; 2071 (57)           ; 5294 (50)                 ; 55552             ; 0          ; 147  ; 0            ; |Basic_Organ_Solution                                                                                                                                                                                                                                                                                                                                            ; Basic_Organ_Solution                                      ; work         ;
 ;    |LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|                                                                             ; 776 (0)             ; 1020 (0)                  ; 18432             ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope                                                                                                                                                                                                                                                                                     ; LCD_Scope_Encapsulated_pacoblaze_wrapper                  ; work         ;
 ;       |LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst|                                                          ; 776 (0)             ; 1020 (0)                  ; 18432             ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst                                                                                                                                                                                                              ; LCD_Scope_Encapsulated_pacoblaze                          ; work         ;
 ;          |LCD_SCOPE_Verilog_pacoblaze:Internal_LCD_Scope|                                                                               ; 776 (115)           ; 1020 (38)                 ; 18432             ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst|LCD_SCOPE_Verilog_pacoblaze:Internal_LCD_Scope                                                                                                                                                               ; LCD_SCOPE_Verilog_pacoblaze                               ; work         ;
@@ -360,11 +360,11 @@ refer to the applicable agreement for further details.
 ;    |doublesync:key1_doublsync|                                                                                                          ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|doublesync:key1_doublsync                                                                                                                                                                                                                                                                                                                  ; doublesync                                                ; work         ;
 ;    |doublesync:key2_doublsync|                                                                                                          ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|doublesync:key2_doublsync                                                                                                                                                                                                                                                                                                                  ; doublesync                                                ; work         ;
 ;    |doublesync:user_scope_enable_sync1|                                                                                                 ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|doublesync:user_scope_enable_sync1                                                                                                                                                                                                                                                                                                         ; doublesync                                                ; work         ;
-;    |freq_divider:Gen_1KHZ_clk|                                                                                                          ; 24 (24)             ; 17 (17)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|freq_divider:Gen_1KHZ_clk                                                                                                                                                                                                                                                                                                                  ; freq_divider                                              ; work         ;
-;    |freq_divider:Gen_2HZ_clk|                                                                                                           ; 36 (36)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|freq_divider:Gen_2HZ_clk                                                                                                                                                                                                                                                                                                                   ; freq_divider                                              ; work         ;
-;    |freq_divider:Gen_some_clk|                                                                                                          ; 86 (86)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|freq_divider:Gen_some_clk                                                                                                                                                                                                                                                                                                                  ; freq_divider                                              ; work         ;
-;    |led_flasher:de1_led_flasher|                                                                                                        ; 48 (10)             ; 36 (9)                    ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|led_flasher:de1_led_flasher                                                                                                                                                                                                                                                                                                                ; led_flasher                                               ; work         ;
-;       |freq_divider:led_flash_divider|                                                                                                  ; 38 (38)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|led_flasher:de1_led_flasher|freq_divider:led_flash_divider                                                                                                                                                                                                                                                                                 ; freq_divider                                              ; work         ;
+;    |freq_divider:Gen_1KHZ_clk|                                                                                                          ; 45 (45)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|freq_divider:Gen_1KHZ_clk                                                                                                                                                                                                                                                                                                                  ; freq_divider                                              ; work         ;
+;    |freq_divider:Gen_2HZ_clk|                                                                                                           ; 46 (46)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|freq_divider:Gen_2HZ_clk                                                                                                                                                                                                                                                                                                                   ; freq_divider                                              ; work         ;
+;    |freq_divider:Gen_some_clk|                                                                                                          ; 65 (65)             ; 17 (17)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|freq_divider:Gen_some_clk                                                                                                                                                                                                                                                                                                                  ; freq_divider                                              ; work         ;
+;    |led_flasher:de1_led_flasher|                                                                                                        ; 55 (10)             ; 42 (9)                    ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|led_flasher:de1_led_flasher                                                                                                                                                                                                                                                                                                                ; led_flasher                                               ; work         ;
+;       |freq_divider:led_flash_divider|                                                                                                  ; 45 (45)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|led_flasher:de1_led_flasher|freq_divider:led_flash_divider                                                                                                                                                                                                                                                                                 ; freq_divider                                              ; work         ;
 ;    |scope_capture:LCD_scope_channelA|                                                                                                   ; 0 (0)               ; 18 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|scope_capture:LCD_scope_channelA                                                                                                                                                                                                                                                                                                           ; scope_capture                                             ; work         ;
 ;       |doublesync:sync_enable|                                                                                                          ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|scope_capture:LCD_scope_channelA|doublesync:sync_enable                                                                                                                                                                                                                                                                                    ; doublesync                                                ; work         ;
 ;    |scope_capture:LCD_scope_channelB|                                                                                                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|scope_capture:LCD_scope_channelB                                                                                                                                                                                                                                                                                                           ; scope_capture                                             ; work         ;
@@ -702,8 +702,8 @@ refer to the applicable agreement for further details.
 ;       |async_trap_and_reset:make_song_restart_signal|                                                                                   ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|speed_reg_control:speed_reg_control_inst|async_trap_and_reset:make_song_restart_signal                                                                                                                                                                                                                                                     ; async_trap_and_reset                                      ; work         ;
 ;    |to_slow_clk_interface:interface_actual_audio_data_left|                                                                             ; 0 (0)               ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|to_slow_clk_interface:interface_actual_audio_data_left                                                                                                                                                                                                                                                                                     ; to_slow_clk_interface                                     ; work         ;
 ;    |to_slow_clk_interface:interface_actual_audio_data_right|                                                                            ; 0 (0)               ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|to_slow_clk_interface:interface_actual_audio_data_right                                                                                                                                                                                                                                                                                    ; to_slow_clk_interface                                     ; work         ;
-;    |tone_selector:tone_organ|                                                                                                           ; 88 (3)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|tone_selector:tone_organ                                                                                                                                                                                                                                                                                                                   ; tone_selector                                             ; work         ;
-;       |freq_divider:tone_gen|                                                                                                           ; 85 (85)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|tone_selector:tone_organ|freq_divider:tone_gen                                                                                                                                                                                                                                                                                             ; freq_divider                                              ; work         ;
+;    |tone_selector:tone_organ|                                                                                                           ; 103 (3)             ; 33 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|tone_selector:tone_organ                                                                                                                                                                                                                                                                                                                   ; tone_selector                                             ; work         ;
+;       |freq_divider:tone_gen|                                                                                                           ; 100 (100)           ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |Basic_Organ_Solution|tone_selector:tone_organ|freq_divider:tone_gen                                                                                                                                                                                                                                                                                             ; freq_divider                                              ; work         ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -748,10 +748,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5269  ;
-; Number of registers using Synchronous Clear  ; 266   ;
+; Total registers                              ; 5294  ;
+; Number of registers using Synchronous Clear  ; 291   ;
 ; Number of registers using Synchronous Load   ; 1458  ;
-; Number of registers using Asynchronous Clear ; 1391  ;
+; Number of registers using Asynchronous Clear ; 1403  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1178  ;
 ; Number of registers using Preset             ; 0     ;
@@ -763,7 +763,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                                                                                                                                                                                                                                                               ; Fan out ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; led_flasher:de1_led_flasher|outLED[1]                                                                                                                                                                                                                                                                                           ; 4       ;
+; led_flasher:de1_led_flasher|outLED[3]                                                                                                                                                                                                                                                                                           ; 3       ;
 ; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[1] ; 3       ;
 ; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[2] ; 2       ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[1]                                                                                                                                                   ; 1       ;
@@ -2505,28 +2505,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-----------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: tone_selector:tone_organ ;
-+----------------+----------------------------+-------------------------+
-; Parameter Name ; Value                      ; Type                    ;
-+----------------+----------------------------+-------------------------+
-; DO             ; 00000000010111010101110010 ; Unsigned Binary         ;
-; RE             ; 00000000010100110010111011 ; Unsigned Binary         ;
-; MI             ; 00000000010010100001100001 ; Unsigned Binary         ;
-; FA             ; 00000000010001011111010001 ; Unsigned Binary         ;
-; SO             ; 00000000001111100101110001 ; Unsigned Binary         ;
-; LA             ; 00000000001101110111110010 ; Unsigned Binary         ;
-; TI             ; 00000000001100010111100011 ; Unsigned Binary         ;
-; DO2            ; 00000000001011101010111001 ; Unsigned Binary         ;
-+----------------+----------------------------+-------------------------+
++----------------+----------------------------------+-------------------+
+; Parameter Name ; Value                            ; Type              ;
++----------------+----------------------------------+-------------------+
+; DO             ; 00000000000000010111010101110010 ; Unsigned Binary   ;
+; RE             ; 00000000000000010100110010111011 ; Unsigned Binary   ;
+; MI             ; 00000000000000010010100001100001 ; Unsigned Binary   ;
+; FA             ; 00000000000000010001011111010001 ; Unsigned Binary   ;
+; SO             ; 00000000000000001111100101110001 ; Unsigned Binary   ;
+; LA             ; 00000000000000001101110111110010 ; Unsigned Binary   ;
+; TI             ; 00000000000000001100010111100011 ; Unsigned Binary   ;
+; DO2            ; 00000000000000001011101010111001 ; Unsigned Binary   ;
++----------------+----------------------------------+-------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: tone_selector:tone_organ|freq_divider:tone_gen ;
-+----------------+----------+-----------------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                            ;
-+----------------+----------+-----------------------------------------------------------------+
-; MAX_DIVIDER    ; 50000000 ; Signed Integer                                                  ;
-+----------------+----------+-----------------------------------------------------------------+
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; DIV_BUS        ; 32    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2536,28 +2536,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value    ; Type                                         ;
 +----------------+----------+----------------------------------------------+
 ; N              ; 8        ; Signed Integer                               ;
-; LED_DIVIDER    ; 50000000 ; Signed Integer                               ;
+; DIV_BUS        ; 32       ; Signed Integer                               ;
+; DIVIDER        ; 50000000 ; Signed Integer                               ;
 +----------------+----------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: led_flasher:de1_led_flasher|freq_divider:led_flash_divider ;
-+----------------+----------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                                        ;
-+----------------+----------+-----------------------------------------------------------------------------+
-; MAX_DIVIDER    ; 50000000 ; Signed Integer                                                              ;
-+----------------+----------+-----------------------------------------------------------------------------+
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; DIV_BUS        ; 32    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: freq_divider:Gen_some_clk ;
-+----------------+----------+--------------------------------------------+
-; Parameter Name ; Value    ; Type                                       ;
-+----------------+----------+--------------------------------------------+
-; MAX_DIVIDER    ; 50000000 ; Signed Integer                             ;
-+----------------+----------+--------------------------------------------+
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; DIV_BUS        ; 16    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2586,7 +2587,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------+
 ; Parameter Name ; Value ; Type                                          ;
 +----------------+-------+-----------------------------------------------+
-; MAX_DIVIDER    ; 50000 ; Signed Integer                                ;
+; DIV_BUS        ; 32    ; Signed Integer                                ;
 +----------------+-------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -2605,11 +2606,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +-----------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: freq_divider:Gen_2HZ_clk ;
-+----------------+----------+-------------------------------------------+
-; Parameter Name ; Value    ; Type                                      ;
-+----------------+----------+-------------------------------------------+
-; MAX_DIVIDER    ; 25000000 ; Signed Integer                            ;
-+----------------+----------+-------------------------------------------+
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; DIV_BUS        ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2699,24 +2700,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "freq_divider:Gen_2HZ_clk"                                                                                                                                                                ;
-+-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; div         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (25 bits) it drives.  The 7 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; div[22..18] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; div[14..11] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; div[10..7]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; div[5..0]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; div[24]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; div[23]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; div[17]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; div[16]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; div[15]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; div[6]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; rst         ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-+-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------+
+; Port Connectivity Checks: "freq_divider:Gen_2HZ_clk" ;
++-------------+-------+----------+---------------------+
+; Port        ; Type  ; Severity ; Details             ;
++-------------+-------+----------+---------------------+
+; div[22..18] ; Input ; Info     ; Stuck at VCC        ;
+; div[14..11] ; Input ; Info     ; Stuck at VCC        ;
+; div[31..25] ; Input ; Info     ; Stuck at GND        ;
+; div[10..7]  ; Input ; Info     ; Stuck at GND        ;
+; div[5..0]   ; Input ; Info     ; Stuck at GND        ;
+; div[24]     ; Input ; Info     ; Stuck at VCC        ;
+; div[23]     ; Input ; Info     ; Stuck at GND        ;
+; div[17]     ; Input ; Info     ; Stuck at GND        ;
+; div[16]     ; Input ; Info     ; Stuck at VCC        ;
+; div[15]     ; Input ; Info     ; Stuck at GND        ;
+; div[6]      ; Input ; Info     ; Stuck at VCC        ;
+; rst         ; Input ; Info     ; Stuck at GND        ;
++-------------+-------+----------+---------------------+
 
 
 +-------------------------------------------------------+
@@ -2746,22 +2747,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+-------+----------+----------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "freq_divider:Gen_1KHZ_clk"                                                                                                                                                                ;
-+-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
-+-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; div         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; div[15..14] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; div[9..8]   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; div[13..10] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; div[3..0]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; div[7]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; div[6]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; div[5]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; div[4]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; rst         ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-+-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------+
+; Port Connectivity Checks: "freq_divider:Gen_1KHZ_clk" ;
++-------------+-------+----------+----------------------+
+; Port        ; Type  ; Severity ; Details              ;
++-------------+-------+----------+----------------------+
+; div[15..14] ; Input ; Info     ; Stuck at VCC         ;
+; div[9..8]   ; Input ; Info     ; Stuck at VCC         ;
+; div[31..16] ; Input ; Info     ; Stuck at GND         ;
+; div[13..10] ; Input ; Info     ; Stuck at GND         ;
+; div[3..0]   ; Input ; Info     ; Stuck at GND         ;
+; div[7]      ; Input ; Info     ; Stuck at GND         ;
+; div[6]      ; Input ; Info     ; Stuck at VCC         ;
+; div[5]      ; Input ; Info     ; Stuck at GND         ;
+; div[4]      ; Input ; Info     ; Stuck at VCC         ;
+; rst         ; Input ; Info     ; Stuck at GND         ;
++-------------+-------+----------+----------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2769,25 +2770,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port               ; Type  ; Severity ; Details                                                                                                                                                                             ;
 +--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; InH[6..5]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; InH[2..1]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; InH[7]             ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; InH[4]             ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; InH[3]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; InH[0]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; InG[5..2]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; InG[7]             ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; InG[6]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; InG[1]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; InG[0]             ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; InF                ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; InE[7..6]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; InE[4..1]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; InE[5]             ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; InE[0]             ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; InD[7..1]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; InC                ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; InB[7..2]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InF[7..1]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InF[0]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InE[1..0]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InE[7..6]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InE[4..2]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InE[5]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InD[5..3]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InD[7]             ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InD[6]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InD[2]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InD[1]             ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InD[0]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InC[6..5]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InC[2..0]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InC[4..3]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InC[7]             ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InB[6..4]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InB[2..1]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InB[7]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InB[3]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InB[0]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InA[1..0]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InA[7]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InA[6]             ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InA[5]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InA[4]             ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; InA[3]             ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; InA[2]             ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; InfoH[11..7]       ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; InfoH[5..1]        ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; InfoH[15]          ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
@@ -2853,23 +2863,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; InfoA[13]          ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; InfoA[5]           ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; ScopeInfoA         ; Input ; Warning  ; Input port expression (48 bits) is wider than the input port (32 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; ScopeInfoA[31..23] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoA[7..6]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoA[3..2]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoA[31]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoA[29]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoA[23]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; ScopeInfoA[22]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; ScopeInfoA[21]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoA[20]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; ScopeInfoA[15]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; ScopeInfoA[14]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; ScopeInfoA[12]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; ScopeInfoA[7]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; ScopeInfoA[3]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoA[5]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; ScopeInfoA[0]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; ScopeInfoB         ; Input ; Warning  ; Input port expression (48 bits) is wider than the input port (32 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; ScopeInfoB[26..24] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; ScopeInfoB[21..20] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; ScopeInfoB[23..22] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; ScopeInfoB[19..18] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoB[19..17] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; ScopeInfoB[15..14] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; ScopeInfoB[11..10] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; ScopeInfoB[8..6]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; ScopeInfoB[3..1]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; ScopeInfoB[21]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; ScopeInfoB[12..6]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoB[4..0]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoB[31]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoB[30]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; ScopeInfoB[29]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoB[28]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; ScopeInfoB[27]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; ScopeInfoB[16]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; ScopeInfoB[13]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 ; ScopeInfoB[5]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                        ;
 +--------------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2902,15 +2920,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+-------+----------+-----------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "freq_divider:Gen_some_clk"                                                                                                                        ;
-+---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port    ; Type  ; Severity ; Details                                                                                                                                         ;
-+---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; div     ; Input ; Warning  ; Input port expression (16 bits) is smaller than the input port (26 bits) it drives.  Extra input bit(s) "div[25..16]" will be connected to GND. ;
-; div[25] ; Input ; Info     ; Stuck at GND                                                                                                                                    ;
-; rst     ; Input ; Info     ; Stuck at GND                                                                                                                                    ;
-+---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------+
+; Port Connectivity Checks: "freq_divider:Gen_some_clk" ;
++---------+-------+----------+--------------------------+
+; Port    ; Type  ; Severity ; Details                  ;
++---------+-------+----------+--------------------------+
+; div[15] ; Input ; Info     ; Stuck at GND             ;
+; rst     ; Input ; Info     ; Stuck at GND             ;
++---------+-------+----------+--------------------------+
 
 
 +----------------------------------------------------------------+
@@ -2922,33 +2939,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+-------+----------+-------------------------------------+
 
 
++----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "led_flasher:de1_led_flasher|freq_divider:led_flash_divider" ;
++-------------+-------+----------+-------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                               ;
++-------------+-------+----------+-------------------------------------------------------+
+; div[23..19] ; Input ; Info     ; Stuck at VCC                                          ;
+; div[15..12] ; Input ; Info     ; Stuck at VCC                                          ;
+; div[31..26] ; Input ; Info     ; Stuck at GND                                          ;
+; div[11..8]  ; Input ; Info     ; Stuck at GND                                          ;
+; div[6..0]   ; Input ; Info     ; Stuck at GND                                          ;
+; div[25]     ; Input ; Info     ; Stuck at VCC                                          ;
+; div[24]     ; Input ; Info     ; Stuck at GND                                          ;
+; div[18]     ; Input ; Info     ; Stuck at GND                                          ;
+; div[17]     ; Input ; Info     ; Stuck at VCC                                          ;
+; div[16]     ; Input ; Info     ; Stuck at GND                                          ;
+; div[7]      ; Input ; Info     ; Stuck at VCC                                          ;
++-------------+-------+----------+-------------------------------------------------------+
+
+
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "led_flasher:de1_led_flasher|freq_divider:led_flash_divider"                                                                                                                              ;
+; Port Connectivity Checks: "tone_selector:tone_organ|freq_divider:tone_gen"                                                                                                                                          ;
 +-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port        ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; div         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (26 bits) it drives.  The 6 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; div[23..19] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; div[15..12] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; div[11..8]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; div[6..0]   ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; div[25]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; div[24]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; div[18]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; div[17]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; div[16]     ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; div[7]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; div         ; Input ; Warning  ; Input port expression (33 bits) is wider than the input port (32 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; div[31..17] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; div[2]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
 +-------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------+
-; Port Connectivity Checks: "tone_selector:tone_organ|freq_divider:tone_gen" ;
-+-------------+-------+----------+-------------------------------------------+
-; Port        ; Type  ; Severity ; Details                                   ;
-+-------------+-------+----------+-------------------------------------------+
-; div[25..17] ; Input ; Info     ; Stuck at GND                              ;
-; div[2]      ; Input ; Info     ; Stuck at GND                              ;
-+-------------+-------+----------+-------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2965,28 +2983,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------------------------------------------+-------+
 ; Type                                                                          ; Count ;
 +-------------------------------------------------------------------------------+-------+
-; arriav_ff                                                                     ; 225   ;
+; arriav_ff                                                                     ; 250   ;
 ;     CLR                                                                       ; 3     ;
-;     CLR SCLR                                                                  ; 52    ;
+;     CLR SCLR                                                                  ; 64    ;
 ;     ENA                                                                       ; 34    ;
 ;     ENA CLR                                                                   ; 6     ;
-;     SCLR                                                                      ; 83    ;
+;     SCLR                                                                      ; 96    ;
 ;     plain                                                                     ; 47    ;
 ; arriav_io_obuf                                                                ; 60    ;
-; arriav_lcell_comb                                                             ; 343   ;
-;     arith                                                                     ; 187   ;
+; arriav_lcell_comb                                                             ; 375   ;
+;     arith                                                                     ; 212   ;
 ;         0 data inputs                                                         ; 5     ;
-;         1 data inputs                                                         ; 169   ;
+;         1 data inputs                                                         ; 194   ;
 ;         2 data inputs                                                         ; 2     ;
 ;         3 data inputs                                                         ; 11    ;
-;     normal                                                                    ; 156   ;
+;     normal                                                                    ; 163   ;
 ;         0 data inputs                                                         ; 2     ;
 ;         1 data inputs                                                         ; 9     ;
-;         2 data inputs                                                         ; 19    ;
-;         3 data inputs                                                         ; 13    ;
-;         4 data inputs                                                         ; 34    ;
-;         5 data inputs                                                         ; 33    ;
-;         6 data inputs                                                         ; 46    ;
+;         2 data inputs                                                         ; 16    ;
+;         3 data inputs                                                         ; 15    ;
+;         4 data inputs                                                         ; 42    ;
+;         5 data inputs                                                         ; 36    ;
+;         6 data inputs                                                         ; 43    ;
 ; blackbox                                                                      ; 13    ;
 ;         CD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst ; 1     ;
 ;     SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0               ; 1     ;
@@ -3003,8 +3021,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     to_slow_clk_interface:interface_actual_audio_data_right                   ; 1     ;
 ; boundary_port                                                                 ; 438   ;
 ;                                                                               ;       ;
-; Max LUT depth                                                                 ; 6.90  ;
-; Average LUT depth                                                             ; 2.47  ;
+; Max LUT depth                                                                 ; 7.30  ;
+; Average LUT depth                                                             ; 2.69  ;
 +-------------------------------------------------------------------------------+-------+
 
 
@@ -3022,88 +3040,88 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------+---------------+-----------+--------------------------------+-------------------+----------------------------------------------------+---------+
 ; Name                                                                      ; Type          ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                                  ; Details ;
 +---------------------------------------------------------------------------+---------------+-----------+--------------------------------+-------------------+----------------------------------------------------+---------+
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[1]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[1]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[2]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[2]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[3]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[3]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[4]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[4]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[5]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[5]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[6]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[6]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[7]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[7]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[8]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[8]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[9]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[9]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InA[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InB[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InC[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InD[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InF[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InF[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InE[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InF[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InF[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InF[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InF[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InF[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
@@ -3118,38 +3136,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InF[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InF[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InF[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[1]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[1]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[2]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[2]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[3]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[3]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[4]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[4]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[5]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[5]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[6]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[6]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[7]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InG[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[7]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[0]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[1]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[2]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[3]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[4]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[5]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[6]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal~_wirecell                      ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InH[7]             ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ScopeChannelASignal~_wirecell                      ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InfoA[0]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InfoA[0]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InfoA[10]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
@@ -3408,122 +3426,122 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|InfoH[9]           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[0]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[0]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[10]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr3~0                                          ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[10]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr3~0                                          ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[11]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~0                                     ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[11]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~0                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[10]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[10]~0                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[10]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[10]~0                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[11]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~1_wirecell                            ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[11]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~1_wirecell                            ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[12]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[12]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[13]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[13]~1_wirecell                            ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[13]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[13]~1_wirecell                            ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[14]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[14]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[13]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[10]~0_wirecell                            ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[13]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[10]~0_wirecell                            ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[14]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[10]~0                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[14]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[10]~0                                     ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[15]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[15]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[16]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA~2                                         ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[16]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA~2                                         ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[17]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr1~0                                          ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[17]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr1~0                                          ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[18]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[18]~3                                     ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[18]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[18]~3                                     ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[19]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA~4                                         ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[19]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA~4                                         ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[1]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[13]~1                                     ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[1]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[13]~1                                     ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[20]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr0~0                                          ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[20]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr0~0                                          ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[21]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[21]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[16]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[10]~0_wirecell                            ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[16]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[10]~0_wirecell                            ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[17]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[17]~2                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[17]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[17]~2                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[18]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr3~0                                          ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[18]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr3~0                                          ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[19]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[19]~3                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[19]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[19]~3                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[1]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~1_wirecell                            ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[1]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~1_wirecell                            ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[20]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[20]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[21]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[10]~0_wirecell                            ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[21]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[10]~0_wirecell                            ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[22]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[22]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[23]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[23]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[24]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[24]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[25]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[25]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[26]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[26]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[27]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[27]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[28]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[28]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[24]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA~4                                         ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[24]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA~4                                         ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[25]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr2~0                                          ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[25]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr2~0                                          ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[26]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[26]~5                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[26]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[26]~5                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[27]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA~6                                         ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[27]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA~6                                         ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[28]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr0~0                                          ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[28]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr0~0                                          ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[29]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[29]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[2]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]~_wirecell                                    ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[2]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]~_wirecell                                    ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[30]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[30]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[2]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[2]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[30]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~1                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[30]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~1                                     ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[31]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[31]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[3]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[3]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[4]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[4]~5                                      ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[4]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[4]~5                                      ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[5]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[5]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[6]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]~_wirecell                                    ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[6]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]~_wirecell                                    ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[4]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~1_wirecell                            ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[4]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~1_wirecell                            ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[5]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[5]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[6]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[6]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[7]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[7]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[8]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[8]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[0]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[9]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr4~0                                          ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[9]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; WideOr4~0                                          ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[0]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[1]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[0]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[1]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[8]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~1_wirecell                            ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[8]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[11]~1_wirecell                            ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[9]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[10]~0                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoA[9]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scopeinA[10]~0                                     ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[0]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[0]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[10]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[10]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[11]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[11]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[12]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[2]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[12]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[2]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[12]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[12]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[13]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[13]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[14]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[14]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[15]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[15]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[16]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[3]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[16]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[3]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[17]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[3]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[17]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[3]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[16]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[16]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[17]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[17]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[18]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[18]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[19]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[19]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[1]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[1]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[20]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[3]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[20]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[3]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[20]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[20]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[21]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[21]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[22]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[22]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[23]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[23]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[24]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[24]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[25]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[25]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[26]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[26]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[24]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[24]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[25]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[25]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[26]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[26]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[27]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[27]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[28]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[28]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[28]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[28]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[29]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[29]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[2]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[2]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[30]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[30]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[30]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[30]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[31]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[31]     ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[3]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[3]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[4]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[1]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[4]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[1]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[4]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[4]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[5]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[5]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; VCC                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[6]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
@@ -3532,8 +3550,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[7]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[8]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[8]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[9]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[2]                                              ; N/A     ;
-; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[9]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; SW[2]                                              ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[9]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
+; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|ScopeInfoB[9]      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; GND                                                ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|scope_channelA[0]  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scope_capture:LCD_scope_channelA|captured_data[0]  ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|scope_channelA[0]  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scope_capture:LCD_scope_channelA|captured_data[0]  ; N/A     ;
 ; LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|scope_channelA[10] ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; scope_capture:LCD_scope_channelA|captured_data[10] ; N/A     ;
@@ -3644,11 +3662,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 25 21:29:36 2023
+    Info: Processing started: Fri May 26 21:41:34 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Basic_Organ_Solution -c Basic_Organ_Solution
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Warning (10885): Verilog HDL Attribute warning at Basic_Organ_Solution.sv(212): synthesis attribute "keep" with value "1" has no object and is ignored File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 212
+Warning (10885): Verilog HDL Attribute warning at Basic_Organ_Solution.sv(222): synthesis attribute "keep" with value "1" has no object and is ignored File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 222
 Warning (10238): Verilog Module Declaration warning at Basic_Organ_Solution.sv(40): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "Basic_Organ_Solution" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file basic_organ_solution.sv
     Info (12023): Found entity 1: Basic_Organ_Solution File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 2
@@ -3673,38 +3691,35 @@ Info (12021): Found 1 design units, including 1 entities, in source file led_fla
 Info (12021): Found 1 design units, including 1 entities, in source file tone_selector.sv
     Info (12023): Found entity 1: tone_selector File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/tone_selector.sv Line: 7
 Info (12127): Elaborating entity "Basic_Organ_Solution" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(408): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 408
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(466): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 466
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(481): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 481
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(482): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 482
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(483): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 483
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(484): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 484
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(485): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 485
-Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(486): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 486
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(417): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 417
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(475): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 475
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(490): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 490
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(491): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 491
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(492): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 492
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(493): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 493
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(494): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 494
+Warning (10230): Verilog HDL assignment warning at Basic_Organ_Solution.sv(495): truncated value with size 8 to match size of target (7) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 495
 Warning (10034): Output port "LEDR[9..8]" at Basic_Organ_Solution.sv(50) has no driver File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 50
-Info (12128): Elaborating entity "tone_selector" for hierarchy "tone_selector:tone_organ" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 204
+Info (12128): Elaborating entity "tone_selector" for hierarchy "tone_selector:tone_organ" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 211
 Info (12128): Elaborating entity "freq_divider" for hierarchy "tone_selector:tone_organ|freq_divider:tone_gen" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/tone_selector.sv Line: 45
-Warning (10230): Verilog HDL assignment warning at freq_divider.sv(34): truncated value with size 32 to match size of target (26) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/freq_divider.sv Line: 34
-Info (12128): Elaborating entity "led_flasher" for hierarchy "led_flasher:de1_led_flasher" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 208
+Info (12128): Elaborating entity "led_flasher" for hierarchy "led_flasher:de1_led_flasher" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 218
 Warning (12125): Using design file doublesync.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: doublesync File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/doublesync.v Line: 1
-Info (12128): Elaborating entity "doublesync" for hierarchy "doublesync:user_scope_enable_sync1" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 235
+Info (12128): Elaborating entity "doublesync" for hierarchy "doublesync:user_scope_enable_sync1" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 245
+Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:Gen_some_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 256
+Warning (10230): Verilog HDL assignment warning at freq_divider.sv(25): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/freq_divider.sv Line: 25
 Warning (12125): Using design file scope_capture.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: scope_capture File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/scope_capture.v Line: 1
-Info (12128): Elaborating entity "scope_capture" for hierarchy "scope_capture:LCD_scope_channelA" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 262
+Info (12128): Elaborating entity "scope_capture" for hierarchy "scope_capture:LCD_scope_channelA" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 272
 Warning (12125): Using design file lcd_scope_encapsulated_pacoblaze_wrapper.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: LCD_Scope_Encapsulated_pacoblaze_wrapper File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/lcd_scope_encapsulated_pacoblaze_wrapper.v Line: 1
-Info (12128): Elaborating entity "LCD_Scope_Encapsulated_pacoblaze_wrapper" for hierarchy "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 347
+Info (12128): Elaborating entity "LCD_Scope_Encapsulated_pacoblaze_wrapper" for hierarchy "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 356
 Info (12128): Elaborating entity "LCD_Scope_Encapsulated_pacoblaze" for hierarchy "LCD_Scope_Encapsulated_pacoblaze_wrapper:LCD_LED_scope|LCD_Scope_Encapsulated_pacoblaze:LCD_Scope_Encapsulated_pacoblaze_inst" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/lcd_scope_encapsulated_pacoblaze_wrapper.v Line: 60
-Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:Gen_1KHZ_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 366
-Warning (10230): Verilog HDL assignment warning at freq_divider.sv(34): truncated value with size 32 to match size of target (16) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/freq_divider.sv Line: 34
-Info (12128): Elaborating entity "async_trap_and_reset_gen_1_pulse" for hierarchy "async_trap_and_reset_gen_1_pulse:make_speedup_pulse" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 425
-Info (12128): Elaborating entity "speed_reg_control" for hierarchy "speed_reg_control:speed_reg_control_inst" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 458
-Info (12128): Elaborating entity "SevenSegmentDisplayDecoder" for hierarchy "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 474
-Info (12128): Elaborating entity "freq_divider" for hierarchy "freq_divider:Gen_2HZ_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 499
-Warning (10230): Verilog HDL assignment warning at freq_divider.sv(34): truncated value with size 32 to match size of target (25) File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/freq_divider.sv Line: 34
-Info (12128): Elaborating entity "to_slow_clk_interface" for hierarchy "to_slow_clk_interface:interface_actual_audio_data_right" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 538
-Info (12128): Elaborating entity "audio_controller" for hierarchy "audio_controller:audio_control" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 569
+Info (12128): Elaborating entity "async_trap_and_reset_gen_1_pulse" for hierarchy "async_trap_and_reset_gen_1_pulse:make_speedup_pulse" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 434
+Info (12128): Elaborating entity "speed_reg_control" for hierarchy "speed_reg_control:speed_reg_control_inst" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 467
+Info (12128): Elaborating entity "SevenSegmentDisplayDecoder" for hierarchy "SevenSegmentDisplayDecoder:SevenSegmentDisplayDecoder_inst0" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 483
+Info (12128): Elaborating entity "to_slow_clk_interface" for hierarchy "to_slow_clk_interface:interface_actual_audio_data_right" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 547
+Info (12128): Elaborating entity "audio_controller" for hierarchy "audio_controller:audio_control" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 578
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_se84.tdf
     Info (12023): Found entity 1: altsyncram_se84 File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/db/altsyncram_se84.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_elc.tdf
@@ -3727,7 +3742,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/db/cmpr_99c.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.05.25.21:30:08 Progress: Loading sld59a4f0a5/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.05.26.21:42:06 Progress: Loading sld59a4f0a5/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -3752,7 +3767,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/ip/s
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/db/ip/sld59a4f0a5/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Warning (286029): Timing-Driven Synthesis is skipped because the Synthesis Effort is set to Fast
 Warning (12240): Synthesis found one or more imported partitions that will be treated as black boxes for timing analysis during synthesis
-Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
     Warning (13040): bidirectional pin "GPIO_0[13]" has no driver File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 79
     Warning (13040): bidirectional pin "GPIO_0[14]" has no driver File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 79
@@ -3837,8 +3852,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 50
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 50
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "ScopeChannelBSignal" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 252
-    Info (17048): Logic cell "scope_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 224
+    Info (17048): Logic cell "ScopeChannelBSignal" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 262
+    Info (17048): Logic cell "scope_clk" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 234
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 613 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 9 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -3883,16 +3898,16 @@ Info (35003): Optimize away 41 nodes that do not fanout to OUTPUT or BIDIR pins
     Info (35004): Node: "to_slow_clk_interface:interface_actual_audio_data_right|outdata[15]" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/to_slow_clk_interface.qxp Line: -1
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "AUD_ADCDAT" File: C:/Users/beako/Documents/cpen311/cpen311-lab1/rtl/Basic_Organ_Solution.sv Line: 67
-Info (21057): Implemented 6986 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 7018 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 56 output pins
     Info (21060): Implemented 76 bidirectional pins
-    Info (21061): Implemented 6526 logic cells
+    Info (21061): Implemented 6558 logic cells
     Info (21064): Implemented 308 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 106 warnings
-    Info: Peak virtual memory: 4974 megabytes
-    Info: Processing ended: Thu May 25 21:30:25 2023
-    Info: Elapsed time: 00:00:49
-    Info: Total CPU time (on all processors): 00:00:49
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 104 warnings
+    Info: Peak virtual memory: 4963 megabytes
+    Info: Processing ended: Fri May 26 21:42:21 2023
+    Info: Elapsed time: 00:00:47
+    Info: Total CPU time (on all processors): 00:00:46
 
 

@@ -199,13 +199,23 @@ wire Clock_1KHz, Clock_1Hz;
 // Insert your code for Lab1 here!
 //
 //
-            
+
+
+//OUTPUT for tone selector.            
 logic outfreq;
-tone_selector tone_organ(.switches(SW[3:0]), .clk(CLK_50M), .out(outfreq), .rst(~KEY[3]));
+
+tone_selector tone_organ
+(.switches(SW[3:0]),
+ .clk(CLK_50M),
+ .out(outfreq),
+ .rst(~KEY[3]));
 
 //instantiate flasher module
 
-led_flasher #(.N(8), .LED_DIVIDER(50_000_000)) de1_led_flasher(.clk(CLK_50M), .outLED(LED[7:0]), .rst(~KEY[3]));
+led_flasher #(.N(8), .DIV_BUS(32), .DIVIDER(50_000_000)) de1_led_flasher
+(.clk(CLK_50M),
+ .outLED(LED[7:0]),
+ .rst(~KEY[3]));
 
 //Audio Generation Signal
 //Note that the audio needs signed data - so convert 1 bit to 8 bits signed, replaced here.
@@ -237,7 +247,7 @@ doublesync user_scope_enable_sync1(.indata(scope_enable_source),
 //Generate the oscilloscope clock - implementation replaced w/ personal implementation
 
 //assuming lowest sampling freq is 1hz. 
-freq_divider #(.MAX_DIVIDER(50_000_000)) Gen_some_clk
+freq_divider #(.DIV_BUS(16)) Gen_some_clk
 (
 .inclk(CLK_50M),
 .outclk(scope_clk),
@@ -277,16 +287,16 @@ assign LCD_ON   = 1'b1;
 logic[47:0] scopeinA;
 
 always_comb begin
-	if (~SW[0]) scopeinA = {character_O, character_F, character_F};
+	if (~SW[0]) scopeinA = {character_O, character_F, character_F, character_space};
 	else begin
 		case(SW[3:1])
-			3'd0: scopeinA = {character_D, character_lowercase_o, character_space}; 
-			3'd1: scopeinA = {character_R, character_lowercase_e, character_space};
-			3'd2: scopeinA = {character_M, character_lowercase_i, character_space};
-			3'd3: scopeinA = {character_F, character_lowercase_a, character_space};
-			3'd4: scopeinA = {character_S, character_lowercase_o, character_space};
-			3'd5: scopeinA = {character_L, character_lowercase_a, character_space};
-			3'd6: scopeinA = {character_T, character_lowercase_i, character_space};
+			3'd0: scopeinA = {character_D, character_lowercase_o, character_space, character_space}; 
+			3'd1: scopeinA = {character_R, character_lowercase_e, character_space, character_space};
+			3'd2: scopeinA = {character_M, character_lowercase_i, character_space, character_space};
+			3'd3: scopeinA = {character_F, character_lowercase_a, character_space, character_space};
+			3'd4: scopeinA = {character_S, character_lowercase_o, character_space, character_space};
+			3'd5: scopeinA = {character_L, character_lowercase_a, character_space, character_space};
+			3'd6: scopeinA = {character_T, character_lowercase_i, character_space, character_space};
 			3'd7: scopeinA = {character_D, character_O, character_2};
 			default: scopeinA = {48{1'bx}};
 		endcase
@@ -296,9 +306,8 @@ end
 logic[47:0] scopeinB;
 
 //Show status of switches
-assign scopeinB[7:0] = SW[1] 		? character_1 : character_space;
-assign scopeinB[15:8] = SW[2] 	? character_2 : character_space;
-assign scopeinB[23:16] = SW[3] 	? character_3 : character_space;
+assign scopeinB =  {character_S, character_W, character_1, character_space, character_space};
+
 
 //The LCD scope and display
 LCD_Scope_Encapsulated_pacoblaze_wrapper LCD_LED_scope(
@@ -310,14 +319,14 @@ LCD_Scope_Encapsulated_pacoblaze_wrapper LCD_LED_scope(
                     .clk(CLK_50M),  //don't touch
                           
                         //LCD Display values - changed to reflect switches.
-                      .InH(8'h69),
-                      .InG(8'h42),
-                      .InF(8'h00),
-                       .InE(8'hde),
-                      .InD({{7{1'b0}}, outfreq}),
-                      .InC(8'h00),
-                      .InB({{6{1'b0}}, SW[9:8]}),
-                     .InA(SW[7:0]),
+                      .InH(audio_data[7:0]),
+                      .InG(SW[7:0]),
+                      .InF(8'h01),
+                       .InE(8'h23),
+                      .InD(8'h45),
+                      .InC(8'h67),
+                      .InB(8'h89),
+                     .InA(8'hAB),
                           
                      //LCD display information signals
                          .InfoH({character_P,character_A}),
@@ -357,11 +366,11 @@ wire speed_up_event, speed_down_event;
 
 //replaced freq divider with personal implementation, 1KHz
 
-freq_divider #(.MAX_DIVIDER(50_000)) Gen_1KHZ_clk
+freq_divider #(.DIV_BUS(32)) Gen_1KHZ_clk
 (
 .inclk(CLK_50M),
 .outclk(Clock_1KHz),
-.div(50_000),
+.div(32'd50_000),
 .rst(1'b0)
 );
 
@@ -490,11 +499,11 @@ wire Clock_2Hz;
 
 //replaced with personal implementation - 2Hz
 
-freq_divider #(.MAX_DIVIDER(25_000_000)) Gen_2HZ_clk
+freq_divider #(.DIV_BUS(32)) Gen_2HZ_clk
 (
 .inclk(CLK_50M),
 .outclk(Clock_2Hz),
-.div(25_000_000),
+.div(32'd25_000_000),
 .rst(1'b0)
 );
 
