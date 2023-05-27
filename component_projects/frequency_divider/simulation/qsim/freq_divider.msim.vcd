@@ -3,7 +3,7 @@ $comment
 		vcd file freq_divider.msim.vcd -direction
 $end
 $date
-	Fri May 26 21:11:37 2023
+	Fri May 26 23:48:03 2023
 $end
 $version
 	ModelSim Version 10.5b

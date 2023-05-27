@@ -3,7 +3,7 @@ $comment
 		vcd file led_flasher.msim.vcd -direction
 $end
 $date
-	Fri May 26 21:52:22 2023
+	Fri May 26 23:43:41 2023
 $end
 $version
 	ModelSim Version 10.5b

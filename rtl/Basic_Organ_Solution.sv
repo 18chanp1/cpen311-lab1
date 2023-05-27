@@ -306,7 +306,7 @@ end
 logic[47:0] scopeinB;
 
 //Show status of switches
-assign scopeinB =  {character_S, character_W, character_1, character_space, character_space};
+assign scopeinB =  {character_S, character_W, character_1, character_space};
 
 
 //The LCD scope and display

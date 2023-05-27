@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri May 26 21:11:23 2023
+    Info: Processing started: Fri May 26 23:47:59 2023
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off freq_divider -c freq_divider --vector_source=C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/Waveform.vwf --testbench_file=C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/simulation/qsim/Waveform.vwf.vt
 Info (119006): Selected device 5CSEMA5F31C6 for design "freq_divider"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -54,15 +54,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri May 26 21:11:31 2023
+    Info: Processing started: Fri May 26 23:48:00 2023
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/simulation/qsim/ freq_divider -c freq_divider
 Info (119006): Selected device 5CSEMA5F31C6 for design "freq_divider"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file freq_divider.vo in folder "C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4715 megabytes
-    Info: Processing ended: Fri May 26 21:11:32 2023
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Fri May 26 23:48:02 2023
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -79,36 +79,35 @@ c:/intelfpga_lite/18.1/modelsim_ase/win32aloem//vsim -c -do freq_divider.do
 
 Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
-# 10.5b
 
+# 10.5b
 
 # do freq_divider.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:35 on May 26,2023
+# Start time: 23:48:03 on May 26,2023
 # vlog -work work freq_divider.vo 
-# -- Compiling module freq_divider
 
+# -- Compiling module freq_divider
 # 
 # Top level modules:
 # 	freq_divider
-# End time: 21:11:35 on May 26,2023, Elapsed time: 0:00:00
+# End time: 23:48:03 on May 26,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:35 on May 26,2023
+# Start time: 23:48:03 on May 26,2023
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module freq_divider_vlg_vec_tst
 # 
 # Top level modules:
 # 	freq_divider_vlg_vec_tst
-
-# End time: 21:11:35 on May 26,2023, Elapsed time: 0:00:00
+# End time: 23:48:03 on May 26,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.freq_divider_vlg_vec_tst 
-# Start time: 21:11:37 on May 26,2023
+# Start time: 23:48:03 on May 26,2023
 # Loading work.freq_divider_vlg_vec_tst
 # Loading work.freq_divider
 # Loading cyclonev_ver.cyclonev_io_obuf
@@ -119,7 +118,7 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # after#25
 # ** Note: $finish    : Waveform.vwf.vt(48)
 #    Time: 1 us  Iteration: 0  Instance: /freq_divider_vlg_vec_tst
-# End time: 21:11:37 on May 26,2023, Elapsed time: 0:00:00
+# End time: 23:48:03 on May 26,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -132,7 +131,7 @@ Reading C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequen
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/simulation/qsim/freq_divider_20230526211137.sim.vwf
+Writing the resulting VWF to C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/simulation/qsim/freq_divider_20230526234804.sim.vwf
 
 Finished VCD to VWF conversion.
 

@@ -1,5 +1,5 @@
 Flow report for freq_divider
-Fri May 26 21:11:32 2023
+Fri May 26 23:48:02 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri May 26 21:11:32 2023       ;
+; Flow Status                     ; Successful - Fri May 26 23:48:02 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; freq_divider                                ;
 ; Top-level Entity Name           ; freq_divider                                ;
@@ -101,7 +101,9 @@ refer to the applicable agreement for further details.
 ; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4783 MB             ; 00:00:20                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4711 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4715 MB             ; 00:00:01                           ;
-; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:22                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4715 MB             ; 00:00:01                           ;
+; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:24                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,6 +115,8 @@ refer to the applicable agreement for further details.
 ; Analysis & Synthesis ; beako-windows    ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; beako-windows    ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; beako-windows    ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; beako-windows    ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; beako-windows    ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -120,6 +124,8 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off freq_divider -c freq_divider
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off freq_divider -c freq_divider --vector_source=C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/Waveform.vwf --testbench_file=C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/simulation/qsim/ freq_divider -c freq_divider
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off freq_divider -c freq_divider --vector_source=C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/Waveform.vwf --testbench_file=C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/simulation/qsim/ freq_divider -c freq_divider
 

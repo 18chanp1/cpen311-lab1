@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/tone_selector/simulation/qsim
 vtone_selector
-Z1 !s110 1685160843
+Z1 !s110 1685169961
 !i10b 1
 !s100 O>]gOfJl>Fc39O_8<<=cn0
 I>>c3GZd:Wm:kabnESVgUO3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1685160842
+w1685169960
 8tone_selector.vo
 Ftone_selector.vo
 L0 31
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1685160843.000000
+Z4 !s108 1685169961.000000
 !s107 tone_selector.vo|
 !s90 -work|work|tone_selector.vo|
 !i113 1
@@ -36,7 +36,7 @@ R1
 IZ[9FGWbRHB[oFSEToBVTi0
 R2
 R0
-w1685160841
+w1685169958
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 29

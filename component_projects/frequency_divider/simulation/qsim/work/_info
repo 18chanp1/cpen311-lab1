@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/beako/Documents/cpen311/cpen311-lab1/component_projects/frequency_divider/simulation/qsim
 vfreq_divider
-Z1 !s110 1685160695
+Z1 !s110 1685170083
 !i10b 1
 !s100 f>b`U:RSehnU;i0SaPOnc2
 I:?82`Q;mJ?HnERj@ojc452
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1685160692
+w1685170082
 8freq_divider.vo
 Ffreq_divider.vo
 L0 31
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1685160695.000000
+Z4 !s108 1685170083.000000
 !s107 freq_divider.vo|
 !s90 -work|work|freq_divider.vo|
 !i113 1
@@ -36,7 +36,7 @@ R1
 Iib?iRa2lcCl>dG6n2zd1k3
 R2
 R0
-w1685160691
+w1685170080
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 29
