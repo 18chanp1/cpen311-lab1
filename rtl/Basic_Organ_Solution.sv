@@ -208,14 +208,16 @@ tone_selector tone_organ
 (.switches(SW[3:0]),
  .clk(CLK_50M),
  .out(outfreq),
- .rst(~KEY[3]));
+ .rst(1'b0)
+ );
 
 //instantiate flasher module
 
 led_flasher #(.N(8), .DIV_BUS(32), .DIVIDER(50_000_000)) de1_led_flasher
 (.clk(CLK_50M),
  .outLED(LED[7:0]),
- .rst(~KEY[3]));
+ .rst(1'b0)
+ );
 
 //Audio Generation Signal
 //Note that the audio needs signed data - so convert 1 bit to 8 bits signed, replaced here.
