@@ -49,6 +49,14 @@ The frequency can be obtained by clock frequency / DIVIDER.
 [tone_selector_20230526211404.sim.vwf](./component_projects/tone_selector/simulation/qsim/tone_selector_20230526211404.sim.vwf)
 ./component_projects/tone_selector/simulation/qsim/tone_selector_20230526211404.sim.vwf
 
+## Information on signaltap
+Please find them here in the folder [signaltap](./rtl/signaltap) 
+./rtl/signaltap
+
+### Annotated signaltaps
+![freq and led flasher signaltap.png](./doc/signaltap/freq and led flasher signaltap.png)
+![tone_selector signaltap.png](./doc/signaltap/tone_selector signaltap.png)
+
 
 
 ### Additional information
